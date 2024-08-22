@@ -1,0 +1,1347 @@
+/* 
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com 
+Twitter: @rich_clark
+*/
+
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+body {
+    line-height:1;
+}
+
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section { 
+	display:block;
+}
+
+nav ul {
+    list-style:none;
+}
+
+blockquote, q {
+    quotes:none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content:'';
+    content:none;
+}
+
+a {
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+    background-color:#ff9;
+    color:#000;
+    text-decoration:none;
+}
+
+/* change colours to suit your needs */
+mark {
+    background-color:#ff9;
+    color:#000; 
+    font-style:italic;
+    font-weight:bold;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+    border-bottom:1px dotted;
+    cursor:help;
+}
+
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+
+/* change border colour to suit your needs */
+hr {
+    display:block;
+    height:1px;
+    border:0;   
+    border-top:1px solid #cccccc;
+    margin:1em 0;
+    padding:0;
+}
+
+input, select {
+    vertical-align:middle;
+}
+/* Fonts */
+@font-face {
+  font-family: 'GandhiSerif';
+  font-style: normal;
+  font-weight: 400;
+  src: url("/assets/GandhiSerif-Regular-webfont.eot");
+  src: url("/assets/GandhiSerif-Regular-webfont.eot?#iefix") format("embedded-opentype"), url("/assets/GandhiSerif-Regular-webfont.woff") format("woff"), url("/assets/GandhiSerif-Regular-webfont.ttf") format("truetype"), url("/assets/GandhiSerif-Regular-webfont.svg#GandhiSerifRegular") format("svg");
+}
+@font-face {
+  font-family: 'GandhiSerif';
+  font-style: normal;
+  font-weight: 700;
+  src: url("/assets/GandhiSerif-Bold-webfont.eot");
+  src: url("/assets/GandhiSerif-Bold-webfont.eot?#iefix") format("embedded-opentype"), url("/assets/GandhiSerif-Bold-webfont.woff") format("woff"), url("/assets/GandhiSerif-Bold-webfont.ttf") format("truetype"), url("/assets/GandhiSerif-Bold-webfont.svg#GandhiSerifBold") format("svg");
+}
+@font-face {
+  font-family: 'GandhiSerif';
+  font-style: italic;
+  font-weight: 400;
+  src: url("/assets/GandhiSerif-Italic-webfont.eot");
+  src: url("/assets/GandhiSerif-Italic-webfont.eot?#iefix") format("embedded-opentype"), url("/assets/GandhiSerif-Italic-webfont.woff") format("woff"), url("/assets/GandhiSerif-Italic-webfont.ttf") format("truetype"), url("/assets/GandhiSerif-Italic-webfont.svg#GandhiSerifItalic") format("svg");
+}
+@font-face {
+  font-family: 'Alegreya SC';
+  font-style: normal;
+  font-weight: 400;
+  src: url("/assets/AlegreyaSC-Regular-webfont.eot");
+  src: url("/assets/AlegreyaSC-Regular-webfont.eot?#iefix") format("embedded-opentype"), url("/assets/AlegreyaSC-Regular-webfont.woff") format("woff"), url("/assets/AlegreyaSC-Regular-webfont.ttf") format("truetype"), url("/assets/AlegreyaSC-Regular-webfont.svg#AlegreyaSCRegular") format("svg");
+}
+@font-face {
+  font-family: 'Alegreya SC';
+  font-style: normal;
+  font-weight: 700;
+  src: url("/assets/AlegreyaSC-Bold-webfont.eot");
+  src: url("/assets/AlegreyaSC-Bold-webfont.eot?#iefix") format("embedded-opentype"), url("/assets/AlegreyaSC-Bold-webfont.woff") format("woff"), url("/assets/AlegreyaSC-Bold-webfont.ttf") format("truetype"), url("/assets/AlegreyaSC-Bold-webfont.svg#AlegreyaSCBold") format("svg");
+}
+@font-face {
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 400;
+  src: url("/assets/SourceSansPro-Regular-webfont.eot");
+  src: url("/assets/SourceSansPro-Regular-webfont.eot?#iefix") format("embedded-opentype"), url("/assets/SourceSansPro-Regular-webfont.woff") format("woff"), url("/assets/SourceSansPro-Regular-webfont.ttf") format("truetype"), url("/assets/SourceSansPro-Regular-webfont.svg#SourceSansProRegular") format("svg");
+}
+@font-face {
+  font-family: 'Source Sans Pro';
+  font-style: italic;
+  font-weight: 400;
+  src: url("/assets/SourceSansPro-It-webfont.eot");
+  src: url("/assets/SourceSansPro-It-webfont.eot?#iefix") format("embedded-opentype"), url("/assets/SourceSansPro-It-webfont.woff") format("woff"), url("/assets/SourceSansPro-It-webfont.ttf") format("truetype"), url("/assets/SourceSansPro-It-webfont.svg#SourceSansProItalic") format("svg");
+}
+@font-face {
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 600;
+  src: url("/assets/SourceSansPro-Bold-webfont.eot");
+  src: url("/assets/SourceSansPro-Bold-webfont.eot?#iefix") format("embedded-opentype"), url("/assets/SourceSansPro-Bold-webfont.woff") format("woff"), url("/assets/SourceSansPro-Bold-webfont.ttf") format("truetype"), url("/assets/SourceSansPro-Bold-webfont.svg#SourceSansProBold") format("svg");
+}
+@font-face {
+  font-family: 'Source Sans Pro';
+  font-style: italic;
+  font-weight: 600;
+  src: url("/assets/SourceSansPro-BoldIt-webfont.eot");
+  src: url("/assets/SourceSansPro-BoldIt-webfont.eot?#iefix") format("embedded-opentype"), url("/assets/SourceSansPro-BoldIt-webfont.woff") format("woff"), url("/assets/SourceSansPro-BoldIt-webfont.ttf") format("truetype"), url("/assets/SourceSansPro-BoldIt-webfont.svg#SourceSansProBoldItalic") format("svg");
+}
+@font-face {
+  font-family: 'Inconsolata';
+  src: url("/assets/Inconsolata-webfont.eot");
+  src: url("/assets/Inconsolata-webfont.eot?#iefix") format("embedded-opentype"), url("/assets/Inconsolata-webfont.woff") format("woff"), url("/assets/Inconsolata-webfont.ttf") format("truetype"), url("/assets/Inconsolata-webfont.svg#InconsolataMedium") format("svg");
+  font-style: normal;
+  font-weight: 400;
+}
+/* ******************************************  */
+/* ******************************************  */
+/* Modernizr conditionals for RGBA colours -- simple fallback approach doesn't work in IE<8 */
+/* line 121, /Users/nigel/SiteDevelopment/DMM/digitalmultimedia.org/app/assets/stylesheets/styles.scss.erb */
+.rgba div#main {
+  background-color: rgba(255, 255, 255, 0.85);
+}
+/* line 124, /Users/nigel/SiteDevelopment/DMM/digitalmultimedia.org/app/assets/stylesheets/styles.scss.erb */
+.rgba #quicklynx {
+  background-color: rgba(255, 255, 255, 0.85);
+}
+/* line 127, /Users/nigel/SiteDevelopment/DMM/digitalmultimedia.org/app/assets/stylesheets/styles.scss.erb */
+.rgba nav {
+  background-color: rgba(35, 62, 106, 0.5);
+}
+/* line 130, /Users/nigel/SiteDevelopment/DMM/digitalmultimedia.org/app/assets/stylesheets/styles.scss.erb */
+.rgba .errors {
+  background-color: rgba(35, 62, 106, 0.15);
+}
+/* line 133, /Users/nigel/SiteDevelopment/DMM/digitalmultimedia.org/app/assets/stylesheets/styles.scss.erb */
+.rgba .boxed, .rgba .boxedsingle, .rgba .advert, .rgba .advertspecial {
+  background-color: rgba(35, 62, 106, 0.15);
+}
+
+/* line 139, /Users/nigel/SiteDevelopment/DMM/digitalmultimedia.org/app/assets/stylesheets/styles.scss.erb */
+.no-rgba div#main, .no-js div#main {
+  background-color: white;
+}
+/* line 142, /Users/nigel/SiteDevelopment/DMM/digitalmultimedia.org/app/assets/stylesheets/styles.scss.erb */
+.no-rgba #quicklynx, .no-js #quicklynx {
+  background-color: white;
+}
+/* line 145, /Users/nigel/SiteDevelopment/DMM/digitalmultimedia.org/app/assets/stylesheets/styles.scss.erb */
+.no-rgba nav, .no-js nav {
+  background-color: #233e6a;
+}
+/* line 148, /Users/nigel/SiteDevelopment/DMM/digitalmultimedia.org/app/assets/stylesheets/styles.scss.erb */
+.no-rgba .errors, .no-js .errors {
+  background-color: #c3cdde;
+}
+/* line 151, /Users/nigel/SiteDevelopment/DMM/digitalmultimedia.org/app/assets/stylesheets/styles.scss.erb */
+.no-rgba .boxed, .no-rgba .boxedsingle, .no-rgba .advert, .no-rgba .advertspecial, .no-js .boxed, .no-js .boxedsingle, .no-js .advert, .no-js .advertspecial {
+  background-color: #c3cdde;
+}
+
+/******************************************/
+/* line 158, /Users/nigel/SiteDevelopment/DMM/digitalmultimedia.org/app/assets/stylesheets/styles.scss.erb */
+body {
+  color: #1d3357;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: normal;
+  font-family: "GandhiSerif", Georgia, serif;
+  line-height: 145%;
+  height: 100%;
+  margin: 0;
+  text-align: left;
+  background-color: #c8c8c8;
+  background-image: url(/assets/DMM-site-background.jpg);
+  background-repeat: repeat;
+  background-position: center top;
+}
+
+/* line 176, /Users/nigel/SiteDevelopment/DMM/digitalmultimedia.org/app/assets/stylesheets/styles.scss.erb */
+div#main {
+  width: 38em;
+  max-width: 95%;
+  height: 100%;
+  min-height: 55em;
+  padding-left: 8em;
+  padding-right: 8em;
+  padding-bottom: 0.5em;
+  padding-top: 1.5em;
+  border-left: 3px solid #233e6a;
+  border-right: 3px solid #233e6a;
+  border-top: 2px solid #233e6a;
+  border-bottom: 3px solid #233e6a;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0;
+  margin-bottom: 18px;
+}
+
+/* line 196, /Users/nigel/SiteDevelopment/DMM/digitalmultimedia.org/app/assets/stylesheets/styles.scss.erb */
+p.iewarning, noscript p {
+  padding: 16px;
+  background-color: black;
+  color: white;
+}
+/* line 200, /Users/nigel/SiteDevelopment/DMM/digitalmultimedia.org/app/assets/stylesheets/styles.scss.erb */
+p.iewarning a:link, p.iewarning a:visited, noscript p a:link, noscript p a:visited {
+  color: white;
+}
+
+/* line 205, /Users/nigel/SiteDevelopment/DMM/digitalmultimedia.org/app/assets/stylesheets/styles.scss.erb */
+#leftpane {
+  display: block;
+  float: left;
+  /*  clear: left;*/
+}
+
+/* line 211, /Users/nigel/SiteDevelopment/DMM/digitalmultimedia.org/app/assets/stylesheets/styles.scss.erb */
+#leftpane {
+  margin: 0.25em 0 0 -11em;
+  font-family: "Source Sans Pro", Helvetica, Arial, sans-serif;
+  font-size: 90%;
+  line-height: 1.1em;
+  width: 9em;
+}
+/* line 217, /Users/nigel/SiteDevelopment/DMM/digitalmultimedia.org/app/assets/stylesheets/styles.scss.erb */
+#leftpane h3 {
+  padding-left: 0;
+  font-style: normal;
+  margin-bottom: 1em;
+}
+/* line 222, /Users/nigel/SiteDevelopment/DMM/digitalmultimedia.org/app/assets/stylesheets/styles.scss.erb */
+#leftpane p {
+  margin-top: 0.5em;
+}
+/* line 225, /Users/nigel/SiteDevelopment/DMM/digitalmultimedia.org/app/assets/stylesheets/styles.scss.erb */
+#leftpane img {
+  width: 8.125em;
+  height: 10.125em;
+}
+/* line 229, /Users/nigel/SiteDevelopment/DMM/digitalmultimedia.org/app/assets/stylesheets/styles.scss.erb */
+#leftpane img.skinny {
+  height: 12.5357142857em;
+}
+
+/* line 234, /Users/nigel/SiteDevelopment/DMM/digitalmultimedia.org/app/assets/stylesheets/styles.scss.erb */
+img#cover_thumbnail {
+  width: 8.125em;
+  height: 10.125em;
+}
+
+/* line 239, /Users/nigel/SiteDevelopment/DMM/digitalmultimedia.org/app/assets/stylesheets/styles.scss.erb */
+#ql-head > span {
+  display: none;
+}
+
+/* line 243, /Users/nigel/SiteDevelopment/DMM/digitalmultimedia.org/app/assets/stylesheets/styles.scss.erb */
+#quicklynx {
+  font-family: "Source Sans Pro", Helvetica, Arial, sans-serif;
+  border-left: 3px solid #233e6a;
+  border-right: 3px solid #233e6a;
+  border-top: 1px solid #233e6a;
+  border-bottom: 0 solid #233e6a;
+  display: block;
+  width: 53.5em;
+  text-align: center;
+  padding-top: 0.15em;
+  padding-bottom: 0.15em;
+  padding-right: 0.5em;
+  padding-left: 0;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+/* line 261, /Users/nigel/SiteDevelopment/DMM/digitalmultimedia.org/app/assets/stylesheets/styles.scss.erb */
+#quicklynx li {
+  font-weight: bold;
+  display: inline;
+}
+/* line 265, /Users/nigel/SiteDevelopment/DMM/digitalmultimedia.org/app/assets/stylesheets/styles.scss.erb */
+#quicklynx li:first-child {
+  padding-top: 0.1em;
+  padding-bottom: 0.1em;
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+  color: #2a6aab;
+}
+/* line 266, /Users/nigel/SiteDevelopment/DMM/digitalmultimedia.org/app/assets/stylesheets/styles.scss.erb */
+#quicklynx li:first-child span {
+  display: inline;
+  color: #1d3357;
+}
+/* line 273, /Users/nigel/SiteDevelopment/DMM/digitalmultimedia.org/app/assets/stylesheets/styles.scss.erb */
+#quicklynx li:first-child:after {
+  content: ": ";
+}
+/* line 276, /Users/nigel/SiteDevelopment/DMM/digitalmultimedia.org/app/assets/stylesheets/styles.scss.erb */
+#quicklynx a, #quicklynx span {
+  padding-top: 0.1em;
+  padding-bottom: 0.1em;
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+  margin: 0;
+  white-space: nowrap;
+  color: #2a6aab;
+  font-size: 90%;
+  width: 10.3em;
+  margin: 0;
+}
+/* line 285, /Users/nigel/SiteDevelopment/DMM/digitalmultimedia.org/app/assets/stylesheets/styles.scss.erb */
+#quicklynx a:link, #quicklynx a:visited {
+  color: #2a6aab;
+  border: none;
+  text-decoration: none;
+}
+/* line 290, /Users/nigel/SiteDevelopment/DMM/digitalmultimedia.org/app/assets/stylesheets/styles.scss.erb */
+#quicklynx a:hover {
+  background-color: #bbd1e1;
+}
+
+/* line 295, /Users/nigel/SiteDevelopment/DMM/digitalmultimedia.org/app/assets/stylesheets/styles.scss.erb */
+nav {
+  font-family: "Source Sans Pro", Helvetica, Arial, sans-serif;
+  display: block;
+  height: 8.2em;
+  width: 54em;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 18px;
+  margin-bottom: 0;
+  border-left: 3px solid #233e6a;
+  border-right: 3px solid #233e6a;
+  border-top: 3px solid #233e6a;
+  border-bottom: 1px solid #233e6a;
+}
+/* line 308, /Users/nigel/SiteDevelopment/DMM/digitalmultimedia.org/app/assets/stylesheets/styles.scss.erb */
+nav h1 {
+  color: white;
+  font-family: "Alegreya SC", Helvetica, Arial, sans-serif;
+  font-weight: normal;
+  letter-spacing: 0.135em;
+  text-align: center;
+  padding-top: 0.15em;
+  padding-bottom: 0;
+  padding-left: 0.4em;
+  padding-right: 0.4em;
+  margin: 0;
+  font-size: 1.8em;
+}
+/* line 317, /Users/nigel/SiteDevelopment/DMM/digitalmultimedia.org/app/assets/stylesheets/styles.scss.erb */
+nav h1 a:link, nav h1 a:visited {
+  padding-top: 0.1em;
+  padding-bottom: 0;
+  padding-left: 0.1em;
+  padding-right: 0.1em;
+  color: white;
+  text-decoration: none;
+  border: none;
+}
+
+/* line 326, /Users/nigel/SiteDevelopment/DMM/digitalmultimedia.org/app/assets/stylesheets/styles.scss.erb */
+.navbar {
+  display: block;
+  vertical-align: top;
+  list-style-type: none;
+  text-align: center;
+  margin: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 0;
+  padding-right: 0;
+}
+/* line 333, /Users/nigel/SiteDevelopment/DMM/digitalmultimedia.org/app/assets/stylesheets/styles.scss.erb */
+.navbar li {
+  display: inline-block;
+}
+/* line 336, /Users/nigel/SiteDevelopment/DMM/digitalmultimedia.org/app/assets/stylesheets/styles.scss.erb */
+.navbar li.current {
+  /*    @include navbar_li_padding;*/
+  color: white;
+  background-color: #bbd1e1;
+  /*		font-size: 90%;*/
+}
+/* line 342, /Users/nigel/SiteDevelopment/DMM/digitalmultimedia.org/app/assets/stylesheets/styles.scss.erb */
+.navbar a:link, .navbar a:visited {
+  display: inline-block;
+  margin: 0;
+  white-space: nowrap;
+  color: white;
+  margin: 0;
+  border: none;
+  text-decoration: none;
+}
+/* line 351, /Users/nigel/SiteDevelopment/DMM/digitalmultimedia.org/app/assets/stylesheets/styles.scss.erb */
+.navbar a:link:hover, .navbar a:visited:hover {
+  background-color: #bbd1e1;
+  color: white;
+}
+
+/* line 358, /Users/nigel/SiteDevelopment/DMM/digitalmultimedia.org/app/assets/stylesheets/styles.scss.erb */
+.nav0 li {
+  list-style-type: none;
+}
+
+/* line 362, /Users/nigel/SiteDevelopment/DMM/digitalmultimedia.org/app/assets/stylesheets/styles.scss.erb */
+.nav0 li:first-child > span {
+  display: none;
+}
+
+/* line 367, /Users/nigel/SiteDevelopment/DMM/digitalmultimedia.org/app/assets/stylesheets/styles.scss.erb */
+.nav1 li, .nav2 li, .nav3 li {
+  font-size: 90%;
+}
+/* line 370, /Users/nigel/SiteDevelopment/DMM/digitalmultimedia.org/app/assets/stylesheets/styles.scss.erb */
+.nav1 a, .nav1 li.current, .nav2 a, .nav2 li.current, .nav3 a, .nav3 li.current {
+  padding-top: 0.1em;
+  padding-bottom: 0.1em;
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+}
+
+/* line 375, /Users/nigel/SiteDevelopment/DMM/digitalmultimedia.org/app/assets/stylesheets/styles.scss.erb */
+.nav2 {
+  padding: 0;
+  text-indent: 0;
+  /*  a, li.current {
+      font-size: 90%;
+    }
+  */
+}
+
+/* line 384, /Users/nigel/SiteDevelopment/DMM/digitalmultimedia.org/app/assets/stylesheets/styles.scss.erb */
+.nav3 li {
+  margin: 0;
+}
+/* line 388, /Users/nigel/SiteDevelopment/DMM/digitalmultimedia.org/app/assets/stylesheets/styles.scss.erb */
+.nav3 a:link, .nav3 a:visited {
+  padding-top: 0.1em;
+  padding-bottom: 0.1em;
+  padding-left: 0.25em;
+  padding-right: 0.25em;
+  margin: 0;
+}
+/* line 393, /Users/nigel/SiteDevelopment/DMM/digitalmultimedia.org/app/assets/stylesheets/styles.scss.erb */
+.nav3 li.current {
+  margin: 0;
+}
+
+/* ******************************************  */
+/* line 400, /Users/nigel/SiteDevelopment/DMM/digitalmultimedia.org/app/assets/stylesheets/styles.scss.erb */
+strong {
+  font-weight: bold;
+}
+
+/* line 404, /Users/nigel/SiteDevelopment/DMM/digitalmultimedia.org/app/assets/stylesheets/styles.scss.erb */
+p {
+  padding-bottom: 1em;
+}
+/* line 406, /Users/nigel/SiteDevelopment/DMM/digitalmultimedia.org/app/assets/stylesheets/styles.scss.erb */
+p.strong {
+  font-weight: bold;
+}
+/* line 409, /Users/nigel/SiteDevelopment/DMM/digitalmultimedia.org/app/assets/stylesheets/styles.scss.erb */
+p.download_links {
+  margin-top: 2em;
+}
+
+/* line 414, /Users/nigel/SiteDevelopment/DMM/digitalmultimedia.org/app/assets/stylesheets/styles.scss.erb */
+sup {
+  vertical-align: super;
+  font-size: 0.8em;
+}
+
+/* line 419, /Users/nigel/SiteDevelopment/DMM/digitalmultimedia.org/app/assets/stylesheets/styles.scss.erb */
+sub {
+  vertical-align: sub;
+  font-size: 0.8em;
+}
+
+/* line 425, /Users/nigel/SiteDevelopment/DMM/digitalmultimedia.org/app/assets/stylesheets/styles.scss.erb */
+a:link, a:visited {
+  text-decoration: underline;
+  color: #2a6aab;
+}
+/* line 429, /Users/nigel/SiteDevelopment/DMM/digitalmultimedia.org/app/assets/stylesheets/styles.scss.erb */
+a:hover {
+  background-color: #bbd1e1;
+}
+/* line 432, /Users/nigel/SiteDevelopment/DMM/digitalmultimedia.org/app/assets/stylesheets/styles.scss.erb */
+a.strong {
+  font-weight: bold;
+  text-decoration: underline;
+  color: inherit;
+}
+/* line 437, /Users/nigel/SiteDevelopment/DMM/digitalmultimedia.org/app/assets/stylesheets/styles.scss.erb */
+a.unstyled {
+  border: none;
+  text-decoration: none;
+}
+
+/* line 444, /Users/nigel/SiteDevelopment/DMM/digitalmultimedia.org/app/assets/stylesheets/styles.scss.erb */
+.formfieldlist {
+  list-style-type: none;
+  padding-left: 10em;
+}
+/* line 447, /Users/nigel/SiteDevelopment/DMM/digitalmultimedia.org/app/assets/stylesheets/styles.scss.erb */
+.formfieldlist li {
+  margin-bottom: 2em;
+}
+/* line 449, /Users/nigel/SiteDevelopment/DMM/digitalmultimedia.org/app/assets/stylesheets/styles.scss.erb */
+.formfieldlist li label {
+  display: inline-block;
+  width: 9.5em;
+  margin: 0 1em 0 -10em;
+}
+/* line 454, /Users/nigel/SiteDevelopment/DMM/digitalmultimedia.org/app/assets/stylesheets/styles.scss.erb */
+.formfieldlist li input, .formfieldlist li textarea {
+  width: 15.2em;
+  font-size: 1.1em;
+}
+/* line 458, /Users/nigel/SiteDevelopment/DMM/digitalmultimedia.org/app/assets/stylesheets/styles.scss.erb */
+.formfieldlist li input.narrow {
+  width: 5.7em;
+}
+/* line 461, /Users/nigel/SiteDevelopment/DMM/digitalmultimedia.org/app/assets/stylesheets/styles.scss.erb */
+.formfieldlist li input[type="submit"] {
+  width: auto;
+}
+
+/* line 467, /Users/nigel/SiteDevelopment/DMM/digitalmultimedia.org/app/assets/stylesheets/styles.scss.erb */
+.errors {
+  float: right;
+  width: 30%;
+  font-size: 0.9em;
+  border: 2px solid #c90244;
+  padding: 0.25em;
+}
+
+/* line 475, /Users/nigel/SiteDevelopment/DMM/digitalmultimedia.org/app/assets/stylesheets/styles.scss.erb */
+div.field_with_errors {
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+  vertical-align: top;
+}
+/* line 480, /Users/nigel/SiteDevelopment/DMM/digitalmultimedia.org/app/assets/stylesheets/styles.scss.erb */
+div.field_with_errors label {
+  color: #c90244;
+}
+
+/* line 485, /Users/nigel/SiteDevelopment/DMM/digitalmultimedia.org/app/assets/stylesheets/styles.scss.erb */
+.error_explanation {
+  margin: 0 0 2em -10em;
+  padding: 1em;
+  border: 1px solid #c90244;
+}
+/* line 489, /Users/nigel/SiteDevelopment/DMM/digitalmultimedia.org/app/assets/stylesheets/styles.scss.erb */
+.error_explanation h2 {
+  margin: 0;
+  padding: 0;
+}
+
+/* line 495, /Users/nigel/SiteDevelopment/DMM/digitalmultimedia.org/app/assets/stylesheets/styles.scss.erb */
+.booktitle {
+  font-style: italic;
+}
+
+/* line 499, /Users/nigel/SiteDevelopment/DMM/digitalmultimedia.org/app/assets/stylesheets/styles.scss.erb */
+.runinhead {
+  font-weight: bold;
+}
+
+/* line 503, /Users/nigel/SiteDevelopment/DMM/digitalmultimedia.org/app/assets/stylesheets/styles.scss.erb */
+h2 {
+  font-family: "Alegreya SC", Helvetica, Arial, sans-serif;
+  font-weight: bold;
+  color: #1d3357;
+  padding: 1em 0 0 0;
+}
+/* line 508, /Users/nigel/SiteDevelopment/DMM/digitalmultimedia.org/app/assets/stylesheets/styles.scss.erb */
+p + h2 {
+  padding-top: 0;
+}
+
+/* line 513, /Users/nigel/SiteDevelopment/DMM/digitalmultimedia.org/app/assets/stylesheets/styles.scss.erb */
+h3 {
+  font-size: 100%;
+  font-style: italic;
+  padding: 1em 0 0 0;
+  color: #1d3357;
+  font-size: 100%;
+}
+/* line 519, /Users/nigel/SiteDevelopment/DMM/digitalmultimedia.org/app/assets/stylesheets/styles.scss.erb */
+h3.example {
+  padding-top: 0;
+}
+/* line 522, /Users/nigel/SiteDevelopment/DMM/digitalmultimedia.org/app/assets/stylesheets/styles.scss.erb */
+h3.reference {
+  padding: 1em 0 0 0;
+  font-style: normal;
+}
+/* line 526, /Users/nigel/SiteDevelopment/DMM/digitalmultimedia.org/app/assets/stylesheets/styles.scss.erb */
+h3.blogmonth {
+  padding: 0;
+}
+
+/* line 531, /Users/nigel/SiteDevelopment/DMM/digitalmultimedia.org/app/assets/stylesheets/styles.scss.erb */
+h1 {
+  color: #1d3357;
+  font-size: 125%;
+  font-family: "Alegreya SC", Helvetica, Arial, sans-serif;
+  font-weight: normal;
+  line-height: 1.5em;
+  margin: 0 0 0.5em 0;
+}
+
+/* line 540, /Users/nigel/SiteDevelopment/DMM/digitalmultimedia.org/app/assets/stylesheets/styles.scss.erb */
+code {
+  font-family: inconsolata, monospace;
+  font-size: 100%;
+  font-weight: bold;
+}
+
+/* line 546, /Users/nigel/SiteDevelopment/DMM/digitalmultimedia.org/app/assets/stylesheets/styles.scss.erb */
+pre {
+  font-family: inconsolata, monospace;
+  font-size: 100%;
+  margin-left: 1em;
+}
+/* line 550, /Users/nigel/SiteDevelopment/DMM/digitalmultimedia.org/app/assets/stylesheets/styles.scss.erb */
+pre.codefragment {
+  margin: 0;
+  width: auto;
+  padding: 12px 24px;
+  font-weight: bold;
+}
+
+/* line 558, /Users/nigel/SiteDevelopment/DMM/digitalmultimedia.org/app/assets/stylesheets/styles.scss.erb */
+h4 {
+  font-size: 100%;
+  padding: 0 24px;
+  margin: 0;
+  font-style: italic;
+  font-weight: bold;
+}
+
+/* line 566, /Users/nigel/SiteDevelopment/DMM/digitalmultimedia.org/app/assets/stylesheets/styles.scss.erb */
+ul.cv {
+  list-style-position: outside;
+}
+/* line 568, /Users/nigel/SiteDevelopment/DMM/digitalmultimedia.org/app/assets/stylesheets/styles.scss.erb */
+ul.cv li {
+  margin-left: 40px;
+}
+
+/* line 573, /Users/nigel/SiteDevelopment/DMM/digitalmultimedia.org/app/assets/stylesheets/styles.scss.erb */
+.example {
+  padding: 1em 0 0 0;
+  margin: 0;
+  clear: right;
+}
+
+/* line 579, /Users/nigel/SiteDevelopment/DMM/digitalmultimedia.org/app/assets/stylesheets/styles.scss.erb */
+.small {
+  font-size: 85%;
+}
+
+/* line 583, /Users/nigel/SiteDevelopment/DMM/digitalmultimedia.org/app/assets/stylesheets/styles.scss.erb */
+.centred {
+  text-align: center;
+}
+
+/* line 587, /Users/nigel/SiteDevelopment/DMM/digitalmultimedia.org/app/assets/stylesheets/styles.scss.erb */
+.copyright {
+  font-size: 70%;
+  margin-top: 5em;
+}
+
+/* line 592, /Users/nigel/SiteDevelopment/DMM/digitalmultimedia.org/app/assets/stylesheets/styles.scss.erb */
+.chapterlist li {
+  font-size: 100%;
+  padding: 0.15em 0 0.35em 0;
+  font-size: 100%;
+  list-style-type: none;
+}
+
+/* line 599, /Users/nigel/SiteDevelopment/DMM/digitalmultimedia.org/app/assets/stylesheets/styles.scss.erb */
+.chapterlist > li {
+  color: #233e6a;
+  font-size: 1.15em;
+}
+
+/* line 604, /Users/nigel/SiteDevelopment/DMM/digitalmultimedia.org/app/assets/stylesheets/styles.scss.erb */
+.aheadlist li {
+  list-style-type: none;
+  text-indent: 1.6em;
+  font-size: medium;
+  color: #1d3357;
+}
+
+/* line 611, /Users/nigel/SiteDevelopment/DMM/digitalmultimedia.org/app/assets/stylesheets/styles.scss.erb */
+.bookhead {
+  font-size: 105%;
+}
+
+/* line 615, /Users/nigel/SiteDevelopment/DMM/digitalmultimedia.org/app/assets/stylesheets/styles.scss.erb */
+.bheadlist li {
+  text-indent: -1em;
+}
+
+/* line 619, /Users/nigel/SiteDevelopment/DMM/digitalmultimedia.org/app/assets/stylesheets/styles.scss.erb */
+.cheadlist li {
+  text-indent: -2em;
+  font-style: italic;
+}
+
+/* line 624, /Users/nigel/SiteDevelopment/DMM/digitalmultimedia.org/app/assets/stylesheets/styles.scss.erb */
+.pagenum {
+  padding-left: 0.5em;
+}
+
+/* line 628, /Users/nigel/SiteDevelopment/DMM/digitalmultimedia.org/app/assets/stylesheets/styles.scss.erb */
+.faqs li {
+  margin: 0 0 0.75em 30px;
+}
+
+/* line 632, /Users/nigel/SiteDevelopment/DMM/digitalmultimedia.org/app/assets/stylesheets/styles.scss.erb */
+.huge {
+  font-size: 250%;
+}
+
+/* line 636, /Users/nigel/SiteDevelopment/DMM/digitalmultimedia.org/app/assets/stylesheets/styles.scss.erb */
+dd {
+  display: inline;
+}
+
+/* line 640, /Users/nigel/SiteDevelopment/DMM/digitalmultimedia.org/app/assets/stylesheets/styles.scss.erb */
+.tbs {
+  font-style: italic;
+  font-size: 90%;
+  color: #cccccc;
+  padding: 0.1em 0.5em;
+}
+/* line 645, /Users/nigel/SiteDevelopment/DMM/digitalmultimedia.org/app/assets/stylesheets/styles.scss.erb */
+.tbs a:hover {
+  background-color: white;
+}
+
+/* line 650, /Users/nigel/SiteDevelopment/DMM/digitalmultimedia.org/app/assets/stylesheets/styles.scss.erb */
+.warning {
+  font-style: italic;
+}
+/* line 652, /Users/nigel/SiteDevelopment/DMM/digitalmultimedia.org/app/assets/stylesheets/styles.scss.erb */
+.warning:before {
+  content: "(";
+}
+/* line 655, /Users/nigel/SiteDevelopment/DMM/digitalmultimedia.org/app/assets/stylesheets/styles.scss.erb */
+.warning:after {
+  content: ")";
+}
+
+/* line 660, /Users/nigel/SiteDevelopment/DMM/digitalmultimedia.org/app/assets/stylesheets/styles.scss.erb */
+.flatlist {
+  list-style-type: none;
+}
+/* line 662, /Users/nigel/SiteDevelopment/DMM/digitalmultimedia.org/app/assets/stylesheets/styles.scss.erb */
+.flatlist li {
+  display: inline;
+  white-space: nowrap;
+}
+
+/* line 668, /Users/nigel/SiteDevelopment/DMM/digitalmultimedia.org/app/assets/stylesheets/styles.scss.erb */
+.shortlist {
+  list-style-type: none;
+  margin-left: -40px;
+  margin-bottom: 2.5em;
+}
+/* line 672, /Users/nigel/SiteDevelopment/DMM/digitalmultimedia.org/app/assets/stylesheets/styles.scss.erb */
+.shortlist li {
+  padding-bottom: 1em;
+}
+
+/* line 677, /Users/nigel/SiteDevelopment/DMM/digitalmultimedia.org/app/assets/stylesheets/styles.scss.erb */
+.points {
+  list-style-position: outside;
+  margin-left: 20px;
+}
+/* line 680, /Users/nigel/SiteDevelopment/DMM/digitalmultimedia.org/app/assets/stylesheets/styles.scss.erb */
+.points li {
+  padding-bottom: 1em;
+}
+
+/* line 685, /Users/nigel/SiteDevelopment/DMM/digitalmultimedia.org/app/assets/stylesheets/styles.scss.erb */
+ol.answerlist, ol.projectlist {
+  list-style-type: decimal;
+  margin-left: 40px;
+}
+
+/* line 690, /Users/nigel/SiteDevelopment/DMM/digitalmultimedia.org/app/assets/stylesheets/styles.scss.erb */
+.answerlist > li, .projectlist > li {
+  display: list-item;
+  list-style-type: decimal;
+  padding-top: 1em;
+}
+
+/* line 696, /Users/nigel/SiteDevelopment/DMM/digitalmultimedia.org/app/assets/stylesheets/styles.scss.erb */
+.projectlist > li p:first-child, p.brief-continuation, p.rubric {
+  color: #1d3357;
+  font-weight: bold;
+}
+/* line 699, /Users/nigel/SiteDevelopment/DMM/digitalmultimedia.org/app/assets/stylesheets/styles.scss.erb */
+.projectlist > li p:first-child em, p.brief-continuation em, p.rubric em {
+  font-style: italic;
+  font-weight: bold;
+}
+
+/* line 705, /Users/nigel/SiteDevelopment/DMM/digitalmultimedia.org/app/assets/stylesheets/styles.scss.erb */
+.answerlist ul {
+  margin: 0.5em 0 0 20px;
+  list-style-type: disc;
+}
+
+/* line 710, /Users/nigel/SiteDevelopment/DMM/digitalmultimedia.org/app/assets/stylesheets/styles.scss.erb */
+.indented, .correction, blockquote {
+  margin-left: 1.5em;
+}
+
+/* line 714, /Users/nigel/SiteDevelopment/DMM/digitalmultimedia.org/app/assets/stylesheets/styles.scss.erb */
+.setoff {
+  margin: 2em 0 1em 0;
+}
+
+/* line 718, /Users/nigel/SiteDevelopment/DMM/digitalmultimedia.org/app/assets/stylesheets/styles.scss.erb */
+ul.indented, blockquote {
+  margin-bottom: 1em;
+}
+
+/* line 722, /Users/nigel/SiteDevelopment/DMM/digitalmultimedia.org/app/assets/stylesheets/styles.scss.erb */
+.boxed {
+  border: 0.2em solid #1d3357;
+  padding: 1em 1em 0;
+  margin: 1em 0 2em 0;
+}
+/* line 726, /Users/nigel/SiteDevelopment/DMM/digitalmultimedia.org/app/assets/stylesheets/styles.scss.erb */
+.boxed p {
+  padding-bottom: 1em;
+}
+
+/* line 731, /Users/nigel/SiteDevelopment/DMM/digitalmultimedia.org/app/assets/stylesheets/styles.scss.erb */
+.boxedsingle, .advert {
+  font-weight: bold;
+  padding: 1em 1em;
+  margin: 0.5em 0 1.5em 0;
+  width: 29em;
+}
+/* line 736, /Users/nigel/SiteDevelopment/DMM/digitalmultimedia.org/app/assets/stylesheets/styles.scss.erb */
+.boxedsingle a:hover, .advert a:hover {
+  background-color: rgba(255, 255, 255, 0.6);
+}
+/* line 739, /Users/nigel/SiteDevelopment/DMM/digitalmultimedia.org/app/assets/stylesheets/styles.scss.erb */
+.boxedsingle p:last-child, .advert p:last-child {
+  padding-bottom: 0;
+}
+
+/* line 744, /Users/nigel/SiteDevelopment/DMM/digitalmultimedia.org/app/assets/stylesheets/styles.scss.erb */
+.boxedsingle {
+  border: 2px solid #1d3357;
+}
+
+/* line 748, /Users/nigel/SiteDevelopment/DMM/digitalmultimedia.org/app/assets/stylesheets/styles.scss.erb */
+.advert, .advertspecial {
+  padding: 1em 1em;
+  border: 2px solid #1d3357;
+}
+
+/* line 753, /Users/nigel/SiteDevelopment/DMM/digitalmultimedia.org/app/assets/stylesheets/styles.scss.erb */
+.advertspecial {
+  margin: 1.5em 0 0.5em 0;
+}
+
+/* line 757, /Users/nigel/SiteDevelopment/DMM/digitalmultimedia.org/app/assets/stylesheets/styles.scss.erb */
+.advert h2 {
+  margin: 0 0 0.5em 0;
+  padding: 0;
+}
+/* line 760, /Users/nigel/SiteDevelopment/DMM/digitalmultimedia.org/app/assets/stylesheets/styles.scss.erb */
+.advert h2 a {
+  font-weight: bold;
+  font-family: "Alegreya SC", Helvetica, Arial, sans-serif;
+  text-decoration: none;
+  border: none;
+}
+
+/* line 768, /Users/nigel/SiteDevelopment/DMM/digitalmultimedia.org/app/assets/stylesheets/styles.scss.erb */
+.boxedwarning {
+  border: 2px solid #c90244;
+  padding: 1em 1em;
+  margin: 2em 0;
+}
+
+/* line 774, /Users/nigel/SiteDevelopment/DMM/digitalmultimedia.org/app/assets/stylesheets/styles.scss.erb */
+li.environment {
+  text-indent: 12px;
+  color: white;
+  font-size: 1em;
+  background-color: #1d3357;
+}
+
+/* line 781, /Users/nigel/SiteDevelopment/DMM/digitalmultimedia.org/app/assets/stylesheets/styles.scss.erb */
+.coverpic {
+  float: right;
+  padding: 0 0 1em 1em;
+  width: 10em;
+}
+
+/* line 787, /Users/nigel/SiteDevelopment/DMM/digitalmultimedia.org/app/assets/stylesheets/styles.scss.erb */
+.clearright {
+  clear: right;
+}
+
+/* line 791, /Users/nigel/SiteDevelopment/DMM/digitalmultimedia.org/app/assets/stylesheets/styles.scss.erb */
+.clearleft {
+  clear: left;
+}
+
+/* line 795, /Users/nigel/SiteDevelopment/DMM/digitalmultimedia.org/app/assets/stylesheets/styles.scss.erb */
+.newexample {
+  clear: right;
+  margin-top: 2.5em;
+}
+
+/* line 800, /Users/nigel/SiteDevelopment/DMM/digitalmultimedia.org/app/assets/stylesheets/styles.scss.erb */
+.poster {
+  float: right;
+  display: inline;
+  margin: 0.5em 0 1.5em 0.75em;
+}
+
+/* line 806, /Users/nigel/SiteDevelopment/DMM/digitalmultimedia.org/app/assets/stylesheets/styles.scss.erb */
+.spaced {
+  margin: 2em 2em 0 0;
+}
+
+/* line 810, /Users/nigel/SiteDevelopment/DMM/digitalmultimedia.org/app/assets/stylesheets/styles.scss.erb */
+.illustrationlinks {
+  list-style-type: none;
+  margin-left: -40px;
+}
+/* line 813, /Users/nigel/SiteDevelopment/DMM/digitalmultimedia.org/app/assets/stylesheets/styles.scss.erb */
+.illustrationlinks li {
+  display: inline;
+  white-space: nowrap;
+}
+/* line 817, /Users/nigel/SiteDevelopment/DMM/digitalmultimedia.org/app/assets/stylesheets/styles.scss.erb */
+.illustrationlinks a {
+  text-decoration: none;
+}
+/* line 819, /Users/nigel/SiteDevelopment/DMM/digitalmultimedia.org/app/assets/stylesheets/styles.scss.erb */
+.illustrationlinks a:visited {
+  text-decoration: none;
+}
+
+/* line 825, /Users/nigel/SiteDevelopment/DMM/digitalmultimedia.org/app/assets/stylesheets/styles.scss.erb */
+.right {
+  text-align: right;
+}
+
+/* line 829, /Users/nigel/SiteDevelopment/DMM/digitalmultimedia.org/app/assets/stylesheets/styles.scss.erb */
+.embed {
+  margin: 2.5em 0;
+}
+
+/* line 833, /Users/nigel/SiteDevelopment/DMM/digitalmultimedia.org/app/assets/stylesheets/styles.scss.erb */
+object {
+  padding-top: 0.5em;
+}
+
+/* line 837, /Users/nigel/SiteDevelopment/DMM/digitalmultimedia.org/app/assets/stylesheets/styles.scss.erb */
+img {
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* &.amazon
+ *   :border none
+ *   :margin 0px
+ *   :height 1px
+ *   :width 1px
+ *
+ * &.floatleft
+ *   :float left
+ *   :padding 0.5em 0.5em 0 0
+ *
+ * &.floatright
+ *   :float right
+ *   :padding 0.5em 0 0 0.5em */
+/* line 857, /Users/nigel/SiteDevelopment/DMM/digitalmultimedia.org/app/assets/stylesheets/styles.scss.erb */
+#leftpane .amazonlinks img {
+  border: none;
+  margin: 0px;
+  height: 1px;
+  width: 1px;
+}
+
+/* line 864, /Users/nigel/SiteDevelopment/DMM/digitalmultimedia.org/app/assets/stylesheets/styles.scss.erb */
+table {
+  border-collapse: collapse;
+  margin-bottom: 1em;
+  font-size: 0.9em;
+}
+
+/* line 870, /Users/nigel/SiteDevelopment/DMM/digitalmultimedia.org/app/assets/stylesheets/styles.scss.erb */
+th {
+  font-weight: bold;
+  text-align: left;
+  border: 1px solid #1d3357;
+}
+/* line 874, /Users/nigel/SiteDevelopment/DMM/digitalmultimedia.org/app/assets/stylesheets/styles.scss.erb */
+th.colhead {
+  text-align: center;
+}
+
+/* line 879, /Users/nigel/SiteDevelopment/DMM/digitalmultimedia.org/app/assets/stylesheets/styles.scss.erb */
+td, th {
+  border: 1px solid #1d3357;
+  padding: 0 0.5em;
+  vertical-align: top;
+}
+/* line 883, /Users/nigel/SiteDevelopment/DMM/digitalmultimedia.org/app/assets/stylesheets/styles.scss.erb */
+td.ll, th.ll {
+  border-left: 2px solid #1d3357;
+}
+
+/* line 888, /Users/nigel/SiteDevelopment/DMM/digitalmultimedia.org/app/assets/stylesheets/styles.scss.erb */
+#definition {
+  font-size: 100%;
+}
+/* line 890, /Users/nigel/SiteDevelopment/DMM/digitalmultimedia.org/app/assets/stylesheets/styles.scss.erb */
+#definition dt {
+  clear: right;
+  font-weight: bold;
+  margin-top: 1.5em;
+  margin-bottom: 0.8em;
+}
+/* line 896, /Users/nigel/SiteDevelopment/DMM/digitalmultimedia.org/app/assets/stylesheets/styles.scss.erb */
+#definition dd {
+  text-indent: 0;
+  margin-left: 0;
+}
+
+/* line 902, /Users/nigel/SiteDevelopment/DMM/digitalmultimedia.org/app/assets/stylesheets/styles.scss.erb */
+#form {
+  padding: 3em 0 0 0;
+}
+
+/* line 906, /Users/nigel/SiteDevelopment/DMM/digitalmultimedia.org/app/assets/stylesheets/styles.scss.erb */
+#term2 {
+  margin: 0 0 0 11.25em;
+}
+
+/* line 910, /Users/nigel/SiteDevelopment/DMM/digitalmultimedia.org/app/assets/stylesheets/styles.scss.erb */
+#term1 {
+  font-size: 120%;
+}
+
+/* line 914, /Users/nigel/SiteDevelopment/DMM/digitalmultimedia.org/app/assets/stylesheets/styles.scss.erb */
+.tight {
+  margin: 0;
+  padding: 0;
+}
+
+/* line 919, /Users/nigel/SiteDevelopment/DMM/digitalmultimedia.org/app/assets/stylesheets/styles.scss.erb */
+ul.examples {
+  padding-right: 255px;
+  list-style-type: none;
+}
+/* line 922, /Users/nigel/SiteDevelopment/DMM/digitalmultimedia.org/app/assets/stylesheets/styles.scss.erb */
+ul.examples li {
+  clear: right;
+}
+/* line 924, /Users/nigel/SiteDevelopment/DMM/digitalmultimedia.org/app/assets/stylesheets/styles.scss.erb */
+ul.examples li img, ul.examples li .embedded, ul.examples li .widget {
+  clear: right;
+  float: right;
+  margin-right: -255px;
+  display: inline;
+  padding-left: 20px;
+}
+/* line 931, /Users/nigel/SiteDevelopment/DMM/digitalmultimedia.org/app/assets/stylesheets/styles.scss.erb */
+ul.examples li .boxedsingle {
+  margin-right: -255px;
+  width: 36em;
+  margin: 2em 0 0 0;
+}
+/* line 937, /Users/nigel/SiteDevelopment/DMM/digitalmultimedia.org/app/assets/stylesheets/styles.scss.erb */
+ul.examples .wide {
+  margin-right: -255px;
+  width: 36em;
+  padding: 1em 0 0 0;
+}
+/* line 941, /Users/nigel/SiteDevelopment/DMM/digitalmultimedia.org/app/assets/stylesheets/styles.scss.erb */
+ul.examples .wide object {
+  padding: 0;
+}
+/* line 944, /Users/nigel/SiteDevelopment/DMM/digitalmultimedia.org/app/assets/stylesheets/styles.scss.erb */
+ul.examples .wide h2 {
+  font-size: 1em;
+  font-weight: bold;
+}
+
+/* line 951, /Users/nigel/SiteDevelopment/DMM/digitalmultimedia.org/app/assets/stylesheets/styles.scss.erb */
+#linkdisplay {
+  font-size: 85%;
+  width: 32em;
+  padding: 0.6em;
+  height: 1.2em;
+  border: solid #1d3357 1px;
+  float: right;
+  clear: right;
+  display: inline;
+  text-align: right;
+  margin: 20px -255px 0 0;
+}
+
+/* line 964, /Users/nigel/SiteDevelopment/DMM/digitalmultimedia.org/app/assets/stylesheets/styles.scss.erb */
+ul.alphabet {
+  list-style-type: none;
+  font-size: 80%;
+  margin-bottom: 2em;
+}
+/* line 968, /Users/nigel/SiteDevelopment/DMM/digitalmultimedia.org/app/assets/stylesheets/styles.scss.erb */
+ul.alphabet li {
+  display: inline;
+}
+/* line 970, /Users/nigel/SiteDevelopment/DMM/digitalmultimedia.org/app/assets/stylesheets/styles.scss.erb */
+ul.alphabet li:after {
+  content: " | ";
+}
+/* line 974, /Users/nigel/SiteDevelopment/DMM/digitalmultimedia.org/app/assets/stylesheets/styles.scss.erb */
+ul.alphabet li:first-child:after {
+  content: none;
+}
+
+/* line 979, /Users/nigel/SiteDevelopment/DMM/digitalmultimedia.org/app/assets/stylesheets/styles.scss.erb */
+ul.termsleft, ul.termsright {
+  list-style-type: none;
+  display: inline-block;
+  vertical-align: top;
+  width: 45%;
+}
+/* line 984, /Users/nigel/SiteDevelopment/DMM/digitalmultimedia.org/app/assets/stylesheets/styles.scss.erb */
+ul.termsleft li, ul.termsright li {
+  padding-bottom: 1em;
+}
+
+/*ul.termsright {
+  float: right;
+}
+*/
+/* line 993, /Users/nigel/SiteDevelopment/DMM/digitalmultimedia.org/app/assets/stylesheets/styles.scss.erb */
+ul.termsleft {
+  /*  float: left;*/
+  margin-right: 5%;
+}
+
+/* line 998, /Users/nigel/SiteDevelopment/DMM/digitalmultimedia.org/app/assets/stylesheets/styles.scss.erb */
+ul.booklist, ul.linklist {
+  list-style-type: none;
+}
+/* line 1000, /Users/nigel/SiteDevelopment/DMM/digitalmultimedia.org/app/assets/stylesheets/styles.scss.erb */
+ul.booklist li p, ul.linklist li p {
+  margin: 0.5em 20px 0;
+}
+/* line 1003, /Users/nigel/SiteDevelopment/DMM/digitalmultimedia.org/app/assets/stylesheets/styles.scss.erb */
+ul.booklist li h3, ul.linklist li h3 {
+  font-style: normal;
+  font-size: 1em;
+}
+
+/* line 1009, /Users/nigel/SiteDevelopment/DMM/digitalmultimedia.org/app/assets/stylesheets/styles.scss.erb */
+ul.sitemap0 {
+  list-style-type: none;
+}
+/* line 1011, /Users/nigel/SiteDevelopment/DMM/digitalmultimedia.org/app/assets/stylesheets/styles.scss.erb */
+ul.sitemap0 ul.nav0, ul.sitemap0 ul.navbar {
+  list-style-type: none;
+  text-align: left;
+  list-style-type: none;
+}
+/* line 109, /Users/nigel/SiteDevelopment/DMM/digitalmultimedia.org/app/assets/stylesheets/styles.scss.erb */
+ul.sitemap0 ul.nav0 li, ul.sitemap0 ul.navbar li {
+  margin: 0 0 0 1em;
+}
+/* line 1015, /Users/nigel/SiteDevelopment/DMM/digitalmultimedia.org/app/assets/stylesheets/styles.scss.erb */
+ul.sitemap0 ul.nav0 li, ul.sitemap0 ul.navbar li {
+  display: block;
+  margin: 0;
+}
+/* line 1018, /Users/nigel/SiteDevelopment/DMM/digitalmultimedia.org/app/assets/stylesheets/styles.scss.erb */
+ul.sitemap0 ul.nav0 li.current, ul.sitemap0 ul.navbar li.current {
+  background-color: inherit;
+}
+/* line 1020, /Users/nigel/SiteDevelopment/DMM/digitalmultimedia.org/app/assets/stylesheets/styles.scss.erb */
+ul.sitemap0 ul.nav0 li.current span, ul.sitemap0 ul.navbar li.current span {
+  background-color: #bbd1e1;
+}
+/* line 1025, /Users/nigel/SiteDevelopment/DMM/digitalmultimedia.org/app/assets/stylesheets/styles.scss.erb */
+ul.sitemap0 ul.nav0 a, ul.sitemap0 ul.navbar a {
+  color: #1d3357;
+}
+/* line 1028, /Users/nigel/SiteDevelopment/DMM/digitalmultimedia.org/app/assets/stylesheets/styles.scss.erb */
+ul.sitemap0 ul.nav0 ul.nav1, ul.sitemap0 ul.navbar ul.nav1 {
+  margin: 0 0 0 20px;
+}
+/* line 1031, /Users/nigel/SiteDevelopment/DMM/digitalmultimedia.org/app/assets/stylesheets/styles.scss.erb */
+ul.sitemap0 ul.nav0 ul.nav2, ul.sitemap0 ul.nav0 ul.nav3, ul.sitemap0 ul.navbar ul.nav2, ul.sitemap0 ul.navbar ul.nav3 {
+  margin: 0 0 0 40px;
+}
+/* line 1034, /Users/nigel/SiteDevelopment/DMM/digitalmultimedia.org/app/assets/stylesheets/styles.scss.erb */
+ul.sitemap0 ul.nav0 ul.nav3 li, ul.sitemap0 ul.navbar ul.nav3 li {
+  display: inline;
+}
+
+/* Slide shows */
+/* line 1043, /Users/nigel/SiteDevelopment/DMM/digitalmultimedia.org/app/assets/stylesheets/styles.scss.erb */
+#slideshow img {
+  border-color: #bbd1e1;
+  border-style: solid;
+  border-width: 4px;
+}
+
+/* line 1052, /Users/nigel/SiteDevelopment/DMM/digitalmultimedia.org/app/assets/stylesheets/styles.scss.erb */
+#ss_controls {
+  list-style-type: none;
+  padding: 0;
+  margin-top: 8px;
+  text-align: center;
+  width: 488px;
+  color: #2a6aab;
+  /*  .enabled {
+      color: $link_text_colour;
+      a:hover {
+        background-color:$slideshow_rollover_colour;
+      }
+    }
+  */
+}
+/* line 1059, /Users/nigel/SiteDevelopment/DMM/digitalmultimedia.org/app/assets/stylesheets/styles.scss.erb */
+#ss_controls li {
+  width: 244px;
+  display: inline-block;
+  text-transform: lowercase;
+}
+/* line 1063, /Users/nigel/SiteDevelopment/DMM/digitalmultimedia.org/app/assets/stylesheets/styles.scss.erb */
+#ss_controls li span.pseudolink:hover {
+  background-color: #bbd1e1;
+}
+/* line 1067, /Users/nigel/SiteDevelopment/DMM/digitalmultimedia.org/app/assets/stylesheets/styles.scss.erb */
+#ss_controls .disabled {
+  color: gray;
+}
+/* line 1069, /Users/nigel/SiteDevelopment/DMM/digitalmultimedia.org/app/assets/stylesheets/styles.scss.erb */
+#ss_controls .disabled span.pseudolink:hover {
+  background-color: transparent;
+}
+/* line 1080, /Users/nigel/SiteDevelopment/DMM/digitalmultimedia.org/app/assets/stylesheets/styles.scss.erb */
+#ss_controls #left-arrow {
+  text-align: left;
+}
+/* line 1083, /Users/nigel/SiteDevelopment/DMM/digitalmultimedia.org/app/assets/stylesheets/styles.scss.erb */
+#ss_controls #right-arrow {
+  text-align: right;
+}
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the top of the
+ * compiled file, but it's generally better to create a new file per style scope.
+ *
+
+
+ */
+

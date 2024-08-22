@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+
+<html class="no-js">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+	<meta name="description" content="Companion site for popular textbook Digital Multimedia, 3rd Edition, by Nigel Chapman and Jenny Chapman. Free teaching and learning resources." />
+
+  <link rel="stylesheet" media="screen" href="/assets/application.css" />
+
+<!--[if lte IE 7]>
+    <link rel="stylesheet" href="/ie67hax.css" type="text/css" media="screen" charset="utf-8">
+<![endif]-->
+
+  <script src="/assets/application.js"></script>
+
+<!--[if (gte IE 6)&(lte IE 8)]>
+	<script src="/assets/selectivizr.js"></script>
+<![endif]-->
+<!--[if lt IE 9]>
+	<script src="/assets/scripts.js"></script>
+<![endif]-->
+
+
+	<link rel="icon" href="/favicon.ico" type="image/x-icon" />
+	<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+	<title>Digital Multimedia -- Answers 4</title>
+</head>
+
+<body>
+
+  <nav>
+    <h1><a href="/">Digital Multimedia</a></h1>
+    <ul class="nav0"><li class="current"><span class="current">Navigation</span></li></ul>
+<ul class="navbar nav1"><li class="current"><a class="current" href="/pages/teaching-and-learning-resources">Teaching and Learning</a></li><li><a href="/pages/preview">Sample Material</a></li><li><a href="/pages/about-us">About Us</a></li></ul>
+<ul class="navbar nav2"><li><a href="/pages/teaching-and-learning-resources">Introduction</a></li><li><a href="/pages/lecture-slides-overview">Lecture Slides</a></li><li class="current"><a class="current" href="/pages/answers-overview">Answers</a></li><li><a href="/pages/examples-overview">Examples</a></li><li><a href="/pages/projects-introduction">Projects</a></li><li><a href="/pages/references-overview">References</a></li><li><a href="/pages/errata">Errata</a></li></ul>
+<ul class="navbar nav3"><li><a href="/pages/answers-overview">Introduction</a></li><li><a href="/pages/answers-1">1</a></li><li><a href="/pages/answers-2">2</a></li><li><a href="/pages/answers-3">3</a></li><li class="current simple-navigation-active-leaf"><span class="current">4</span></li><li><a href="/pages/answers-5">5</a></li><li><a href="/pages/answers-6">6</a></li><li><a href="/pages/answers-7">7</a></li><li><a href="/pages/answers-8">8</a></li><li><a href="/pages/answers-9">9</a></li><li><a href="/pages/answers-10">10</a></li><li><a href="/pages/answers-11">11</a></li><li><a href="/pages/answers-12">12</a></li><li><a href="/pages/answers-13">13</a></li><li><a href="/pages/answers-14">14</a></li><li><a href="/pages/answers-15">15</a></li><li><a href="/pages/answers-16">16</a></li></ul>
+
+  </nav>
+  <ul class="nav0"><li class="current simple-navigation-active-leaf"><span class="current">Quick Links</span><ul id="quicklynx"><li><span>Quick Links</span></li><li><a href="/pages/lecture-slides-overview">Lecture Slides</a></li><li><a href="/pages/answers-overview">Answers</a></li><li><a href="/pages/examples-overview">Examples</a></li><li><a href="/pages/preview">Sample Material</a></li></ul></li></ul>
+
+	<div id="main">
+  <noscript>
+    <p><em>JavaScript Is Required</em> You have disabled JavaScript for this site, or your browser does not support JavaScript. Some features of the site will not work correctly. We advise you to enable JavaScript.</p>
+  </noscript>
+
+	<h1>Answers to Exercises, Chapter 4</h1>
+<p>These are answers to the exercises in the 3rd edition of <span class="booktitle">Digital Multimedia</span> (published February 2009) only. Do not try to use them in conjunction with the 2nd edition.</p>
+                                                                                                               <h2>Test Questions</h2>
+<ol class="answerlist">
+	<li>It will if you resample the image in both of the steps. To see why, consider an extreme example: an "image" 2 pixels square with a resolution of 8 ppi and alternate pixels coloured blue and white. If you change the resolution to 4&nbsp;ppi, you get a single blue pixel, so if you subsequently change the size, say to 8 pixels square, you will only ever get a plain blue square. On the other hand, if you had increased the size first, you would have retained the pattern of colours, and could subsequently change the resolution without losing them. Normally, therefore, you would perform one of the operations without resampling and only resample when you had to. (Note that Photoshop changes the print dimensions, not the pixel dimensions, when you change the resolution with resampling, so you can't actually try this example exactly as we have described it in Photoshop, though you can demonstrate the principle. Be sure to use nearest-neighbour interpolation.)</li>
+	<li>In general, no. It is necessary to interpolate pixels when an image is scaled up. If you scale up an image by a power of 2, using nearest neighbour interpolation, and then immediately downsampled again, you will probably end up with the same image you started with (depending on the exact algorithm and software used). However, this is not true is you scale the image up to three times its size. The amount of variation from the original will be more or less pronounced depending on the interpolation method used. Try the experiment using the 2&nbsp;pixel square image described in the previous answer and bicubic interpolation.</li>
+	<li>Bicubic and bilinear interpolation work by combining values from adjacent pixels, as described in Chapter 4. The effect of applying a low-pass filter is likewise to combine a pixel's value with those of its neighbours, as described on pages&nbsp;144–145. Notice that the filter uses values from 9 pixels, whereas the interpolation algorithms use 4 and 16, respectively, so the actual result of using the filter will not be identical to either of the interpolation methods, it provides another alternative.</li>
+	<li>This question just requires you to summarize the descriptions on pages&nbsp;115–122 to make sure you have absorbed the information. The essential points are:
+		<p><strong>JPEG</strong>: The image is divided into 8x8 pixel square blocks, which are transformed into the spatial frequency domain by a Discrete Cosine Transform (DCT). This is followed by quantization of the DCT coefficients (the stage at which information corresponding to visually insignificant high frequencies is discarded) then lossless compression of the quantized coefficients using a combination of RLE, computed along the zig-zag sequence to catch runs of zero coefficients, and Huffman encoding.</p>
+		<p><strong>JPEG2000</strong>: The image is divided into tiles of any size up to the size of the full image. A Discrete Wavelet Transform is applied to each tile, giving a wavelet decomposition comprising a value that describes the whole image coarsely  together with a set of coefficients that can be used to add progressively more detail to the image by effectively encoding the image at increasingly fine resolution. Quantization is then used to discard details by encoding higher coefficients in fewer levels than lower ones, and the resulting set of coefficients is losslessly compressed using arithmetic coding.</p>
+		<p><strong>Advantages of JPEG</strong>: Computationally simple (relatively), very widely implemented in software, including Web browsers, and hardware such as cameras. Effective on photographic and similar images. <strong>Disadvantages of JPEG</strong>: Ugly artefacts at block boundaries and a tendency to blur sharp lines. No real file format standard.</p>
+		<p><strong>Advantages of JPEG2000</strong>: Extremely good quality at high compression ratios, no block artefacts. Can display progressively better quality approximations to the image when downloading over a slow connection. Standard file format. <strong>Disadvantages of JPEG2000</strong>: Limited software and hardware support, computationally intensive process.</p></li>
+		<li>The widely-supported Web graphics file formats are all bitmapped image formats. They are GIF, JPEG and PNG.
+			<p><strong>GIF</strong>: Lossless (LZW) compression; 8-bit indexed colour; one colour may be designated transparent; several images may be included in a single file, permitting animation ("animated GIFs"). Most suitable for simple images with areas of flat colour. Often required if transparency is needed since PNG support in Internet Explorer has been poor until recently. Used for Web animation without a plug-in or scripting.</p>
+			<p><strong>JPEG</strong>: Lossy compression; 24-bit colour; no transparency. Most popular choice for photographic images and other complex bitmaps, because the effectiveness of JPEG compression allows relatively high quality.</p>
+			<p><strong>PNG</strong>: Lossless compression, 8-bit indexed or 24-bit colour; alpha channel. Least widely used of the three, partly owing to incomplete support until recently in Internet Explorer. Suitable as a higher-quality substitute for GIF, with more effective compression, and for any effects requiring partial transparency – PNG is the only Web image format supporting alpha channels.</p>
+			<p>Support for the vector format SVG is growing but it is not yet widely used.</p>
+		</li>
+		<li>There are utilities and plug-ins dedicated to putting frames around images but we'll assume that you are just using Photoshop or its equivalent. The easiest way is to get hold of a photograph of a real picture frame of the right shape. Place it on a layer on top of the vignette and transform the layer until it fits round the picture, some distance beyond the feathered edge. Select the middle of the frame using an elliptical marquee tool (you might need to anti-alias it – see below – but don't feather the selection) and delete the selection so that the layer below shows through. You would probably need to delete the area outside the frame too. Transforming the photograph may distort it, so you might prefer to start by drawing your own elliptical frame in Illustrator, applying a suitable pattern to it there and then importing it into Photoshop and proceeding as described.</li>
+		<li>The edge of a mask can exhibit the jaggies like any other line and this can show up on any effect or filter applied to a masked area. Applying anti-aliasing to a mask will soften the edge, just as it does when we render lines in vector graphics. Anti-aliasing works by colouring pixels in the region of an edge between black and white in shades of grey, as illustrated in Figure 3.6. This means that the mask must be in greyscale, with grey shades between black and white being interpreted as partially transparent – in other words, an alpha channel.</li>
+		<li>("Swap the layers" is not an acceptable answer.) Proceed as described in the text, but invert the selection before saving it as a layer mask on the map layer. That way, it will allow the flag to show through where it is required.</li>
+		<li><p>(a) Increasing the brightness will move the histogram to the right, squashing the values together at the top (i.e. more pixels have a high value). Decreasing the brightness moves the histogram to the left, squashing the values at the bottom.</p>
+			<p>(b) Increasing the contrast spreads the histogram more evenly across the range, so there are more pixels with high and low values and any peaks at intermediate levels will get flattened somewhat. Decreasing the contrast squashes the histogram together around the middle, so the range of pixel values is reduced. Try this for yourself to see how it works. In Photoshop you can keep the Histogram panel open while you drag the sliders in the Brightness/Contrast dialogue.</p></li>
+		<li>Take the sigmoid curve illustrated in Figure 4.24 and reflect it in the diagonal line y = x shown in the figure. That is, the curve should droop below the diagonal in the top half and bulge above it in the lower half. Using this curve is better than simply reducing the contrast as a whole because it preserves the dynamic range of the image and avoids abrupt changes in tonal values.</li>
+		<li>As explained on p. 146, sharpening enhances details. However, it cannot discriminate between details of the image and noise. A scanned image might include various types of noise. Printed material usually consists of relatively coarse dots of four colours of ink arranged in patterns that create colours by optical mixing, as explained in Chapter 5. Scanning can bring out these dots. Photographic originals often exhibit graininess, which will be most pronounced in pictures taken under low light. In both cases, sharpening will enhance these imperfections. Applying a blur first will soften the image so that this effect will be reduced, though it cannot actually remove the faults completely. (The same thing can happen with JPEG-compressed images, where sharpening will enhance the discontinuities at block boundaries, as mentioned in the text.)</li>
+		<li>A slight motion blur, modelling movement from left to right, can be produced by applying a classical blur to one side only. The coefficients in the first and second column could be some positive value <em>a</em>, and those in the third column 0. (HTML is not a good medium for writing matrices so we won't display any here.) You would use the mirror of this convolution mask to move in the opposite direction, and swap rows and columns for vertical motion blurring. The result would be very subtle, though. To create more complex and noticeable effects, including motion at other angles, you would have to use an asymmetrical version of the Gaussian blur with a larger mask.
+			<p>The amount of blur is determined by the actual values of the coefficients so you would have to supply a control – probably a slider – to vary these interactively. If you implemented the more general filter, you would also provide a means of setting the angle of the simulated motion.</p></li>
+</ol>
+<h2>Discussion Topics: Hints and Tips</h2>
+<ol class="answerlist">
+	<li>Think about the differences between print and screen display and about how a screenshot is made and prepared for print.</li>
+	<li>Downsampling involves interpolation, which uses information from several pixels in the original to determine the final colour of each pixel in the downsampled version. If the low-resolution image does not provide the same information, why not?</li>
+	<li>Digital camera manufacturers keep on increasing the maximum size of image that digital cameras can photograph, even though many photos are only intended to be printed or displayed at a small size. In the printing industry, the rule of thumb is to use an original image that has twice the resolution of the printing device. For the Web, however, this would still be a very small image. Consider what might be the advantages and drawbacks of using, say, a 10 megapixel photograph as the source for a 320x240 image on a Web page.</li>
+	<li>Once you understand the way in which pixels must be mapped during the transformation, this is a fairly routine exercise.</li>
+	<li>This is an open-ended discussion question. Consider the properties of the two representations. One application of bitmap tracing that may not be obvious is in creating animation from photographic or hand-drawn or painted source material.</li>
+</ol>
+<h2>Practical Tasks: Hints and Tips</h2>
+<ol class="answerlist">
+	<li>You could start by comparing the convolution masks in the text with the built-in filters for performing the same operations. Note that in Photoshop you must enter integer coefficients and specify a scale factor for them. Enthusiasts with some programming experience may wish to investigate Adobe's <a href="http://labs.adobe.com/technologies/pixelbender/" title="Adobe Labs - Pixel Bender">Pixel Bender</a>, which allows you to define convolution kernels using a simple programming language and combine them into more complex filters using an XML-based language. Filters created in Pixel Bender can be used in the CS4 versions of Photoshop, After Effects and Flash.</li>
+	<li>This is a difficult hypothesis to prove one way or the other. (On the whole, we don't believe it.) You should try to gather as much data as you can, in a systematic way, perhaps working as a group. Formulate a more specific hypothesis to test. Does it make a difference if the scale factors are a power of 2, for instance? Try pushing the image to extremes (for instance, reduce it to 8 by 8 pixels, all at once or in steps) so that you can see the effect of accumulating difference, if there are any.</li>
+	<li>In particular, are programs which are essentially devoted to bitmapped images – such as Photoshop – better or worse at dealing with vector graphics than vector graphics programs such as Illustrator are at dealing with bitmapped images? Putting it another way, if you had to combine vectors and bitmaps, would you prefer to do it in Photoshop or Illustrator? Why?</li>
+</ol>
+
+
+</div>
+</body>
+
+</html>

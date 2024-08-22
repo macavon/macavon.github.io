@@ -1,0 +1,52 @@
+body {
+	color: maroon;
+	font-family: Georgia,Times,serif;
+	font-size: medium;
+	line-height: 150%;
+	background-color: #fdffe6;
+/*	background-image: url(texture.gif);*/
+}
+
+h1 {
+	font-size: 150%;
+	font-style: italic;
+	font-weight: bolder;
+	text-indent: 12em;
+	text-transform: inherit;
+	letter-spacing: 0.2em;
+	border-bottom: maroon;
+	border-width: 0 0 3px 0;
+	border-style: none none dotted none;
+	width: 100%;
+	padding: 1em 0 1ex 0;
+	margin: 0;
+}
+
+#thumbnails ul {
+	list-style-type: none;
+}
+
+#thumbnails li {
+	display: block;
+	padding: 5% 0 0 0;
+}
+
+#thumbnails {
+	width: 16em;
+	border-right: maroon;
+	border-width: 0 3px 0 3px;
+	border-style: none dotted none none;
+	padding: 0 1.5%;
+	float: left;
+}
+
+#thumbnails a img {
+	border-style: none;
+	border-width: 0;
+	border-color: transparent;
+}
+
+
+#main-image {
+	margin: 5.5em 0 0 22em;
+}

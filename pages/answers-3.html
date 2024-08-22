@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+
+<html class="no-js">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+	<meta name="description" content="Companion site for popular textbook Digital Multimedia, 3rd Edition, by Nigel Chapman and Jenny Chapman. Free teaching and learning resources." />
+
+  <link rel="stylesheet" media="screen" href="/assets/application.css" />
+
+<!--[if lte IE 7]>
+    <link rel="stylesheet" href="/ie67hax.css" type="text/css" media="screen" charset="utf-8">
+<![endif]-->
+
+  <script src="/assets/application.js"></script>
+
+<!--[if (gte IE 6)&(lte IE 8)]>
+	<script src="/assets/selectivizr.js"></script>
+<![endif]-->
+<!--[if lt IE 9]>
+	<script src="/assets/scripts.js"></script>
+<![endif]-->
+
+
+	<link rel="icon" href="/favicon.ico" type="image/x-icon" />
+	<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+	<title>Digital Multimedia -- Answers 3</title>
+</head>
+
+<body>
+
+  <nav>
+    <h1><a href="/">Digital Multimedia</a></h1>
+    <ul class="nav0"><li class="current"><span class="current">Navigation</span></li></ul>
+<ul class="navbar nav1"><li class="current"><a class="current" href="/pages/teaching-and-learning-resources">Teaching and Learning</a></li><li><a href="/pages/preview">Sample Material</a></li><li><a href="/pages/about-us">About Us</a></li></ul>
+<ul class="navbar nav2"><li><a href="/pages/teaching-and-learning-resources">Introduction</a></li><li><a href="/pages/lecture-slides-overview">Lecture Slides</a></li><li class="current"><a class="current" href="/pages/answers-overview">Answers</a></li><li><a href="/pages/examples-overview">Examples</a></li><li><a href="/pages/projects-introduction">Projects</a></li><li><a href="/pages/references-overview">References</a></li><li><a href="/pages/errata">Errata</a></li></ul>
+<ul class="navbar nav3"><li><a href="/pages/answers-overview">Introduction</a></li><li><a href="/pages/answers-1">1</a></li><li><a href="/pages/answers-2">2</a></li><li class="current simple-navigation-active-leaf"><span class="current">3</span></li><li><a href="/pages/answers-4">4</a></li><li><a href="/pages/answers-5">5</a></li><li><a href="/pages/answers-6">6</a></li><li><a href="/pages/answers-7">7</a></li><li><a href="/pages/answers-8">8</a></li><li><a href="/pages/answers-9">9</a></li><li><a href="/pages/answers-10">10</a></li><li><a href="/pages/answers-11">11</a></li><li><a href="/pages/answers-12">12</a></li><li><a href="/pages/answers-13">13</a></li><li><a href="/pages/answers-14">14</a></li><li><a href="/pages/answers-15">15</a></li><li><a href="/pages/answers-16">16</a></li></ul>
+
+  </nav>
+  <ul class="nav0"><li class="current simple-navigation-active-leaf"><span class="current">Quick Links</span><ul id="quicklynx"><li><span>Quick Links</span></li><li><a href="/pages/lecture-slides-overview">Lecture Slides</a></li><li><a href="/pages/answers-overview">Answers</a></li><li><a href="/pages/examples-overview">Examples</a></li><li><a href="/pages/preview">Sample Material</a></li></ul></li></ul>
+
+	<div id="main">
+  <noscript>
+    <p><em>JavaScript Is Required</em> You have disabled JavaScript for this site, or your browser does not support JavaScript. Some features of the site will not work correctly. We advise you to enable JavaScript.</p>
+  </noscript>
+
+	<h1>Answers to Exercises, Chapter 3</h1>
+
+<p>These are answers to the exercises in the 3rd edition of <span class="booktitle">Digital Multimedia</span> (published February 2009) only. Do not try to use them in conjunction with the 2nd edition.</p>
+                                                                                                               <h2>Test Questions</h2>
+<ol class="answerlist">
+	<li><p>Using the computer graphics convention that y values increase downwards:</p> <p>(a) (370.0,&thinsp;250.0); </p><p>(b) (120.0,&thinsp;-130.0);</p> <p>(c) (120.0+a,&thinsp;250.0+a) where a<sup>2</sup>=80000, i.e. approximately (402.8,&thinsp;532.8).</p> <p>If you prefer the mathematical convention that y values increase upwards:</p> <p>(a) (370.0,&thinsp;250.0);</p><p> (b) (120.0,&thinsp;370.0); </p><p>(c) approximately (402.8,&thinsp;-32.8).</p>
+		<p>In pixel coordinates, the values would have to be integers (whole numbers), so if X and Y were pixels the values for (c) could only be stored as an approximation (403,&thinsp;533).</p></li>
+		<li>True, in principle, but note the remark about sub-pixel anti-aliasing in Chapter 9 (p.&nbsp;352). The physical construction of real devices means our idea that a pixel is a perfect rectangle is not entirely accurate.</li>
+		<li>The path will leave P<sub>4</sub> at the same rate as it entered it, but instead of continuing its direction it will be reflected.</li>
+		<li>Please note the <a href="/pages/errata">erratum</a> to this question and only consider the two lower shapes in Figure&nbsp;3.24. Of these two lower shapes, the one on the left, which is entirely filled – the pentagon in the middle is inside the shape – has used the non-zero winding number rule. The shape at the lower right of Figure&nbsp;3.24 – with the pentagon unfilled because it is outside – has used the even-odd rule.  A line drawn from the centre of the star is crossed by the path twice, both times in the same direction. (Try it.) So the winding number is 2, which is even. (Note that in the inside vertices, where the path crosses itself, it must be counted twice, but since the rules let you construct any line you can always avoid such points.)</li>
+		<li><p>The first of these is actually the most difficult. One way to do it is by moving (p,&thinsp;q) to the origin, rotating (x,&thinsp;y) about it using the equation on page&nbsp;80, and then moving it back. Alternatively, just use trigonometrical identities to derive it from first principles.</p>
+			<p>(a) Rotate clockwise through an angle θ (y increases down; if y increases up, rotate counter-clockwise to get the same result):<br />x′&thinsp;=&thinsp;p&thinsp;+&thinsp;(x-p)cosθ&thinsp;-&thinsp;(y-q)sinθ, y′&thinsp;=&thinsp;q&thinsp;+&thinsp;(x-p)sinθ&thinsp;-&thinsp;(y-q)cosθ.</p>
+			<p>(b) Reflecting in x&thinsp;=&thinsp;p, x′&thinsp;=&thinsp;2p-x, y′&thinsp;=&thinsp;y.</p>
+			<p>(c) Reflecting in y&thinsp;=&thinsp;q, x′&thinsp;=&thinsp;x, y′&thinsp;=&thinsp;2q&thinsp;-&thinsp;y.</p>
+		</li>
+	<li><p>(a) right;</p> <p>(b) right;</p> <p>(c) left;</p> <p>(d) right.</p> <p>On each hand, try writing x on your thumb, y on your first finger, z on your middle finger, as in Figure&nbsp;3.30 and see which hand you can twist your hand so the fingers point as described in the question. (Don't hurt yourself trying this last one.)</p>
+		<p>Any pair of left-handed coordinate systems are related by one or more rotations. Going from left to right-handed or vice versa always requires a reflection.</p></li>
+</ol>
+<h2>Discussion Topics: Hints and Tips</h2>
+<ol class="answerlist">
+	<li>Consider both implementation issues such as ease of programming, compactness of representation and efficient implementation on current graphics hardware, and issues that affect the user, such as the naturalness of drawing tools and the accuracy of the drawn shapes. If you are discussing this in a group, discover whether individual views on this topic vary according to the background of the student.</li>
+	<li>Think about this for yourself first, but then investigate how it is done in SWF and PDF.</li>
+	<li>Does every image have to look like a photograph? How may different types of 3-D "scenes" can you think of (forget about games for a moment).</li>
+</ol>
+<h2>Practical Tasks: Hints and Tips</h2>
+<ol class="answerlist">
+	<li>Yes, this is a pretty dull exercise but it will help you to understand how Bézier curves work. You can make sketches on graph paper, or use a drawing program. In the latter case, mark the points on a separate layer, and use them to line up the direction lines as you draw each curve with the pen. If you do it this way you can test your intuitions about which pairs of curves can be transformed by trying it. If you really can't face drawing 24 curves you could write a program but it will probably take you longer.</li>
+	<li>You should be able to draw an ellipse using four Bézier curves.</li>
+	<li>Check your sketch using a 3-D program that supports constructive solid geometry, if you can.</li>
+	<li>Real hats will have imperfections that you can ignore; you can also assume that the brim of a top hat or bowler is the same all round – some other hats always have the brim turned down on one side, though. Where features such as a peak interfere with the radial symmetry, can you break the hat into separate pieces, one or more of which can be made by lathing, the others using some other operation? For the case of the Tam o'Shanter – which is almost symmetrical but not quite, because of the way it is made out of several pieces sewn together – try making the best approximation you can with lathing and then map a surface over it the makes it appear more realistic.
+		<p>A 42nd Street skimmer is one of those flat-crowned straw hats that were popular in the United States during the first half of the 20th century – a species of boater. If you are not familiar with the shapes of the other hats, you can research them on the Web.</p></li>
+</ol>
+
+
+</div>
+</body>
+
+</html>

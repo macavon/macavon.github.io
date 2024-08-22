@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+
+<html class="no-js">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+	<meta name="description" content="Companion site for popular textbook Digital Multimedia, 3rd Edition, by Nigel Chapman and Jenny Chapman. Free teaching and learning resources." />
+
+  <link rel="stylesheet" media="screen" href="/assets/application.css" />
+
+<!--[if lte IE 7]>
+    <link rel="stylesheet" href="/ie67hax.css" type="text/css" media="screen" charset="utf-8">
+<![endif]-->
+
+  <script src="/assets/application.js"></script>
+
+<!--[if (gte IE 6)&(lte IE 8)]>
+	<script src="/assets/selectivizr.js"></script>
+<![endif]-->
+<!--[if lt IE 9]>
+	<script src="/assets/scripts.js"></script>
+<![endif]-->
+
+
+	<link rel="icon" href="/favicon.ico" type="image/x-icon" />
+	<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+	<title>Digital Multimedia -- Answers 8</title>
+</head>
+
+<body>
+
+  <nav>
+    <h1><a href="/">Digital Multimedia</a></h1>
+    <ul class="nav0"><li class="current"><span class="current">Navigation</span></li></ul>
+<ul class="navbar nav1"><li class="current"><a class="current" href="/pages/teaching-and-learning-resources">Teaching and Learning</a></li><li><a href="/pages/preview">Sample Material</a></li><li><a href="/pages/about-us">About Us</a></li></ul>
+<ul class="navbar nav2"><li><a href="/pages/teaching-and-learning-resources">Introduction</a></li><li><a href="/pages/lecture-slides-overview">Lecture Slides</a></li><li class="current"><a class="current" href="/pages/answers-overview">Answers</a></li><li><a href="/pages/examples-overview">Examples</a></li><li><a href="/pages/projects-introduction">Projects</a></li><li><a href="/pages/references-overview">References</a></li><li><a href="/pages/errata">Errata</a></li></ul>
+<ul class="navbar nav3"><li><a href="/pages/answers-overview">Introduction</a></li><li><a href="/pages/answers-1">1</a></li><li><a href="/pages/answers-2">2</a></li><li><a href="/pages/answers-3">3</a></li><li><a href="/pages/answers-4">4</a></li><li><a href="/pages/answers-5">5</a></li><li><a href="/pages/answers-6">6</a></li><li><a href="/pages/answers-7">7</a></li><li class="current simple-navigation-active-leaf"><span class="current">8</span></li><li><a href="/pages/answers-9">9</a></li><li><a href="/pages/answers-10">10</a></li><li><a href="/pages/answers-11">11</a></li><li><a href="/pages/answers-12">12</a></li><li><a href="/pages/answers-13">13</a></li><li><a href="/pages/answers-14">14</a></li><li><a href="/pages/answers-15">15</a></li><li><a href="/pages/answers-16">16</a></li></ul>
+
+  </nav>
+  <ul class="nav0"><li class="current simple-navigation-active-leaf"><span class="current">Quick Links</span><ul id="quicklynx"><li><span>Quick Links</span></li><li><a href="/pages/lecture-slides-overview">Lecture Slides</a></li><li><a href="/pages/answers-overview">Answers</a></li><li><a href="/pages/examples-overview">Examples</a></li><li><a href="/pages/preview">Sample Material</a></li></ul></li></ul>
+
+	<div id="main">
+  <noscript>
+    <p><em>JavaScript Is Required</em> You have disabled JavaScript for this site, or your browser does not support JavaScript. Some features of the site will not work correctly. We advise you to enable JavaScript.</p>
+  </noscript>
+
+	<h1>Answers to Exercises, Chapter 8</h1>
+<p>These are answers to the exercises in the 3rd edition of <span class="booktitle">Digital Multimedia</span> (published February 2009) only. Do not try to use them in conjunction with the 2nd edition.</p>
+                                                                                                               <h2>Test Questions</h2>
+<ol class="answerlist">
+	<li>No, it would not be sensible. You would (presumably) only choose to employ such a penetrating and potentially annoying sound to alert users to some serious event, so you would want to be sure that everyone could hear it. Even though the limit of human hearing is usually taken to be around 20&nbsp;kHz, this is a maximum value, usually only achieved by children and young adults. The top limit falls off with age, so a pure 18&nbsp;kHz tone would not be audible to most older people. You should also be aware that some users will have the sound turned off on their computers, and some people cannot hear at all, so any audio alert should always be accompanied by some visual signal.</li>
+	<li>44.1&nbsp;kHz is the sampling rate used for CD audio, which for a long time was the dominant format for digital audio. Because of economies of scale, ADC circuitry sampling at this frequency is cheap. It is simple to adapt 44.1&nbsp;kHz equipment to work at exact sub-multiples of this frequency – in particular, dividing by 2 in binary just means dropping a bit – so this makes those sub-multiples the most attractive sampling frequencies for applications that do not require CD-quality audio.</li>
+	<li>Recall the description of temporal anti-aliasing from Chapter&nbsp;2. When a signal is sampled at a rate f, frequency components greater than f/2 cannot be reconstructed accurately and may be confused with lower frequencies. Hence they must be removed before sampling takes place to prevent this anti-aliasing, which would cause distortion in the signal. The filtering cannot be done after sampling has taken place – the anti-aliasing has already occurred by then.</li>
+	<li>Increasing the sample size – i.e. the number of bits used to store each sample – permits more quantization levels to be used. If more levels are used, the difference between the levels will be smaller, which means that any signal can be better approximated, without the abrupt jumps between levels that cause quantization noise, as illustrated on p.&nbsp;296. The purpose of dithering – which in this context means the addition of small amounts of random noise – is to soften those transitions, as shown on p.&nbsp;297. Since there will be less quantization noise if a larger sample size is used, the need for dithering is reduced.</li>
+	<li>As we show on p.&nbsp;301, there is a simple relationship between the number of bits per second in an audio stream and the sampling rate, because each sample occupies a fixed number of bits. In the case of MP3 audio, this relationship no longer holds, because MP3 audio is lossily compressed and some data has been discarded. (The question really is that simple, we just want to make sure you understand that an MP3 audio stream does not contain all the sampled data.)</li>
+	<li>(a)  If the sound was digitized with its levels so high that clipping has occurred, there is nothing you can do. The information has been lost and cannot be regained. If it is simply the case that the volume is higher than you would like, but no clipping has occurred, you can decrease the amplitude by dividing each sample's value by a suitable constant.
+		<p>(b) The amplitude of the sampled signal can be increased just by multiplying each sample by a suitable constant. Note that this could produce rounding errors (equivalent to a new source of quantization noise), but if the sample size is sufficiently large this should not cause any audible effect.</p>
+		<p class="tight">A large dynamic range is not usually appropriate for use on a video soundtrack. For example, dialogue usually needs to be at a fairly even volume; music used as background will not be listened to attentively the way that it would in a concert, so it cannot afford quiet passages, and sudden loud passages may interfere with the viewer's enjoyment of the picture or story. If a soundtrack exhibits great disaparity between the quietest and loudest sounds, you can apply a dynamic compressor (a type of filter that reduces the dynamic range, not to be confused with data compression) to reduce the dynamic range overall. An simpler and more intuitive approach would be to use the facility available in most video editing software to adjust the levels interactively by dragging a "rubber band" over the waveform. This allows you to adjust the levels to suit the visual context on-screen.</p></li>
+		<li>Notch filters are designed for precisely such a situtation, as they remove a narrow frequency band from a signal. In this case, therefore, you would apply a notch filter at the mains frequency (50&nbsp;Hz or 60&nbsp;Hz, depending on your location).</li>
+		<li>Lossy audio compression works by discarding information that is not perceptible. Unlike the case of images, where there is a straightforward correlation between high frequencies and imperceptible changes, there is no simple property of audio data itself that can be identified as not being perceptible. It is only by applying an accurate mathematical model of the complex physical and neurological processes that take place when sound is perceived – a psycho-acoustical model – that we can identify those parts of a sound that will be inaudible, and which can be discarded without perceptible loss of quality. If we don't have a model, we have no basis for compression; if the model is not accurate, it may lead us to discard perceptible information, leading to degraded sound quality. Note that a psycho-acoustical model does not need to represent all the actual processes that occur in the ear and brain, it just needs to provide an abstract model of the relationship between perceived sound and measurable quantities, from which we can derive a compression algorithm.</li>
+		<li>(a) Although this operation is routinely done by digital audio processing software, it is not simple. Discarding half the samples and "closing up the gaps" will shift the pitch up an octave, but it will also halve the duration of the sound. This is exactly the same as playing an analogue tape at double speed – the pitch goes up but everything plays faster. To shift the pitch without altering the duration, it is necessary somehow to duplicate sections of the waveform to compensate. Conceptually, it is easy to see that you need to identify the cycles in the waveform, apply the pitch shift to each cycle and then duplicate it. Several algorithms for performing this operation have been devised, some of them operate in the time domain, others transform the signal to the frequency domain, but none is particularly simple.
+			<p>(b) In contrast, this is trivial. Add 12 to the first parameter of the "Note On" message.</p></li>
+</ol>
+<h2>Discussion Topics: Hints and Tips</h2>
+<ol class="answerlist">
+	<li>Some people would ask "Is there any point…?" The question is controversial, as a little research will show you. Try to get an idea of the real technical arguments on both sides, ignoring if you can  the irrational arguments sometimes proposed.</li>
+	<li>If you have the opportunity, consult an expert in sound recording. In connection with the final sentence of the question, remember that information once lost can never be regained.</li>
+	<li>This would appear to be a trivial question: just look at how singing is compressed for distribution on the Internet. It does, though, raise a more interesting question: What makes sound musical? And how does that affect compression?</li>
+	<li>Again, a superficial answer would be based on when you run out of samples to interpolate or discard, but you might consider whether it is possible to synthesize additional information.</li>
+</ol>
+<h2>Practical Tasks: Hints and Tips</h2>
+<ol class="answerlist">
+	<li>This is a straightforward practical task if you have suitable recording equipment and software. The results should be quite interesting. Do they shed any light on "voice print" technology as a means of recognizing speakers?</li>
+	<li>Don't expect this to be easy. This very commonly encountered problem is difficult to deal with.</li>
+	<li>This is an exercise in the creative use of audio processing software. You are aiming for a general hubbub – the atmosphere will be destroyed if it's possible to hear what people are saying. It will probably be easier to achieve the desired result for a rowdy student party with loud music than for a diplomatic cocktail party.</li>
+</ol>
+
+
+</div>
+</body>
+
+</html>

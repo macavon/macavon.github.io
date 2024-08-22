@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+
+<html class="no-js">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+	<meta name="description" content="Companion site for popular textbook Digital Multimedia, 3rd Edition, by Nigel Chapman and Jenny Chapman. Free teaching and learning resources." />
+
+  <link rel="stylesheet" media="screen" href="/assets/application.css" />
+
+<!--[if lte IE 7]>
+    <link rel="stylesheet" href="/ie67hax.css" type="text/css" media="screen" charset="utf-8">
+<![endif]-->
+
+  <script src="/assets/application.js"></script>
+
+<!--[if (gte IE 6)&(lte IE 8)]>
+	<script src="/assets/selectivizr.js"></script>
+<![endif]-->
+<!--[if lt IE 9]>
+	<script src="/assets/scripts.js"></script>
+<![endif]-->
+
+
+	<link rel="icon" href="/favicon.ico" type="image/x-icon" />
+	<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+	<title>Digital Multimedia -- Answers 12</title>
+</head>
+
+<body>
+
+  <nav>
+    <h1><a href="/">Digital Multimedia</a></h1>
+    <ul class="nav0"><li class="current"><span class="current">Navigation</span></li></ul>
+<ul class="navbar nav1"><li class="current"><a class="current" href="/pages/teaching-and-learning-resources">Teaching and Learning</a></li><li><a href="/pages/preview">Sample Material</a></li><li><a href="/pages/about-us">About Us</a></li></ul>
+<ul class="navbar nav2"><li><a href="/pages/teaching-and-learning-resources">Introduction</a></li><li><a href="/pages/lecture-slides-overview">Lecture Slides</a></li><li class="current"><a class="current" href="/pages/answers-overview">Answers</a></li><li><a href="/pages/examples-overview">Examples</a></li><li><a href="/pages/projects-introduction">Projects</a></li><li><a href="/pages/references-overview">References</a></li><li><a href="/pages/errata">Errata</a></li></ul>
+<ul class="navbar nav3"><li><a href="/pages/answers-overview">Introduction</a></li><li><a href="/pages/answers-1">1</a></li><li><a href="/pages/answers-2">2</a></li><li><a href="/pages/answers-3">3</a></li><li><a href="/pages/answers-4">4</a></li><li><a href="/pages/answers-5">5</a></li><li><a href="/pages/answers-6">6</a></li><li><a href="/pages/answers-7">7</a></li><li><a href="/pages/answers-8">8</a></li><li><a href="/pages/answers-9">9</a></li><li><a href="/pages/answers-10">10</a></li><li><a href="/pages/answers-11">11</a></li><li class="current simple-navigation-active-leaf"><span class="current">12</span></li><li><a href="/pages/answers-13">13</a></li><li><a href="/pages/answers-14">14</a></li><li><a href="/pages/answers-15">15</a></li><li><a href="/pages/answers-16">16</a></li></ul>
+
+  </nav>
+  <ul class="nav0"><li class="current simple-navigation-active-leaf"><span class="current">Quick Links</span><ul id="quicklynx"><li><span>Quick Links</span></li><li><a href="/pages/lecture-slides-overview">Lecture Slides</a></li><li><a href="/pages/answers-overview">Answers</a></li><li><a href="/pages/examples-overview">Examples</a></li><li><a href="/pages/preview">Sample Material</a></li></ul></li></ul>
+
+	<div id="main">
+  <noscript>
+    <p><em>JavaScript Is Required</em> You have disabled JavaScript for this site, or your browser does not support JavaScript. Some features of the site will not work correctly. We advise you to enable JavaScript.</p>
+  </noscript>
+
+	<h1>Answers to Exercises, Chapter 12</h1>
+<p>These are answers to the exercises in the 3rd edition of <span class="booktitle">Digital Multimedia</span> (published February 2009) only. Do not try to use them in conjunction with the 2nd edition.</p>
+                                                                                                               <h2>Test Questions</h2>
+<ol class="answerlist">
+	<li><p>There is scope for disagreement about which controls should be provided. Play and Stop are essential, as is a Volume control for sound. A Mute control is also often provided, but is redundant, because the same effect can be achieved by turning the volume right down. Rewind (i.e. Go To Beginning) would also be normal. Pause could be supplied, as a separate control from Stop, with the meaning that after pressing Stop, pressing Play would cause the movie to start again from the beginning, but after pressing Pause, pressing Play would make the movie resume playing from the point where it paused. In that case, Stop is strictly redundant, because its effect can be achieved by pressing Pause then Rewind. However, in this case and the case of the Mute control, adding the redundant controls would make the device more convenient to use.</p>
+		<p>A control for turning captions on and off should be supplied for media that support captioning.</p>
+		<p>A slider for scrubbing through a movie is considered useful. It would not be redundant, since the other controls provide no way of going to an arbitrary point, but you might argue that it is not strictly necessary.</p>
+		<p>These controls would be adequate for ordinary use. Other controls you might see on media players, such as Go To End, Step Forward and Step Back buttons are not actually required for simple playback of normal video and would not be used by most people.</p></li>
+		<li>Underlining is performed with a rule for <code>a</code> elements (or <code>a:link</code>, if you use <code>a</code> elements as destination anchors) . The two methods that can be used in such a rule are to set the <code>text-decoration</code> property to <code>underline</code> or to apply a bottom border, using the <code>border-bottom</code> property. The main advantage of using the <code>text-decoration</code> property is that the underline will be correctly positioned below the text, whereas a bottom border will be too low. The advantage of using the <code>border-bottom</code> property is that it gives you much more control over the appearance of the underline, which can be any colour or thickness you choose, and may use any of the available border styles, such as dotted or dashed lines.</li>
+		<li><p>If the font size of the link text changes when the cursor rolls over it, other text will usually have to move to accommodate the change. If links are arranged horizontally in a typical navbar, for instance, all the links to the right of the one rolled over will move right (or left if the rollover makes the text smaller) and the whole navbar and anything below it in normal flow will move down as the line height increases to accommodate the larger type. Since the point of rollovers is to attract attention to the link being rolled over, having other things move at the same time will interfere with this function, as well as looking odd, because movement always attracts the attention.</p>
+			<p>The only obvious way you can get round this is by arranging the links vertically in fixed-height boxes, large enough to accommodate the text at either size. Mark the navbar up as a list, and set the height and width of <code>li</code> elements, then add a rule for the rollover to <code>a</code> elements inside the <code>li</code> elements. (You can use <code>em</code> units for the size to accommodate users' changing the font settings in their browser, because the height is based on the inherited font size, not the size of the content.) CSS does not provide a way of fixing the width of an inline box, so font-size-changing rollovers are never going to work well for inline links or horizontally-arranged navbars. We can imagine implementing the rollover using JavaScript in a way that compensated for changes in size, but we leave that as an exercise.</p></li>
+			<li><p>There are many more than three different uses of dragging to interact with images. Some of them are listed here, but this list is not exhaustive.</p>
+				<p>Much interaction with images occurs in image processing software, such as Photoshop. Here you use dragging for a range of quite different purposes – for example, to make a selection, to paint with a brush tool, to apply free transforms, to move a selected element across the document, and so on. (See the Photoshop chapter in <span class="booktitle">Digital Media Tools</span> for descriptions of the operations.)</p>
+				<p>Dragging is also frequently used when images are too large to display conveniently, for example, when part of a landscape panorama is shown on a Web page (and again, when working on very large images in image processing software). In this case dragging is used to reveal parts of a large image hidden by the edge of a window which is smaller than the image.</p>
+				<p>Dragging is often used in conjunction with a zoom feature, for example, in Web shopping sites displaying clothes. In this case it may be possible to zoom into the image to reveal greater detail, and then to drag across it to see the same level of detail in other areas of the image.</p>
+			<p>To summarize, some of the more important uses of dragging across an image are: to reveal parts of a large image which cannot all be seen at once, to make a selection, to make marks on the image (painting, drawing, cloning, erasing, etc.), to apply transforms, to move a selected element of an image.</p></li>
+			<li>CSS rollovers can only alter the styling of elements on the page, including making them appear or disappear. JavaScript can actually create and delete elements. This makes certain effects easy: image swaps are trivial in JavaScript, for example. However, some such effects can be achieved using elaborate CSS. For instance, image swaps can be done by setting the <code>background-image
+</code> property, or by using more elaborate schemes to make images appear and disappear. The ingenuity of CSS experts and the ability to make elements move and appear or disappear means that many of the effects that, at first sight, seem to need scripting can be achieved purely with CSS. JavaScript is also used at present to simulate some CSS&nbsp;3 effects and unofficial CSS extensions, such as animated transitions, which are not implemented in most browsers. As support for these extra CSS facilities becomes widespread, the need for scripting will decrease. There is, though, one class of changes which cannot possibly be achieved by CSS, though it can in JavaScript. A script can perform computation or fetch data from a server, so it would be possible to create a rollover whose effect depended on some client-side or server-side computation using JavaScript, but this could not be done using CSS. For example, rolling over a link might cause the current time of day to appear. (You can probably think of more useful examples.)</li>
+		<li> In the XHTML form:
+			<p>(a) A text field, in the form of an <code>input</code> element with <code>type="text"</code>. There is no way to limit the possible set of values so that none of the restricted input controls can be used – though email addresses should always be validated. In principle you could use two text fields, one for name, the other for the domain, separated by an <code>@</code> sign, but this is not conventional and so might confuse users.</p>
+			<p>(b) It is customary to use a pop-up menu for choosing countries. The possible choices belong to a finite set and using a menu prevents users making typing mistakes and enforces uniformity, so the program that processes the input does not need to normalize case and look for possible synonyms (UK, U.K. and United Kingdom, for instance) and different languages (Germany or Deutschland, and so on). In XHTML, you would use a <code>select</code> element, with the <code>multiple</code> attribute omitted to ensure only one value could be chosen, and a set of <code>option</code> elements inside it, one for each country. You could use <code>optgroup</code> elements to group countries by region, but people have become used to an alphabetical list, so this would probably be confusing. The list of countries in the world is a long one, though, as you probably know from experience, but the extra work you would have to do in your program if you used a text field is considerable, and hard to get entirely right. (Do you know what the inhabitants of every country in the world call their country in their own language?)</p>
+			<p>(c) Again, this has to be a text field (an <code>input</code> element with <code>type="text"</code>) if you want to allow for absolutely any conceivable answer. (How many people live at Buckingham Palace?) If you were content to accept "More than 6" or something of the sort as an answer, you could use a pop-up menu.</p>
+			<p>(d) A pair of radio buttons: two <code>input</code> elements with <code>type="radio"</code>, both having the same value for the <code>name</code> attribute. One of them should be selected initially, otherwise the behaviour is undefined if a user does not select either.</p>
+			<p>(e) The answer here depends on where you live and how much research you are prepared to do. If you live in a country where candidates must belong to one of a few recognized political parties, you could use a pop-up menu, implemented as in (b). (Don't forget to add an entry for "Mind your own business".) In countries which allow candidates belonging to fringe parties, such as the UK's Monster Raving Loony Party, you could only use a pop-up menu if you could include all the parties that had put up candidates in any constituency, which would require extensive background checking, but it would be invidious and lead to misleading results if you left any out. Otherwise, you would have to use a text field and allow any value to be entered, with all the attendant pitfalls and difficulties.</p>
+			For Flash, you would mostly use the equivalent UI components (check the <a href="http://help.adobe.com/en_US/ActionScript/3.0_UsingComponentsAS3/" title="">Using ActionScript&nbsp;3.0 Components</a> manual for further details about the available components):
+			<p>(a) A <code>TextInput</code> component is Flash's way of creating text fields.</p>
+			<p>(b) A non-editable <code>ComboBox</code> component would be used to create the pop-up menu.</p>
+			<p>(c) The <code>NumericStepper</code> component is available for convenient entering of numbers.</p>
+			<p>(d) <code>RadioButton</code> components are used to make the appropriate control.</p>
+			<p>(e) This might be a good case for using an editable <code>ComboBox</code> component. Provide entries for the mainstream parties and allow users to write in the name of a fringe party in the text box.</p>
+		</li>
+		<li>
+			<p>(i) Using Flash UI components saves you effort, including the effort of testing and debugging.</p>
+			<p>(ii) The people who made the UI components took the necessary steps to make them accessible, within the limits of Flash.</p>
+			<p>(iii) Using standard components provides users with familiar controls, so they do not have to learn a new interface. This contributes to making the application more usable.</p>
+			You might prefer to implement your own components because you don't like the look of the standard ones. In particular, you might prefer to use controls that more closely resemble the native controls of one of the main operating systems. In that case, though, you would be better off customizing the UI components by editing their "skins", which would still leave you with the benefits. You would probably only be justified in creating new components from scratch if you wanted to implement some new type of control or wanted to change some detail of the UI components' behaviour that you did not feel was correct.
+		</li>
+</ol>
+<h2>Discussion Topics: Hints and Tips</h2>
+<ol class="answerlist">
+	<li>This is a question that has caused fairly heated controversy in the context of Adobe's Creative Suite applications. You may be able to find "discussions" of the matter on Adobe's forums. It's worth noting that – in contrast to Adobe – Microsoft go to great lengths to make their Office applications look like native Mac programs on the Macintosh platform. You should also consider the implications of Web-based applications, whose "platform" is the Web browser.</li>
+	<li>Fitts's Law is usually considered to be one of the few solid experimentally verified results that are applicable to user interfaces, although Fitts's original work only dealt with one-dimensional movement. At first sight, the Windows Media Player's design seems to go against the obvious application of the Law. When you use the player, do you find it inconvenient in the way the theory would lead you to expect, or is there something more behind Microsoft's design?</li>
+	<li>Non-linear jog and shuttle controls are common on video editing equipment and software. Does this provide a good example? Is the case unique?</li>
+	<li>This inadvertant duplication of Test Question&nbsp;7 should be seen as an invitation to explore the issues in greater depth, especially in the light of your answers to Discussion Topic&nbsp;1. Take a look at the collection of components that are provided with Flash and the possibilities for skinning them and compare these with the collection of controls available through the standard APIs of the major platforms, including the controls available in XHTML.</li>
+</ol>
+<h2>Practical Tasks: Hints and Tips</h2>
+<ol class="answerlist">
+	<li>You will need to learn how to use Flash to do this exercise. Skip it if you have no other reason for doing so.</li>
+	<li>Don't forget that some people cannot distinguish between certain colours, so be very careful if you want to make colour your signifier for links. (See Chapter&nbsp;13 for more on this topic.) Also, you need to ensure that any convention you adopt for indicating the presence of a link should not conflict with established conventions used for other purposes. Italicizing links could be problematical, for instance. You should bear in mind the answer to Test Question&nbsp;3: don't use rollover effects that cause other elements to move.</li>
+	<li>Just to make this more difficult, try to do it without relying on people being able to understand any text that you use.</li>
+	<li>This is an exercise you actually need to do if you want to gain any benefit from it.</li>
+	<li>Here is a direct link to <a href="http://kuler.adobe.com/" title="kuler">Kuler</a>. At the time of writing, Kuler requires Flash Player 10.0.12 or higher.</li>
+</ol>
+
+
+</div>
+</body>
+
+</html>

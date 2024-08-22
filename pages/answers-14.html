@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+
+<html class="no-js">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+	<meta name="description" content="Companion site for popular textbook Digital Multimedia, 3rd Edition, by Nigel Chapman and Jenny Chapman. Free teaching and learning resources." />
+
+  <link rel="stylesheet" media="screen" href="/assets/application.css" />
+
+<!--[if lte IE 7]>
+    <link rel="stylesheet" href="/ie67hax.css" type="text/css" media="screen" charset="utf-8">
+<![endif]-->
+
+  <script src="/assets/application.js"></script>
+
+<!--[if (gte IE 6)&(lte IE 8)]>
+	<script src="/assets/selectivizr.js"></script>
+<![endif]-->
+<!--[if lt IE 9]>
+	<script src="/assets/scripts.js"></script>
+<![endif]-->
+
+
+	<link rel="icon" href="/favicon.ico" type="image/x-icon" />
+	<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+	<title>Digital Multimedia -- Answers 14</title>
+</head>
+
+<body>
+
+  <nav>
+    <h1><a href="/">Digital Multimedia</a></h1>
+    <ul class="nav0"><li class="current"><span class="current">Navigation</span></li></ul>
+<ul class="navbar nav1"><li class="current"><a class="current" href="/pages/teaching-and-learning-resources">Teaching and Learning</a></li><li><a href="/pages/preview">Sample Material</a></li><li><a href="/pages/about-us">About Us</a></li></ul>
+<ul class="navbar nav2"><li><a href="/pages/teaching-and-learning-resources">Introduction</a></li><li><a href="/pages/lecture-slides-overview">Lecture Slides</a></li><li class="current"><a class="current" href="/pages/answers-overview">Answers</a></li><li><a href="/pages/examples-overview">Examples</a></li><li><a href="/pages/projects-introduction">Projects</a></li><li><a href="/pages/references-overview">References</a></li><li><a href="/pages/errata">Errata</a></li></ul>
+<ul class="navbar nav3"><li><a href="/pages/answers-overview">Introduction</a></li><li><a href="/pages/answers-1">1</a></li><li><a href="/pages/answers-2">2</a></li><li><a href="/pages/answers-3">3</a></li><li><a href="/pages/answers-4">4</a></li><li><a href="/pages/answers-5">5</a></li><li><a href="/pages/answers-6">6</a></li><li><a href="/pages/answers-7">7</a></li><li><a href="/pages/answers-8">8</a></li><li><a href="/pages/answers-9">9</a></li><li><a href="/pages/answers-10">10</a></li><li><a href="/pages/answers-11">11</a></li><li><a href="/pages/answers-12">12</a></li><li><a href="/pages/answers-13">13</a></li><li class="current simple-navigation-active-leaf"><span class="current">14</span></li><li><a href="/pages/answers-15">15</a></li><li><a href="/pages/answers-16">16</a></li></ul>
+
+  </nav>
+  <ul class="nav0"><li class="current simple-navigation-active-leaf"><span class="current">Quick Links</span><ul id="quicklynx"><li><span>Quick Links</span></li><li><a href="/pages/lecture-slides-overview">Lecture Slides</a></li><li><a href="/pages/answers-overview">Answers</a></li><li><a href="/pages/examples-overview">Examples</a></li><li><a href="/pages/preview">Sample Material</a></li></ul></li></ul>
+
+	<div id="main">
+  <noscript>
+    <p><em>JavaScript Is Required</em> You have disabled JavaScript for this site, or your browser does not support JavaScript. Some features of the site will not work correctly. We advise you to enable JavaScript.</p>
+  </noscript>
+
+	<h1>Answers to Exercises, Chapter 14</h1>
+<p>These are answers to the exercises in the 3rd edition of <span class="booktitle">Digital Multimedia</span> (published February 2009) only. Do not try to use them in conjunction with the 2nd edition.</p>
+                                                                                                               <h2>Test Questions</h2>
+<p>Most of the test questions ask you to write JavaScript, and the answers below are in JavaScript, but you can use ActionScript instead if  you prefer. The only difference will be in the need to declare the types of your variables.</p>
+<ol class="answerlist">
+  <li><p>There are several possible answers, but if we simply observe that the value of <code>commission</code> never changes, so we can substitute its value wherever it appears, then the second version of the script becomes (in JavaScript).</p>
+<pre class="codefragment">
+var payment = amount * 0.1
+if (payment &lt; 10) payment = 0
+</pre>
+<p>In ActionScript, we must declare the type of <code>payment</code></p>
+<pre class="codefragment">
+var payment:Number = amount * 0.1
+if (payment &lt; 10) payment = 0
+</pre>
+    </li>
+    <li>
+      It is not possible to know how many times a loop will be executed if the number depends on some value that is obtained from a source external to the program. A common external source for data is input typed or entered by a user using some other control. Another possibility is data received over a network connection, or read from a file. The format of data may also make it infeasible to know how many times a loop is to be executed. To take a particular example, if you write a script to add up all the numbers in a data file, you would probably use a loop, similar to the one in our answer to question&nbsp;3 below, but you would have no way of knowing how many times that loop would be executed until you had read all the values in the file. Even if the number of values was included as the first thing in the file, it could be different for each file you needed to process.
+    </li>
+    <li><p>In ECMAScript, the first element of an array <code>a</code> is <code>a[0]</code>, so <code>a[1]</code> is the second element, and so on. In general, <code>a[n]</code> is the (n+1)th entry. Putting that another way, the nth entry is <code>a[n-1]</code> The property <code>a.length</code> holds the total number of elements in <code>a</code>, so the last element (the "length-th", as it were) is <code>a[a.length-1]</code></p>
+      <p>There are many different ways of adding together all the elements of an array <code>a</code>, but the following is probably the simplest (in JavaScript):</p>
+<pre class="codefragment">
+var sum = 0
+for (var i = 0; i &lt; a.length; i = i + 1)
+  sum = sum + a[i]
+</pre>
+<p class="tight">This leaves the total in <code>sum</code>. Note that we haven't checked that <code>a</code> actually is an array, which we would have to in production code if it was passed as an argument to a function, since JavaScript would not check the type for us. The loop gives the right answer if <code>a</code> is an empty array (one that has no elements in it), though.</p>
+      </li>
+      <li><p>If there were no images on the page, the method call <code>document.getElementsByTagName("img")</code> would return an empty array, with no elements, so <code>all_images.length</code> would be equal to 0 and the test in the head of the loop would fail the first time it was evaluated, which is on entry to the loop. Therefore the loop body would never be executed and the value of <code>max_width</code> would remain 0.</p>
+        <p>For calculating the width of the narrowest image, the structure of the code could remain the same, with <code>min_width</code> replacing <code>max_width</code> (not that the name makes any difference to the execution, but it makes the code easier to read) and the test in the conditional inside the loop being changed from &gt; to &lt;. The problem with computing the minimum width lies in deciding what value to set <code>min_width</code> to at the beginning. There are two choices:</p>
+<p><code>min_width</code> could be set to the biggest possible number, so that by the same logic as our original program, it would be replaced as soon as an image with a real width was processed. ECMAScript's built-in <code>Number</code> object has a property <code>MAX_VALUE</code>, which is the biggest number that scripts can manipulate. However, you could use any very large number that you were certain was bigger than any image on a Web page could ever be. This gives the following code fragment:</p>
+<pre class="codefragment">
+var min_width = Number.MAX_VALUE
+var all_images = document.getElementsByTagName(&quot;img&quot;)
+for (var i = 0; i &lt; all_images.length; i = i+1)
+  if (all_images[i].width &lt; min_width)
+    min_width = all_images[i].width
+</pre>
+<p>The alternative approach would be to set <code>min_width</code> to a negative number to begin with. Within the loop, if <code>min_width</code> is negative, you assign the current image's width to it. This will only happen the first time an image is processed, but you will have to go on doing the test, so this version is less efficient.</p>
+<pre class="codefragment">
+var min_width = -1
+var all_images = document.getElementsByTagName(&quot;img&quot;)
+for (var i = 0; i &lt; all_images.length; i = i+1)
+  if (min_width &lt; 0 || all_images[i].width &lt; min_width)
+    min_width = all_images[i].width
+</pre>
+<p>Notice that these two versions leave different values in <code>min_width</code> if there are no images on the page.</p>
+</li>
+<li>
+  <p>The following two functions would be acceptable as answers here, given the level at which we have described JavaScript. For serious work, some checking on the type and range of the arguments should be included. You will notice that we've re-used the code from our answer to Question&nbsp;3 in the second function. There would be a good case for making the summation into its own function, so it could be re-used. We leave that refinement as a further exercise.</p>
+<pre class="codefragment">
+function average2(a, b) {
+  return (a+b)/2
+}
+
+function average(a) {
+  var sum = 0
+  for (var i = 0; i &lt; a.length; i = i + 1)
+    sum = sum + a[i]
+  return sum/a.length
+}
+</pre>
+</li>
+<li><p>This task can be performed using code that is very similar to the fragment on page&nbsp;557, wrapped up as a function, like this:</p>
+<pre class="codefragment">
+function append_paragraph(s) {
+  var h1 = document.createElement("p")
+  h1.appendChild(document.createTextNode(s))
+  var body = document.getElementsByTagName("body")[0]
+  body.appendChild(h1)
+}
+</pre>
+  </li>
+</ol>
+<h2>Discussion Topics: Hints and Tips</h2>
+<ol class="answerlist">
+	<li>There are good arguments to be made on both sides of this question. Enforced type declarations permit more sorts of error to be caught at compile-time. Their absence allows values of different types to be stored in the location associated with a variable, which enables a more flexible and dynamic style of programming. Opinion ebbs and flows as to which of these arguments is the stronger – at the moment, dynamic languages are in the ascendant, but this will surely pass. Think about the way you write programs and the sorts of mistake you make to see which side you are on. You may have other considerations to put forward as well.</li>
+	<li>Although this question is phrased hypothetically, Web and multimedia authoring programs, such as Dreamweaver and Flash, already provide such facilities, so you could start by surveying these and see whether you can think of anything better. For the second part of the question, consider who is better placed to create interactivity – designers or programmers?</li>
+	<li>If you are short of ideas for this topic, look at the <a href="http://www.w3.org/2008/webapps/wiki/Main_Page" title="Main Page - WEBAPPS">recommendations being developed</a> by the <a href="http://www.w3.org/2008/webapps/" title="W3C WebApps Working Group">W3C Web Applications Working Group</a>.</li>
+</ol>
+<h2>Practical Tasks: Hints and Tips</h2>
+<p>The value of these exercises lies in doing them. Some of them, notably the first, can be done using pre-built behaviours in Dreamweaver; others could probably be done best using one of the JavaScript libraries that we mention briefly on page&nbsp;566. However, we expect you to create your own solution from scratch – the exercises are to help you learn, not necessarily to get the task achieved in the best way.</p>
+<p>We assume that instructors will have provided some form of programming help for individuals, which will be much more effective than any general advice we can offer.</p>
+<p>Always keep in mind that the most important property of a program is that it should be correct, that is, it should do what it is supposed to. Next, it should be maintainable, which means that it needs to be readable and easy to follow. Efficiency comes third, although it should not be neglected entirely.</p>
+<p>Expect to make mistakes. Current versions of all the major browsers have some tools to assist with debugging JavaScript built in to them. Notably, they all have an "error console" where you will find messages diagnosing any syntax errors in your script, or telling you about errors that occur while it is running. Similar messages are written to the <code>Compiler Errors</code> panel in Flash. You can use the <code>alert</code> function in JavaScript or the <code>trace</code> function in ActionScript to write messages as your program runs. Both functions take a string as their argument, <code>alert</code> writes it in an alert box, <code>trace</code> sends it to Flash's <code>Output</code> panel. In either case, the string can be created by concatenating literal strings with variables, so you can use these functions to tell you the values of your variables at important points in your script.</p>
+<p>More assistance is available in the form of interactive debuggers, but try to work out what is going wrong by thinking about the program and reading the code before you get mesmerized watching the values of all the variables as execution proceeds.</p>
+<p>For the JavaScript examples, please see the note under <a href="/pages/examples-14">Examples&gt;14</a> about Internet Explorer. Since these are educational examples, not real tasks, we strongly recommend that you avoid Explorer's non-standard behaviour and only test your answers on a browser that implements the standards correctly, such as the latest versions of Firefox, Opera and Safari. (But see the note about implementations of <code>addEventListener</code> on the <a href="/pages/errata">errata page</a>.)</p>
+<ol class="answerlist">
+	<li>As we mention on p.&nbsp;557, you can assign a new value to the <code>src</code> attribute of an <code>img</code> element to change the image displayed. It is easiest to require the <code>img</code> to have an <code>id</code> attribute, so you can access it easily in your script. You will need to attach listeners for the <code>mouseover</code> and <code>mouseout</code> events to the img.</li>
+	<li>When considering additional checks, don't be too ambitious. Checking that an email address is well-formed according to the relevant standard is quite difficult, and not always a good idea, because some real addresses are not, strictly speaking, legal. Confine yourself to looking for something that could be a domain name in the right place.</li>
+	<li>This exercise does not need any further hint.</li>
+	<li>You need to define a function that you can call directly, or from inside the listener.</li>
+	<li>The total number of frames in a <code>MovieClip</code> object is available in its <code>totalFrames</code> property. A <code>Slider</code> component has <code>minimum</code> and <code>maximum</code> properties, which hold the corresponding values.</li>
+	<li>Note that you need to change both the FLA document and the script in the <code>.as</code> file.</li>
+	<li>There are several ways of making a movie appear and disappear. Experts would probably add it to and remove it from the display list, but an easier option for the beginner may be to set the <code>alpha</code> property to 0 when you want the movie to be invisible and 1 when you want to be able to see it (and not see what is behind it). You don't have to keep the movies in sync all the time, just make sure that when you switch from one to the other they are at the same frame. (You might prefer to make two new movies yourself, differing only in colour, so you can see whether they are correctly synchronized.)</li>
+</ol>
+
+</div>
+</body>
+
+</html>

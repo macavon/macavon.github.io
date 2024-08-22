@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+
+<html class="no-js">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+	<meta name="description" content="Companion site for popular textbook Digital Multimedia, 3rd Edition, by Nigel Chapman and Jenny Chapman. Free teaching and learning resources." />
+
+  <link rel="stylesheet" media="screen" href="/assets/application.css" />
+
+<!--[if lte IE 7]>
+    <link rel="stylesheet" href="/ie67hax.css" type="text/css" media="screen" charset="utf-8">
+<![endif]-->
+
+  <script src="/assets/application.js"></script>
+
+<!--[if (gte IE 6)&(lte IE 8)]>
+	<script src="/assets/selectivizr.js"></script>
+<![endif]-->
+<!--[if lt IE 9]>
+	<script src="/assets/scripts.js"></script>
+<![endif]-->
+
+
+	<link rel="icon" href="/favicon.ico" type="image/x-icon" />
+	<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+	<title>Digital Multimedia -- Answers 7</title>
+</head>
+
+<body>
+
+  <nav>
+    <h1><a href="/">Digital Multimedia</a></h1>
+    <ul class="nav0"><li class="current"><span class="current">Navigation</span></li></ul>
+<ul class="navbar nav1"><li class="current"><a class="current" href="/pages/teaching-and-learning-resources">Teaching and Learning</a></li><li><a href="/pages/preview">Sample Material</a></li><li><a href="/pages/about-us">About Us</a></li></ul>
+<ul class="navbar nav2"><li><a href="/pages/teaching-and-learning-resources">Introduction</a></li><li><a href="/pages/lecture-slides-overview">Lecture Slides</a></li><li class="current"><a class="current" href="/pages/answers-overview">Answers</a></li><li><a href="/pages/examples-overview">Examples</a></li><li><a href="/pages/projects-introduction">Projects</a></li><li><a href="/pages/references-overview">References</a></li><li><a href="/pages/errata">Errata</a></li></ul>
+<ul class="navbar nav3"><li><a href="/pages/answers-overview">Introduction</a></li><li><a href="/pages/answers-1">1</a></li><li><a href="/pages/answers-2">2</a></li><li><a href="/pages/answers-3">3</a></li><li><a href="/pages/answers-4">4</a></li><li><a href="/pages/answers-5">5</a></li><li><a href="/pages/answers-6">6</a></li><li class="current simple-navigation-active-leaf"><span class="current">7</span></li><li><a href="/pages/answers-8">8</a></li><li><a href="/pages/answers-9">9</a></li><li><a href="/pages/answers-10">10</a></li><li><a href="/pages/answers-11">11</a></li><li><a href="/pages/answers-12">12</a></li><li><a href="/pages/answers-13">13</a></li><li><a href="/pages/answers-14">14</a></li><li><a href="/pages/answers-15">15</a></li><li><a href="/pages/answers-16">16</a></li></ul>
+
+  </nav>
+  <ul class="nav0"><li class="current simple-navigation-active-leaf"><span class="current">Quick Links</span><ul id="quicklynx"><li><span>Quick Links</span></li><li><a href="/pages/lecture-slides-overview">Lecture Slides</a></li><li><a href="/pages/answers-overview">Answers</a></li><li><a href="/pages/examples-overview">Examples</a></li><li><a href="/pages/preview">Sample Material</a></li></ul></li></ul>
+
+	<div id="main">
+  <noscript>
+    <p><em>JavaScript Is Required</em> You have disabled JavaScript for this site, or your browser does not support JavaScript. Some features of the site will not work correctly. We advise you to enable JavaScript.</p>
+  </noscript>
+
+	<h1>Answers to Exercises, Chapter 7</h1>
+<p>These are answers to the exercises in the 3rd edition of <span class="booktitle">Digital Multimedia</span> (published February 2009) only. Do not try to use them in conjunction with the 2nd edition.</p>
+                                                                                                               <h2>Test Questions</h2>
+<ol class="answerlist">
+	<li>In short, the main advantage of using a stills camera or scanner for capturing traditional art work created on physical media is that you don't have to deal with video (and you don't need a video camera). In particular, your captured images are not confined to standard video sizes (or even aspect ratios) and you don't need to worry about interlacing or non-square pixels. As most video capture set-ups are not designed for capturing a single frame at a time you are likely to need specialist software for stop-motion video capture. Using a scanner or stills camera also allows capture at very high resolutions if you wish. Although high resolution is unlikely to be appropriate for many final delivery formats, it provides the opportunity to crop, zoom in, and make adjustments to images with minimum loss of quality. Most video capture involves compression at the time of capture, so that it is never possible to work with uncompressed images, as you can with a scanner or some still image cameras. Sequences of still images are very suitable for import into Flash, for example, and may also be converted into vector graphics by "tracing" if the material is suitable.
+		<p>Disadvantages arise particularly if you wish to combine live-action video with the animation, in which case you will probably end up using a video editor, which may cause problems dealing with animation that has been captured in some other format and resolution. In fact, if you need to do any extensive editing or compositing of the images, you may find video formats are more satisfactory – large still image sequences may become unwieldy, depending on the software available to you.</p>
+		<p>If your animation will be delivered in video, converting from a still image format adds an extra step and may introduce complications, such as the need for non-square pixels.</p>
+		</li>
+		<li>Really, animated GIF is only an appropriate format for short, simply drawn animations on a Web site, without sound or any need for guaranteed smooth playback, when you do not want to rely on visitors to the site having any particular plug-in installed on their browser to play back the animation.
+			<p>Among the limitations of the animated GIF format are its use of indexed colour (see the answer to Question&nbsp;7 in Chapter&nbsp;5) and in particular the use of one colour table for a whole set of different images; its use of lossless compression, because it produces relatively large files which become unmanageable for long sequences; the absence of sound and the the absence of any reliable mechanism for ensuring the animation is played back at a desired frame rate. Finally, it is not possible to provide player controls to start and stop an animated GIF – it will play as many times as specified in the file, unless the user disables GIF animation entirely. This prevents Web pages that include animated GIFs from conforming to WAI accessibility guidelines.</p>
+			</li>
+			<li>Using linear interpolation leads to abrupt starts, stops and changes of velocity, as shown in Figures&nbsp;7.5 and&nbsp;7.7 – in other words, to jerky and unrealistic movements. (These undesirable effects will occur in any property being interpolated, if "velocity" is taken to mean "rate of change of the property".) Bézier interpolation avoids these problems, by allowing the rate to vary gradually at the beginning and end of interpolated sequences, and by permitting sequences to be joined together smoothly, because of the properties of Bézier curves outlined in Chapter&nbsp;3, so that abrupt changes can be avoided.</li>
+			<li>The difference between the effect on file sizes of using interpolation in bitmapped and vector graphics results from the time at which interpolation can feasibly be carried out in each case. Bitmapped animations that use interpolation are no smaller than those that don't because all of the information in every frame has to be stored, even if interpolation has been used to create the animation. In the case of bitmapped images, interpolation requires the calculation of the value of every pixel in each intermediate frame, and at present this takes too long to be done in real time when the animation is played, so interpolation is done when the animation is being constructed, and the interpolated frames are explicitly stored in the animation – just as they would have been if they had been created explicitly. So the file size will be identical to an animation of the same pixel dimensions created one frame at a time. In the case of vector graphics, however, new values for the parameters defining each object can be computed rapidly, making it feasible to store only the minimum information needed to define the interpolation (the end point values and a description of the interpolation path) in the file, and to compute the intermediate frames on the fly as the animation plays. This usually results in much smaller files than you would get if you created each frame of a vector animation explicitly as a key frame.</li>
+			<li>Interpolation can only be applied to numerical quantities which can be easily computed. In the case of bitmapped images, there are not many of these. The parameters to any filters applied to a bitmapped image can be interpolated over time (see, for example, the change in hue over time in the example illustrated in Figure 7.17). If an image is composed in layers, as most are, the position and opacity of each layer may be interpolated independently. Programs such as After Effects, which allow you to apply pseudo-3D effects to 2D images usually also permit these effects to be interpolated.
+				<p>In vector graphics, geometrical transformations can be interpolated (so objects can shrink and expand, move in space or rotate), and so can the values of fill and stroke parameters, including their opacity. This allows much animation to be performed by interpolation.</p>
+				<p>As we explained in the previous answer, the difference arises from the way the images are stored, which gives rise to a different set of numerical values that can be interpolated easily.</p>
+				</li>
+				<li>Using Bézier interpolation for position means that there will be no abrupt changes in direction; the motion will follow a smooth path. Using linear interpolation for the velocity means that the movement will start and stop abruptly and there may be sudden abrupt changes in speed.</li>
+</ol>
+<h2>Discussion Topics: Hints and Tips</h2>
+<ol class="answerlist">
+	<li>Consider the visual qualities of the animation, how it was made (how the art work originated) and captured, and the intended delivery medium (cinema, Web, etc.). Remember that "live-action video" is in reality just a sequence of still photographs … </li>
+	<li>It should be obvious what the similarities are, but there are differences. Research the history of animation and compare traditional pre-digital techniques with the methods and terminology used in digital animation and animation software.</li>
+	<li>Is there a simple answer to this? Again, it is useful to research the history of animation, discover how artists like the great Disney animators or Max Fleischer actually worked, and watch classic animation from the first half of the 20th century, long before digital interpolation was possible. Then consider recent animations created by interpolation (can you tell which ones use interpolation?) and how much faith you have in physics-based simulation. Think also about actual movements, about the illusion of movement created by video, and the special types of illusion of movement in animation. Do you think that your answer to this question is likely to change with future developments?</li>
+</ol>
+<h2>Practical Tasks: Hints and Tips</h2>
+<ol class="answerlist">
+	<li>If you have not tried any animation before you can <a href="/digitalmediatools/Book/Materials/flash.html" title="Digital Media Tools -- Exercise Files &ndash; Flash">download a Flash file</a> from the archived support site for <span class="booktitle">Digital Media Tools</span> which contains the basic ball, motion-tweened (you will need Flash CS3 or higher). Read the exercise on the site beside the example, and if possible refer to the section in <span class="booktitle">Digital Media Tools</span>. Use any suitable photograph as a background. If you have a little more experience, think about the actual motion of a bouncing ball, and see whether the motion path you can create is satisfactory. An experienced animator will be able to make a ball bounce quite easily without use of a motion path or interpolation. Try it and see how you get on.</li>
+	<li>Start by importing a single still image – a photograph or a scanned painting or drawing – at a suitable size (beware of trying to work with very high resolution photos from multi-mega pixel cameras). Try out the effects of the parameters available under Trace Bitmap on this one image. When you progress to a video clip make sure that it is really short or you may find you have a large task on your hands, which Flash may not cope well with. Make sure you compare the "before" and "after" file sizes. When do you think that the trace bitmap command might be valuable, and why?</li>
+	<li>This is a simple practical exercise. Bear in mind that a title has to be legible, at least for part of the time.</li>
+	<li>This is a purely practical exercise. It will be easier if you have some experience of Flash than if you don't. The timing of a countdown sequence is usually important - make sure that the gaps between the start of consecutive numbers are exactly equal.</li>	 
+</ol>
+
+
+</div>
+</body>
+
+</html>

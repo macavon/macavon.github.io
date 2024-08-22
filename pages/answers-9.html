@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+
+<html class="no-js">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+	<meta name="description" content="Companion site for popular textbook Digital Multimedia, 3rd Edition, by Nigel Chapman and Jenny Chapman. Free teaching and learning resources." />
+
+  <link rel="stylesheet" media="screen" href="/assets/application.css" />
+
+<!--[if lte IE 7]>
+    <link rel="stylesheet" href="/ie67hax.css" type="text/css" media="screen" charset="utf-8">
+<![endif]-->
+
+  <script src="/assets/application.js"></script>
+
+<!--[if (gte IE 6)&(lte IE 8)]>
+	<script src="/assets/selectivizr.js"></script>
+<![endif]-->
+<!--[if lt IE 9]>
+	<script src="/assets/scripts.js"></script>
+<![endif]-->
+
+
+	<link rel="icon" href="/favicon.ico" type="image/x-icon" />
+	<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+	<title>Digital Multimedia -- Answers 9</title>
+</head>
+
+<body>
+
+  <nav>
+    <h1><a href="/">Digital Multimedia</a></h1>
+    <ul class="nav0"><li class="current"><span class="current">Navigation</span></li></ul>
+<ul class="navbar nav1"><li class="current"><a class="current" href="/pages/teaching-and-learning-resources">Teaching and Learning</a></li><li><a href="/pages/preview">Sample Material</a></li><li><a href="/pages/about-us">About Us</a></li></ul>
+<ul class="navbar nav2"><li><a href="/pages/teaching-and-learning-resources">Introduction</a></li><li><a href="/pages/lecture-slides-overview">Lecture Slides</a></li><li class="current"><a class="current" href="/pages/answers-overview">Answers</a></li><li><a href="/pages/examples-overview">Examples</a></li><li><a href="/pages/projects-introduction">Projects</a></li><li><a href="/pages/references-overview">References</a></li><li><a href="/pages/errata">Errata</a></li></ul>
+<ul class="navbar nav3"><li><a href="/pages/answers-overview">Introduction</a></li><li><a href="/pages/answers-1">1</a></li><li><a href="/pages/answers-2">2</a></li><li><a href="/pages/answers-3">3</a></li><li><a href="/pages/answers-4">4</a></li><li><a href="/pages/answers-5">5</a></li><li><a href="/pages/answers-6">6</a></li><li><a href="/pages/answers-7">7</a></li><li><a href="/pages/answers-8">8</a></li><li class="current simple-navigation-active-leaf"><span class="current">9</span></li><li><a href="/pages/answers-10">10</a></li><li><a href="/pages/answers-11">11</a></li><li><a href="/pages/answers-12">12</a></li><li><a href="/pages/answers-13">13</a></li><li><a href="/pages/answers-14">14</a></li><li><a href="/pages/answers-15">15</a></li><li><a href="/pages/answers-16">16</a></li></ul>
+
+  </nav>
+  <ul class="nav0"><li class="current simple-navigation-active-leaf"><span class="current">Quick Links</span><ul id="quicklynx"><li><span>Quick Links</span></li><li><a href="/pages/lecture-slides-overview">Lecture Slides</a></li><li><a href="/pages/answers-overview">Answers</a></li><li><a href="/pages/examples-overview">Examples</a></li><li><a href="/pages/preview">Sample Material</a></li></ul></li></ul>
+
+	<div id="main">
+  <noscript>
+    <p><em>JavaScript Is Required</em> You have disabled JavaScript for this site, or your browser does not support JavaScript. Some features of the site will not work correctly. We advise you to enable JavaScript.</p>
+  </noscript>
+
+	<h1>Answers to Exercises, Chapter 9</h1>
+<p>These are answers to the exercises in the 3rd edition of <span class="booktitle">Digital Multimedia</span> (published February 2009) only. Do not try to use them in conjunction with the 2nd edition.</p>
+                                                                                                               <h2>Test Questions</h2>
+<ol class="answerlist">
+	<li>The most visible uses of ASCII control characters occur in terminal emulators and command-line interfaces. For instance, on Unix systems, ^D is used to denote the end of input, ^C to interrupt a process, and so on. If you don't think that a command-line interface is part of a "modern computer system", one of the most commonly used control characters in graphical user interfaces is ESC, which is used among other things to cancel a dialogue box from the keyboard in Mac&nbsp;OS&nbsp;X and Windows. Another notable use of control characters is the use of NUL to mark the end of a string in programming languages. Of course, either or both of CR and LF are used to denote the end of lines and DEL is used to delete a character. TAB is used for several purposes, including moving the cursor between cells in a spreadsheet. The arrow keys on a keyboard, which are generally used to move the cursor, are sometimes mapped to control characters whose original function on teletypes is no longer relevant.
+		<p>One area in which control codes are not used, although you might think they are, is in key equivalents for menu commands. On Windows and Unix, menu commands can be activated by holding down CTL at the same time as some other key. (On Macs, CMD is used for this purpose, but CTL is used as a modifier by some applications, to extend the range of possible key combinations.) Originally the CTL key was provided to allow control characters to be typed (e.g. CTL-g sent BEL), but only a few letter keys have corresponding control characters. In a modern system, the program that receives the key press will receive the code for the letter together with some flags indicating which, if any, modifier keys were held down. The control character is not sent.</p></li>
+		<li>What are the alternatives? ASCII does not have a code for a multiplication operator, and most programming languages were devised before Unicode (which does) became available. A lower case letter x looks like a multiplication operator, and was often used for the purpose in typewritten manuscripts, but the same ASCII code would appear in the program source for the letter and the operator, which would mean that the compiler had to be able to distinguish between x used as a letter, for example in a name, and x used to denote multiplication. This is complicated, at best, and any disambiguating rules would be likely to confuse programmers. The same applies to the conventional mathematical convention of implicit multiplication (e.g. is xy a name or x times y?) although the designers of at least one early programming language (CPL) managed to devise a means of allowing implicit multiplication using fairly natural rules. The asterisk does not present these problems: it is present in ASCII and is not used in any other context that could be confused with its use for multiplication, and it looks a bit like the conventional multiplication sign. (It would be nice if modern languages allowed the use of the Unicode × sign as an alternative, though.)</li>
+		<li>8-bit character sets have not been adequate for computer applications since it became common for programs to manipulate written language. As we explain in the text, there are many languages which cannot be written down using ASCII characters and 8 bits is the minimum required for many languages based on alphabets consisting of letters for each sound. However, 8-bit character sets are completely inadequate for languages with ideographic alphabets, which may have many thousands of characters, and can only accommodate languages with closely related alphabets, such as all the Latin alphabets, or the Cyrillic alphabets. A single 8-bit character set does not permit languages with alphabets in different groups (such as Russian and French) to be used together (as they might need to be in a 19th century Russian novel). Many mathematical symbols are also left out of such a scheme. To accommodate all languages, character sets with more than 8 bits must be used.</li>
+		<li>The argument which naive commentators put forward is that, for the reasons given in the preceding answer, ISO&nbsp;10646 uses 32 bits for each character value, or Unicode uses 16, and for ASCII codes most of these bits will be zero, which is a complete waste of space. This is a misunderstanding of the way in which characters in these character sets are actually stored and transmitted. The 2 or 4 bytes of the complete value can be encoded in different ways. In particular, the UTF-8 UCS encoding packs each 16-bit Unicode value into a variable-length code comprising up to six bytes, in such a way that ASCII characters are always encoded in a single byte. In fact, the UTF-8 representation of an ASCII character is identical to the ASCII representation, so no space is wasted at all when storing documents whose textual content can be adequately represented in ASCII.</li>
+		<li>A character is an abstract entity, which always carries the same information. For example, the second letter of the word "example" is the character "x", regardless of what it actually looks like when written. A character is the component of written language from which words are built. A glyph is a graphical representation of a character. Any character may be written down in many ways: x, <em>x</em> and <code>x</code> are just three of the glyphs for the "x" character. Usually, the glyphs for a particular character look roughly the same (although there are, for example, two distinct glyphs for "r" in use), but they differ in details, just as one person's handwriting differs from another. In programming terms, a character is a value of some character data type, while a glyph is a small vector image displayed to represent the character.</li>
+		<li>PDF (or, at a pinch, SWF) allows fonts to be embedded in the document. Most other formats, including Word or InDesign documents and XHTML use only the fonts which are installed on the user's machine and will substitute others if the fonts originally specified are not available.</li>
+		<li>As you will see in Chapter&nbsp;10, these are the characteristics used to identify fonts in CSS. However, strictly speaking, they are not adequate: some fonts (e.g. Univers) come in different widths, including condensed and extended forms, so the width should also be specified. However, this is sometimes taken to be part of the family name. For example, "Arial Narrow" is a condensed version of "Arial".</li>
+		<li>x-height &lt; cap height &lt; body size &lt; leading (See Figure 9.15, p.&nbsp;347.)
+			<p class="tight">We assume an alphabet with upper- and lower-case forms, so that the cap height makes sense. We also assume that the text is set for reading, not for a graphic effect. Sometimes graphic designers set type with leading equal to or less than the body height so that lines are squashed together or overlap. (Usually, it's not a great idea.)</p></li>
+			<li>There are two main reasons why justification is not commonly used on Web pages. One is that Web browsers make a poor job of it, justifying each line in isolation, which leads to poor spacing and "rivers of white". There is no provision for hyphenation in Web browsers, which makes it hard to choose good line breaks. Secondly, justified text is normally used for extended passages that are intended to be read from beginning to end. Tradition holds that justification makes reading lines sequentially easier. On Web pages, much of the text is designed to be skimmed, or consists of short disjointed passages. In this case, little is gained by justification.</li>
+			<li>The structure of a document is independent of its appearance. A heading is a short piece of text describing or identifying what follows it, irrespective of whether it is distinguished by being set in large bold type, or centred and underlined, or whatever. The chosen styling for headings expresses their structural nature, but the same structure can be expressed in many different ways. By using visual markup, you tie the structure to one particular visual representation. This means that you cannot easily change the appearance of all your headings, and it means that the structure is only perceptible by people who can see and interpret the appearance created by your markup. If the structure is made explicit by structural markup, and the appearance of each structural element is specified independently, it is easy to make global changes to the appearance. Perhaps more importantly, the structure can now be "perceived" by computer programs, which can more easily analyze documents or translate them into a form that can be used by people who are unable to see. For example, a screen reading program would be able to "speak" a heading with special emphasis, or preceded by the word "heading". A program could create an overview of a document by extracting all the headings. These points are taken up in later chapters in the book.</li>
+</ol>
+<h2>Discussion Topics: Hints and Tips</h2>
+<ol class="answerlist">
+	<li>This is an accidentally duplicated discussion topic. See under <a href="/pages/answers-2">answers for Chapter 2</a>, Discussion Topic 2.</li>
+	<li>This distinction certainly is often made. It depends on a particular understanding of what "reading" is.</li>
+	<li>The Computer Modern family of fonts, devised for use with the TeX typesetting system, did include an upright italic font. This was mostly done to demonstrate the possibilities of the MetaFont program used to create the Computer Modern fonts. If you have TeX, you can try setting some text in upright italic to see how it works.</li>
+	<li>If the traditional distinction is not suitable, what distinctions could you make between the fonts appropriate for the different sorts of text displayed on a screen? For example, we don't normally use the same fonts for displaying code in an editor as for displaying a Web page.</li>
+	<li>In thinking about this question, don't necessarily assume that invisible markup is visual and tags are structural.</li>
+</ol>
+<h2>Practical Tasks: Hints and Tips</h2>
+<ol class="answerlist">
+	<li>We asked you to compare and contrast the way fonts and layout are used in news stories
+	and in advertisements in a printed newspaper in Chapter 2. Now do the same comparison on the online version of a paper and see whether fonts are used differently there. Note how the way in which advertisements use fonts influences the technology used to display them.</li>
+	<li>The more fonts you have installed, the more valuable this exercise will be. Note that many fonts are installed with Adobe Creative Suite applications, if you have them, but in a default installation of versions prior to CS4, they were installed in special locations, not in the normal system font directories.</li>
+	<li>You may very well argue that the existing Scrabble font is a "design classic", which cannot be improved. Nevertheless, try rethinking the design from scratch and see what you come up with. Think about the way in which the letters are used in Scrabble and how the game is played (often without a turntable), and make sure that the font you design is fit for the purpose. While doing this exercise, also explore font designs which are not suited for this purpose, and note why they do not work.</li>
+	<li>This probably sounds easy but by the end you may have an increased respect for the skills of graphic designers.</li>
+</ol>
+
+
+</div>
+</body>
+
+</html>

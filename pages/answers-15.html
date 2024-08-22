@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+
+<html class="no-js">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+	<meta name="description" content="Companion site for popular textbook Digital Multimedia, 3rd Edition, by Nigel Chapman and Jenny Chapman. Free teaching and learning resources." />
+
+  <link rel="stylesheet" media="screen" href="/assets/application.css" />
+
+<!--[if lte IE 7]>
+    <link rel="stylesheet" href="/ie67hax.css" type="text/css" media="screen" charset="utf-8">
+<![endif]-->
+
+  <script src="/assets/application.js"></script>
+
+<!--[if (gte IE 6)&(lte IE 8)]>
+	<script src="/assets/selectivizr.js"></script>
+<![endif]-->
+<!--[if lt IE 9]>
+	<script src="/assets/scripts.js"></script>
+<![endif]-->
+
+
+	<link rel="icon" href="/favicon.ico" type="image/x-icon" />
+	<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+	<title>Digital Multimedia -- Answers 15</title>
+</head>
+
+<body>
+
+  <nav>
+    <h1><a href="/">Digital Multimedia</a></h1>
+    <ul class="nav0"><li class="current"><span class="current">Navigation</span></li></ul>
+<ul class="navbar nav1"><li class="current"><a class="current" href="/pages/teaching-and-learning-resources">Teaching and Learning</a></li><li><a href="/pages/preview">Sample Material</a></li><li><a href="/pages/about-us">About Us</a></li></ul>
+<ul class="navbar nav2"><li><a href="/pages/teaching-and-learning-resources">Introduction</a></li><li><a href="/pages/lecture-slides-overview">Lecture Slides</a></li><li class="current"><a class="current" href="/pages/answers-overview">Answers</a></li><li><a href="/pages/examples-overview">Examples</a></li><li><a href="/pages/projects-introduction">Projects</a></li><li><a href="/pages/references-overview">References</a></li><li><a href="/pages/errata">Errata</a></li></ul>
+<ul class="navbar nav3"><li><a href="/pages/answers-overview">Introduction</a></li><li><a href="/pages/answers-1">1</a></li><li><a href="/pages/answers-2">2</a></li><li><a href="/pages/answers-3">3</a></li><li><a href="/pages/answers-4">4</a></li><li><a href="/pages/answers-5">5</a></li><li><a href="/pages/answers-6">6</a></li><li><a href="/pages/answers-7">7</a></li><li><a href="/pages/answers-8">8</a></li><li><a href="/pages/answers-9">9</a></li><li><a href="/pages/answers-10">10</a></li><li><a href="/pages/answers-11">11</a></li><li><a href="/pages/answers-12">12</a></li><li><a href="/pages/answers-13">13</a></li><li><a href="/pages/answers-14">14</a></li><li class="current simple-navigation-active-leaf"><span class="current">15</span></li><li><a href="/pages/answers-16">16</a></li></ul>
+
+  </nav>
+  <ul class="nav0"><li class="current simple-navigation-active-leaf"><span class="current">Quick Links</span><ul id="quicklynx"><li><span>Quick Links</span></li><li><a href="/pages/lecture-slides-overview">Lecture Slides</a></li><li><a href="/pages/answers-overview">Answers</a></li><li><a href="/pages/examples-overview">Examples</a></li><li><a href="/pages/preview">Sample Material</a></li></ul></li></ul>
+
+	<div id="main">
+  <noscript>
+    <p><em>JavaScript Is Required</em> You have disabled JavaScript for this site, or your browser does not support JavaScript. Some features of the site will not work correctly. We advise you to enable JavaScript.</p>
+  </noscript>
+
+	<h1>Answers to Exercises, Chapter 15</h1>
+<p>These are answers to the exercises in the 3rd edition of <span class="booktitle">Digital Multimedia</span> (published February 2009) only. Do not try to use them in conjunction with the 2nd edition.</p>
+                                                                                                               <h2>Test Questions</h2>
+<ol class="answerlist">
+  <li><p>We will only show the details for the first <code>book</code> element, as the others are essentially the same. Our choice of element and attribute names is arbitrary. As an extra exercise, modify the DTD for each of your revised versions.</p>
+    <p>(a) The following is not the only way to eliminate attributes. You could, for instance, have <code>sterling-price</code> and <code>euro-price</code> elements, and do away with the enclosing <code>price</code> element.</p>
+<pre class="codefragment">
+&lt;books&gt;
+  &lt;book&gt;
+    &lt;id&gt;cpp&lt;/id&gt;
+    &lt;title&gt;The Late Night Guide to C++&lt;/title&gt;
+    &lt;author&gt;Nigel Chapman&lt;/author&gt;
+    &lt;price&gt;
+      &lt;sterling&gt;29.95&lt;/sterling&gt;
+      &lt;euro&gt;29.95&lt;/euro&gt;
+    &lt;/price&gt;
+    &lt;publisher&gt;John Wiley &amp;amp; Sons&lt;/publisher&gt;
+    &lt;numberinstock&gt;
+      &lt;current&gt;1&lt;/current&gt;
+      &lt;ordered&gt;6&lt;/ordered&gt;
+    &lt;/numberinstock&gt;
+  &lt;/book&gt;
+ 2 more similar book elements
+&lt;/books&gt;
+</pre>
+    <p>(b) There are many ways of turning this fragment into one that only uses empty elements, including making all the content of the inner elements into attributes of the <code>book</code> element. We have done it in a way that preserves the structure of the original.</p>
+<pre class="codefragment">
+&lt;books&gt;
+  &lt;book id=&quot;cpp&quot;&gt;
+    &lt;title value=&quot;The Late Night Guide to C++&quot;/&gt;
+    &lt;author name=&quot;Nigel Chapman&quot;/&gt;
+    &lt;price sterling=&quot;29.95&quot; euro=&quot;50&quot;/&gt;
+    &lt;publisher company=&quot;John Wiley &amp;amp; Sons&quot;/&gt;
+    &lt;numberinstock current=&quot;1&quot; ordered=&quot;6&quot;/&gt;
+  &lt;/book&gt;
+ 2 more similar book elements
+&lt;/books&gt;
+</pre>
+<p>
+The version that stores all the data in attributes is more compact and arguably easier to read. The long-winded version that eliminates attributes would be easier to process, because of the simpler syntax, and it expresses the data's structure more explicitly. The original version printed in the book is a compromise – but not a very successful one – which uses a mixture of attributes and elements. This makes it more complex to understand and there is no clear rationale for when each is used. (This is because in the book it is intended as an example that shows both, rather than as a practical document.) We will make some more remarks on this subject under Discussion Topic&nbsp;2. 
+</p>
+    </li>
+    <li>The <code>getElementById</code> method cannot be used successfully with every XML document. It depends on elements having ids. As it is defined in the DOM Level 2, <code>getElementById</code> can retrieve an element which has an attribute of type <code>ID</code> whose value matches the argument passed to the method. The attribute's name doesn't have to be <code>id</code> (and if it is <code>id</code>, its type must be <code>ID</code>). Nevertheless, not every XML-based language uses <code>ID</code> attributes. Furthermore, as the standard admits, a program processing the document may not have access to the DTD or schema, so it may not be able to recognize the <code>ID</code> even if there is one, in which case the method will not work. In general, it is only advisable to use <code>getElementById</code> with XHTML and other XML-based markup languages whose elements have an attribute of type <code>ID</code> called <code>id</code>.</li>
+    <li>An XML document is valid if it is well-formed and, in the words of the <a href="http://www.w3.org/TR/2008/REC-xml-20081126/#dt-valid" title="Extensible Markup Language (XML) 1.0 (Fifth Edition)">XML standard</a>, "it has an associated document type declaration and if the document complies with the constraints expressed in it". It follows that not every well-formed document is valid: a document might be well-formed but violate some of the constraints expressed in an associated document type declaration, or it may be well-formed and not have an associated document type declaration. However, a document cannot be valid unless it is well-formed, so every valid document is well-formed.</li>
+    <li><p>The first two lines (as the document is laid out in the question) comprise the document type declaration, which declares the root element to be <code>html</code> then provides the public identifier and the URL (system identifier) for the XHTML Strict DTD. These can, in principle, be used by a program to retrieve the DTD and validate the document. The next line is the start tag for the <code>html</code> element, which introduces the document's content. It sets the default namespace to the XHTML namespace, by assigning a URL to the <code>xmlns</code> attribute, so that XHTML elements do not need a namespace prefix.</p>
+      <p>You should not expect to find anything after the <code>&lt;/html&gt;</code> closing tag. It should be the last thing in the document.</p>
+    <p>An XML declaration may precede the document type declaration but rarely does in practice, because it forces IE6 into quirks mode. Other browsers that don't understand XML may simply display the XML declaration, so it is best omitted to ensure that the document is displayed correctly by the largest number of browsers.</p>
+</li>
+<li>In addition to the elements and attributes, the DTD is where character references, such as <code>&amp;amp;</code> that can be used in the language are defined. (The XML language definition also permits various other sorts of "entity" to be defined and used within a DTD, but they do not generally have any impact on the users of the language.)</li>
+<li>Namespace prefixes are not just used for convenience, although using full URLs would be unwieldy. XML's rules defining what constitutes a name that can be used for elements are what makes it necessary to use a namespace prefix that is not the same as the namespace URL. These rules do not permit some characters that can appear in URLs, so names constructed from full namespace URLs would not necessarily be legal XML element (or attribute) names.</li>
+<li>Namespace prefixes are needed on element names when different XML-based languages are combined, to identify the language to which each element belongs and prevent name clashes. In the case of attributes, there is no need for this: an attribute appears within the start tag of an element, so you know which element it "belongs to" and hence which language it is part of. Namespaces are nevertheless sometimes used with attributes, but in this case their purpose is to identify a collection of related attributes, which should have the same meaning in any language that uses them. This helps people reading the document to understand what the attributes in some namespace mean. It also helps programs processing documents to identify attributes that must be interpreted in some particular way. For instance, the XLink proposal defined a collection of attributes that function as link sources and destinations. These are all placed in the XLink namespace. Any XML-based language that needs to provide links could declare this namespace and then use the attributes with an appropriate prefix (often <code>xlink:</code>). Any program that read a document that used the XLink attributes in this way would know that elements with these attributes were functioning as links, and would be able to interpret them appropriately. For instance, assuming the conventional prefix has been declared, the <code>xlink:href</code> attribute will point to the destination of a simple link when it appears in an <code>a</code> element in SVG, or in almost any element in MathML. The practice is not popular, though, and seems to be dying out. Instead, namespaces are being used to classify the <em>values</em> of attributes, when these lie within a limited set, such as the values of the Dublin Core fields that can be used as the values of the <code>property</code> attribute in RDFa. The Dublin Core namespace holds the values of the fields that are defined by the standard, and documents that declare this namespace can use the fields' names with a namespace prefix, so that they can be identified by any program that processes the document.</li>
+<li>
+<p>We have used a hex colour value for the fill, but you can just use the value <code>"red"</code> if you prefer. We have not used all the shortcuts we could have done in the <code>path</code> elements, but we have omitted some superfluous commands, as allowed by SVG.</p>
+<p>(a)</p>
+<pre class="codefragment">
+&lt;rect x=&quot;150&quot; y=&quot;200&quot; fill=&quot;#FF0000&quot;
+  width=&quot;300&quot; height=&quot;400&quot;/&gt;
+</pre>
+<p>(b)</p>
+<pre class="codefragment">
+&lt;polygon fill=&quot;#FF0000&quot;
+  points=&quot;150,200 450,200 450,600 150,600&quot;/&gt;
+</pre>
+<p>(c) You don't actually need the final point for the polyline, the user agent will fill the shape anyway, but it does no harm.</p>
+<pre class="codefragment">
+&lt;polyline fill=&quot;#FF0000&quot;
+  points=&quot;150,200 450,200 450,600 150,600 150,200&quot;/&gt;
+</pre>
+<p>(d)</p>
+<pre class="codefragment">
+&lt;path fill=&quot;#FF0000&quot;
+  d=&quot;M150 200 L450 200 450 600 150 600 150 200&quot;/&gt;
+</pre>
+<p>(e)</p>
+<pre class="codefragment">
+&lt;path fill=&quot;#FF0000&quot;
+  d=&quot;M150 200 l300 0 0 400 -300 0 0 -400&quot;/&gt;
+</pre>
+<p>(f)</p>
+<pre class="codefragment">
+&lt;path fill=&quot;#FF0000&quot;
+  d=&quot;M150 200 h300 v400 h-300 v-400&quot;/&gt;
+</pre>
+</li>
+<li><p>See the <a href="/pages/errata">errata page</a> for clarification of this question if it puzzles you.</p>
+<p>We will only consider uniform scaling, as scaling the width and height by separate factors introduces a little extra complication without adding any understanding. A <code>scale</code> transformation that multiplies the size by a factor σ will multiply the <em>x</em> and <em>y</em> coordinates of the top left corner by σ too, so the rectangle will move to (<em>x</em>′,&nbsp;<em>y</em>′)=(σ<em>x</em>,&nbsp;σ<em>y</em>), so we need to add a <code>translate</code> transformation to move it back, by a distance ((1-σ)<em>x</em>, (1-σ)<em>y</em>). When a transformation is applied to an object, it uses the current value of its coordinates, so the <code>translate</code> transformation has to be expressed in terms of the new coordinate system of the scaled rectangle. That means, instead of moving by (-(1-σ)<em>x</em>,&nbsp;-(1-σ)<em>y</em>), we must move by (-(1-σ)/σ<em>x</em>,&nbsp;-(1-σ)/σ<em>y</em>) to compensate for the scaling.</p>
+  <p>For the specific case when <em>x</em>=150, <em>y</em>=200 and σ=1.5, -(1-σ)/σ is equal to -1/3, so we can use the following SVG element to produce the scaled rectangle in place:</p>
+<pre class="codefragment">&lt;rect x=&quot;150&quot; y=&quot;200&quot; fill=&quot;#FF0000&quot;
+    width=&quot;300&quot; height=&quot;400&quot;
+    transform=&quot;scale(1.5) translate(-50,-66.67)&quot;/&gt;
+</pre>
+<p>The preceding discussion shows that, to write a general transform to scale rectangles in place, you would need to be able to pass the current coordinates and scaling factor as parameters to the <code>translate</code> transformation. You can't do this in SVG, because the values given to a transformation must be numbers (numeric literals). SVG isn't a programming language. The necessary computation must be done by the program (or person) generating the SVG code.</p>
+  </li>
+</ol>
+<h2>Discussion Topics: Hints and Tips</h2>
+<ol class="answerlist">
+	<li>The HTML5 specification and much of the commentary on it implicitly convey a coherent criticism of XML-based markup languages for the Web. Much of the practical argument is directed against XML's error handling, which you may or may not find too strict for Web use. The arguments against XML are not just concerned with its use as the basis of markup languages, though. Increasingly, it is being supplanted as a data representation too. Look at YAML and JSON, for example. The arguments in this area might serve as a good starting point for the discussion if you are a programmer.</li>
+	<li><p>The answer to this question depends, of course, on what you mean by "necessary". One way of looking at it is to consider what happens to a document if you strip out all the markup. The attributes, if any, will disappear along with the tags, and what will be left could be considered the document's content. Does a document need anything else? For instance, looking at the books example, is the id for a book part of the content, or is it metadata?</p>
+		<p>You may remark that the answer to 1(b) certainly does not demonstrate that elements can always be empty. Attribute values cannot have any structure, whereas the content of an element can contain other elements. Attribute values and element content are certainly not interchangeable.</p></li>
+	<li>Some programs that generate XHTML automatically from page layouts do so by mapping every paragraph – whether it is a simple paragraph of text, an item in a list, or a header – to a <code>p</code> element with a <code>class</code> attribute whose value is the paragraph's style, so evidently some people believe that <code>class</code> attributes can be used to define a document's structure. This isn't what the HTML standard says, though. However, "semantic markup" may not be an entirely simple concept. Does using a <code>ul</code> element for a navbar really express the semantics of navbars, or is it just a convention? What if you don't know what <code>ul</code> stands for, or don't speak English?</li>
+	<li>Since no known Web browser works in the way described, there must be some problem with the approach. Or are there other reasons why browsers do not use DTDs?</li>
+	<li>Consider other metalanguages, such as the extended BNF notation used to define the syntax of programming languages.</li>
+	<li>"Don't use the same name in different languages" may be an answer, but how do you avoid doing so? Is it really difficult, or do the problems that namespaces are supposed to prevent never actually crop up?</li>
+	<li> Consider another way of looking at this question: if XHTML were abolished and SVG was used to create Web pages, in what ways would the Web be different? What would be the impact on accessibility or search engines, for example?</li>
+</ol>
+<h2>Practical Tasks: Hints and Tips</h2>
+<ol class="answerlist">
+	<li>There should be adequate guidance in the question for you to do this task.</li>
+	<li><p>At the risk of being obvious, we advise you to sketch the smiley face on squared paper before writing the SVG code.</p>
+		<p>In the book, we only describe SVG's Bézier paths, so you will find it easiest to use a Bézier curve as the smile on your face. If you think that the smile must be a circular arc, you will have to look up the <a href="http://www.w3.org/TR/SVG11/paths.html#PathDataEllipticalArcCommands" title="Paths - SVG 1.1 - 20030114">elliptical arc curve commands</a>, which can be used in paths, in the SVG specification.</p></li>
+</ol>
+
+
+</div>
+</body>
+
+</html>

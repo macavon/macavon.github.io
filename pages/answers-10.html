@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+
+<html class="no-js">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+	<meta name="description" content="Companion site for popular textbook Digital Multimedia, 3rd Edition, by Nigel Chapman and Jenny Chapman. Free teaching and learning resources." />
+
+  <link rel="stylesheet" media="screen" href="/assets/application.css" />
+
+<!--[if lte IE 7]>
+    <link rel="stylesheet" href="/ie67hax.css" type="text/css" media="screen" charset="utf-8">
+<![endif]-->
+
+  <script src="/assets/application.js"></script>
+
+<!--[if (gte IE 6)&(lte IE 8)]>
+	<script src="/assets/selectivizr.js"></script>
+<![endif]-->
+<!--[if lt IE 9]>
+	<script src="/assets/scripts.js"></script>
+<![endif]-->
+
+
+	<link rel="icon" href="/favicon.ico" type="image/x-icon" />
+	<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+	<title>Digital Multimedia -- Answers 10</title>
+</head>
+
+<body>
+
+  <nav>
+    <h1><a href="/">Digital Multimedia</a></h1>
+    <ul class="nav0"><li class="current"><span class="current">Navigation</span></li></ul>
+<ul class="navbar nav1"><li class="current"><a class="current" href="/pages/teaching-and-learning-resources">Teaching and Learning</a></li><li><a href="/pages/preview">Sample Material</a></li><li><a href="/pages/about-us">About Us</a></li></ul>
+<ul class="navbar nav2"><li><a href="/pages/teaching-and-learning-resources">Introduction</a></li><li><a href="/pages/lecture-slides-overview">Lecture Slides</a></li><li class="current"><a class="current" href="/pages/answers-overview">Answers</a></li><li><a href="/pages/examples-overview">Examples</a></li><li><a href="/pages/projects-introduction">Projects</a></li><li><a href="/pages/references-overview">References</a></li><li><a href="/pages/errata">Errata</a></li></ul>
+<ul class="navbar nav3"><li><a href="/pages/answers-overview">Introduction</a></li><li><a href="/pages/answers-1">1</a></li><li><a href="/pages/answers-2">2</a></li><li><a href="/pages/answers-3">3</a></li><li><a href="/pages/answers-4">4</a></li><li><a href="/pages/answers-5">5</a></li><li><a href="/pages/answers-6">6</a></li><li><a href="/pages/answers-7">7</a></li><li><a href="/pages/answers-8">8</a></li><li><a href="/pages/answers-9">9</a></li><li class="current simple-navigation-active-leaf"><span class="current">10</span></li><li><a href="/pages/answers-11">11</a></li><li><a href="/pages/answers-12">12</a></li><li><a href="/pages/answers-13">13</a></li><li><a href="/pages/answers-14">14</a></li><li><a href="/pages/answers-15">15</a></li><li><a href="/pages/answers-16">16</a></li></ul>
+
+  </nav>
+  <ul class="nav0"><li class="current simple-navigation-active-leaf"><span class="current">Quick Links</span><ul id="quicklynx"><li><span>Quick Links</span></li><li><a href="/pages/lecture-slides-overview">Lecture Slides</a></li><li><a href="/pages/answers-overview">Answers</a></li><li><a href="/pages/examples-overview">Examples</a></li><li><a href="/pages/preview">Sample Material</a></li></ul></li></ul>
+
+	<div id="main">
+  <noscript>
+    <p><em>JavaScript Is Required</em> You have disabled JavaScript for this site, or your browser does not support JavaScript. Some features of the site will not work correctly. We advise you to enable JavaScript.</p>
+  </noscript>
+
+	<h1>Answers to Exercises, Chapter 10</h1>
+<p>These are answers to the exercises in the 3rd edition of <span class="booktitle">Digital Multimedia</span> (published February 2009) only. Do not try to use them in conjunction with the 2nd edition.</p>
+                                                                                                               <h2>Test Questions</h2>
+<ol class="answerlist">
+	<li>An element is part of the document which forms a logical sub-division. A tag is a syntactical marker which signifies the start or end of an element. Thus <code>&lt;li&gt;item&lt;/li&gt;</code> is an element, <code>&lt;li&gt;</code> and <code>&lt;/li&gt;</code> are tags that show where it begins and ends and what its name is. Putting it another way, elements are sub-divisions of the document's structure, tags are the symbols that mark up the structure.</li>
+	<li>
+	<ul>
+		<li>The closing <code>&lt;/p&gt;</code> tag is missing from the end of the first paragraph. In XHTML, unlike HTML, elements must be explicitly closed.</li>
+		<li>The <code>&amp;</code> character must always be encoded as a character entity reference and cannot be used as itself the way it is in <code>XY&amp;Z</code>.</li>
+		<li>The <code>em</code> element begins inside the first paragraph and ends in the second, but elements in XHTML must be properly nested.</li>
+		<li>Attribute values must be enclosed in double quotes.</li>
+		<li>Not necessarily an error, but probably: If the quotes are inserted, the opening tag for the span would read <code>&lt;span class=&quot;product name&quot;&gt;</code>. This would put the span into the classes <code>product</code> and <code>name</code>, whereas it is probable that it was intended to belong to a single class, so the space should be omitted: <code>&lt;span class=productname&gt;</code></li>
+		<li>The closing tag on the <code>span</code> element is malformed, it should be <code>&lt;/span&gt;</code>.</li>
+		<li>There should be no space between the <code>/</code> and <code>p</code> in the final closing tag, which should just be <code>&lt;/p&gt;</code>.</li>
+	</ul>
+		It's instructive, but perhaps not as helpful as you might hope, to insert this snippet in an XHTML document with a proper DTD and so on and run it through the W3C XHTML validator service.
+		</li>
+		<li>You need to turn off the italicization as well as setting the font weight, otherwise you end up with boldface italics:
+			<pre class="codefragment">
+em {
+  font-weight: bold;
+  font-style: normal;
+}
+			</pre>
+			</li>
+			<li>There are lots of ways to do this one. For example,
+				<pre class="codefragment">
+body {
+  line-height: 1.5em;
+}
+				</pre>
+			</li>
+			<li>
+				Assume we have set the left margin of the body to a suitably large value:
+				<pre class="codefragment">
+body {
+  margin-left: 200px;
+}
+				</pre>
+			 The actual value doesn't matter and you can use relative units if you like, as long as it matches the negative margin width used in the rule for <code>h1</code>:
+			<pre class="codefragment">
+h1 {
+  font-weight: bold;
+  font-size: 1.2em;
+  float: left;
+  margin-left: -200px;
+  margin-top: 0;
+}
+			</pre>
+			The font attributes are only illustrative. The <code>margin-top</code> has to be set to zero explicitly because most browsers' default style sheets put some space above level&nbsp;1 headings.
+			</li>
+			<li>Trivially, a resource can be identified by different <em>relative</em> URLs, depending on where in the document hierarchy each URL appears. Domain names can be "forwarded" by various means so that pages on a site may be referred to by different URLs. For instance, http://www.macavon.co.uk and http://www.macavon.com will both take you to the same Web site. Finally, within a site different URLs can be made to refer to the same resource. This usually entails some server configuration or scripting.
+				<p>In contrast, at any instant, a given URL can only refer to a single resource,  by definition. (But the resource may change over time.)</p></li>
+				<li>HTML (including XHTML, of course) separates markup from appearance. In practical terms, this means that text can reflow according to the font size and window dimensions, and its physical position on the screen can be controlled by a style sheet, which may sometimes be disabled. What this means is that an arbitrary rectangular area cannot be uniquely and reliably associated with any particular part of the document's content. It is hard to see how links with no association to the content could be used meaningfully in hypertext. (Image maps could be considered a counter-example, but they are a special case, because they can only be defined within an image so they don't provide a mechanism for linking from arbitrary parts of a document.)</li>
+				<li>Internet Explorer's implementation of <code>object</code> treats the ActiveX control as the embedded object, not the media object itself. The <code>type</code> attribute identifies the media type of the object, but the ActiveX control does not need to know this: each control only displays one type of object, so it is the identity of the ActiveX control that needs to be specified in order to ensure that it can deal with the object. This is done using the <code>clsid</code> attribute, as described in the text.</li>
+</ol>
+<h2>Discussion Topics: Hints and Tips</h2>
+<ol class="answerlist">
+	<li>The first part of Appendix&nbsp;A of <a href="http://webdesignbook.org/" title="Web Design -- A Complete Introduction"><span class="booktitle">Web Design: A Complete Introduction</span></a> consists of a brief description of the capabilities of some programs for creating Web pages, which may serve as a starting point for this discussion.</li>
+	<li>If you claim that this is practical, you will have to provide at least an outline of how it could be achieved. If you don't think it would be useful, can you say when, if ever, it would be useful to add links to definitions of terms occurring on a Web page?</li>
+	<li>It isn't possible to provide a hint to this question without giving away the answer. The <code>nohref</code> attribute is not included in the <a href="http://www.w3.org/html/wg/html5/" title="HTML 5">current draft HTML5 specification</a>. Does this make it impossible to achieve whatever it is you would use <code>nohref</code> to achieve?</li>
+</ol>
+<h2>Practical Tasks: Hints and Tips</h2>
+<ol class="answerlist">
+	<li>You should start by writing a rule with * as its selector to set all the font characteristics and spacing for every element to the same values, then write individual rules for each element that sets their colours. You'll probably want to add some rules for spacing and set the document width to a reasonable value.</li>
+	<li>If you are experienced at scripting, you could try writing a script that performed this transformation, or some of it, automatically for you.</li>
+	<li>This should be a simple task. You are only trying to demonstrate that the appearance and structure have been successfully separated, so in that sense it doesn't matter what you make the page look like, but it is always good practice to try to create something that looks good.</li>
+	<li>As video is used more and more on the Web, finding good ways to incorporate clips into Web pages is becoming more important, but integrating time-based media into the framework of a static page remains a difficult task to achieve well.</li>
+</ol>
+
+
+</div>
+</body>
+
+</html>

@@ -1,0 +1,742 @@
+absolutely positioned (AP)
+Term used in Dreamweaver to describe <CrossReference>HTML</CrossReference> elements (often div elements) whose position property is set to absolute by a CSS rule.
+
+action
+The specification of the operation to be performed in response to an event when attaching a <CrossReference>behaviour</CrossReference> to some element of a document in Dreamweaver.
+
+adjustment layer
+In Photoshop, an extension of the <CrossReference>layer</CrossReference> metaphor that provides a way of applying adjustments to an image non-destructively. Adjustment layers alter the appearance of layers beneath them, without permanently altering the <CrossReference>pixels</CrossReference> of the image, and can hidden to turned the adjusmtent off temporarily.
+
+Adobe Every-line Composer
+A paragraph layout algorithm, available in Photoshop and Illustrator, which determines line breaks on the basis of an entire paragraph at a time. Usually produces better results than the <CrossReference>Adobe Single-Line Composer</CrossReference>.
+
+Adobe Integrated Runtime
+See <CrossReference>AIR</CrossReference>.
+
+Adobe Single-Line Composer
+A paragraph layout algorithm, available in Photoshop and Illustrator, which determines line breaks one line  at a time. Usually produces inferior results compared with the <CrossReference>Adobe Every-Line Composer</CrossReference>.
+
+AIR
+Adobe Integrated Runtime. An environment which allows applications built from a mixture of Flash and Web-standard content to be run on the desktop.
+
+algorithmic
+Based on the use of a clearly-defined and finitely realizable procedure. In the context of vector graphics, the term may be used to refer to methods of creating shapes by entering numerical values or setting them by simple gestures, in contrast to freehand drawing techniques.
+
+alpha
+In Flash, a synonym for transparency.
+
+anchor points
+In <CrossReference>vector graphics</CrossReference>, the points where segments of a <CrossReference>path</CrossReference> meet.
+
+angular gradient
+A type of <CrossReference>gradient</CrossReference> only available in Photoshop, in which the blend sweeps round a circle.
+
+appearance
+The aspect of a Web page's formatting concerned with how it looks, as distinct from its <CrossReference>structure</CrossReference>.
+
+appearance attributes
+In Illustrator, the aspects of an object's appearance, including <CrossReference>stroke</CrossReference>, <CrossReference>fill</CrossReference> and <CrossReference>transparency</CrossReference>, which modify the way it is displayed but do not affect its shape. Appearance attributes can be viewed and manipulated in Illustrator's Appearance panel.
+
+arc segment tool
+A tool in Illustrator for drawing quarter-ellipses.
+
+art brushes
+Brush tools in Illustrator which stretch an object along the line made by the brush. Art brushes based on suitable objects can produce marks which resemble those made by real paint brushes.
+
+artboard
+In Illustrator, the notional area of an image. Objects drawn on the artboard will normally appear when the document is printed or exported to another format.
+
+Bezier path
+In <CrossReference>vector graphics</CrossReference>, a <CrossReference>path</CrossReference> made up of segments that are <CrossReference>Bezier curves</CrossReference>.
+
+background eraser
+One of Photoshop's brush tools, which can be used to erase uniform backgrounds.
+
+base colour
+A colour that is chosen for use as the basis of a <CrossReference>colour group</CrossReference>, generated according to <CrossReference>colour harmony</CrossReference> rules in Illustrator's Color Guide panel.
+
+behaviour
+A pre-built parameterized script, which you can attach to elements of a page in Dreamweaver. Each behaviour performs some <CrossReference>action</CrossReference>, such as replacing one image with another, in response to an <CrossReference>event</CrossReference>.
+
+bitmap fill
+A texture created from a <CrossReference>bitmapped image</CrossReference> and used as a <CrossReference>fill</CrossReference> in Flash.
+
+blending mode
+A method for combining layers in Photoshop or objects in Illustrator with layers or objects below them. The blending mode is essentially an algorithm that determines how the colour values of pixels or objects are combined.
+
+bounding box
+In vector graphics, the smallest rectangle that can enclose an object or a collection of objects.  
+
+brightness
+One of the three components used to specify a colour in the <CrossReference>HSB</CrossReference> <CrossReference>colour model</CrossReference>. Reducing the brightness of a colour produces a darker tone of the same colour.
+
+brush tool
+Any tool in Photoshop, Illustrator or Flash that behaves like a paintbrush, making marks (or removing them) as it is dragged in the document. Brush tools can be customized to produce different sorts of mark.
+
+C-curve
+A <CrossReference>Bezier curve</CrossReference> with a single bulging segment, like a capital letter C.
+
+calligraphic brush
+Brush tools in Illustrator which produce marks that look as if they have been applied with some sort of calligraphic pen or an italic nib.
+
+camera raw
+A general term to describe any of the file formats used by high-end digital cameras for recording the unprocessed data captured by the camera's sensors.
+
+Camera Raw
+A plug-in included with Photoshop and After Effects for working with camera raw data.
+
+cancel button
+A button bearing the 'Do Not' symbol (consisting of a circle with a diagonal line through it) that appears on the Options bar or Control panel in Photoshop or Illustrator.  It is used to cancel certain operations, such as free transformation. See also, <CrossReference>commit button</CrossReference>.
+
+centred
+A style of aligning paragraphs, with both margins ragged and the text arranged symmetrically about the centre line. 
+
+checkbox
+A user interface element that may be checked or unchecked in order to select or deselect an option. An input element in HTML may be designated a checkbox in Dreamweaver.
+
+class
+In HTML, a subset of all the elements of a particular type, whose class attribute has a particular value.
+
+clipping mask
+A vector shape used like a <CrossReference>mask</CrossReference> to allow only certain parts of objects below it to show through.
+
+cloaking
+Excluding certain file types or folders from <CrossReference>sychronization</CrossReference> operations in Dreamweaver.
+
+CMYK colour
+A <CrossReference>colour model</CrossReference> used extensively in the printing industry, based on the four process colours used in most colour printing: cyan, magenta, yellow and black.
+
+code view
+One of Dreamweaver's ways of displaying a document, in which the actual marked-up source document is displayed.
+
+collapsed
+The state of a <CrossReference>dock</CrossReference> in CS3 programs (except Dreamweaver), in which it has been reduced to a minimal form to save screen space.
+
+collection
+In Bridge, a saved set of search results.
+
+colour group
+A collection of <CrossReference>swatches</CrossReference> which may be manipulated as a group in the Swatches panel in Illustrator.
+
+colour harmony
+A theory of colour based on relationships on the <CrossReference>colour wheel</CrossReference>, used to generate colour schemes according to rules. In Illustrator, <CrossReference>colour groups</CrossReference> may be generated from a <CrossReference>base colour</CrossReference> using colour harmony rules in the Color Guide panel.
+
+colour mode
+A scheme for representing colours numerically, usually using three or more values. Examples include RGB colour and CMYK colour.
+
+colour palette
+An image's colour palette is the set of all colours used in the image.
+
+colour picker
+A dialogue for choosing colours, which presents the colours that can be represented in a specific colour model in a graphical form.
+
+colour ramp
+An area at the bottom of the Color panel in Photoshop and Illustrator, filled with a spectrum of colours, from which a colour can be selected by clicking.
+
+colour table
+A data structure used to map small colour index values to full 24-bit <CrossReference>colour values</CrossReference>.
+
+colour wheel
+A circular arrangement of colours, with primaries equally spaced around the perimeter and secondaries in between them such that each one is opposite its complementary primary. Used as the basis for rules of <CrossReference>colour harmony</CrossReference>.
+
+commit button
+A button bearing a tick symbol that appears on the Options bar or Control panel in Photoshop or Illustrator.  It is used to confirm certain operations, such as free transformation. See also, <CrossReference>cancel button</CrossReference>.
+
+compact mode
+In Bridge, an option for displaying the browser window in a compact form so that everything except the thumbnails and basic navigation controls is hidden.
+
+complementary colour
+The colour obtained by subtracting light of a specified colour from white light.
+
+context menu
+A menu which pops up when the right button on the mouse is clicked, providing immediate access to commands which are relevant to the object or window being clicked on.
+
+corner point
+An <CrossReference>anchor point</CrossReference> at which the <CrossReference>path</CrossReference> makes an abrupt change of direction.
+
+crop tool
+In Photoshop, a tool that combines selection with a cropping operation; it allows you to drag out and then adjust a cropping rectangle.
+
+current frame indicator
+In Flash, the red box in the <CrossReference>timeline</CrossReference> above the frame numbers that indicates the current frame.
+
+custom easing
+Changing the rate of change of <CrossReference>tweened</CrossReference> properties in Flash by manually adjusting the easing curve showing the way the property being tweened varies with time.
+
+definition list
+An <CrossReference>HTML</CrossReference> element for marking up lists, such as glossaries, where each item is associated with a term.
+
+deselect
+To end any current selection. In Illustrator, for instance, you can deselect any currently selected object or objects by cmd-clicking an empty area of the document.
+
+design view
+One of Dreamweaver's ways of displaying a document, in which the document is displayed approximately as it would be in a Web browser.
+
+Device Central
+A program, included with Adobe’s Creative Suites, that can be used to preview the appearance of images and time-based media on mobile devices.
+
+diamond gradient
+A type of <CrossReference>gradient</CrossReference> only available in Photoshop, in which the blend expands in a diamond shape.
+
+DICOM
+A standard used in hospitals, which provides a set of <CrossReference>metadata</CrossReference> for describing medical images. DICOM metadata can be attached to images in Bridge.
+
+direct colour
+The technique of storing full 24-bit <CrossReference>colour values</CrossReference> for each pixel of an image. See also <CrossReference>indexed colour</CrossReference>.
+
+divitis
+A term used facetiously to describe the excessive use of div elements in <CrossReference>HTML</CrossReference> documents, which can lead to bloated pages that take longer to load than they need to, and which can become hard to maintain.
+
+dock
+A set of <CrossReference>panel groups</CrossReference> that are arranged vertically.
+
+document profile
+In Illustrator, a collection of settings for colour mode and document sizes appropriate for a certain type of document, which may be selected in the New Document dialogue when creating documents of that type.
+
+drawing mode
+A setting in Flash which controls how vector objects interact with each other when they are drawn on the stage and how they can be selected. See <CrossReference>merge drawing</CrossReference> and <CrossReference>object drawing</CrossReference>.
+
+dynamic text
+In Flash, text that is created by scripts while the movie runs.
+
+dynamic element
+An element of a Web page that responds to events such as mouse clicks and rollovers, by changing in some way.
+
+editable region
+A part of a Dreamweaver <CrossReference>template</CrossReference> which can be changed in every document based on that template.
+
+effect gallery
+Illustrator's equivalent of Photoshop's <CrossReference>filter gallery</CrossReference>.
+
+effects
+Filters that are applied in Illustrator to modify the appearance of objects without permanently changing the objects themselves.
+
+elastic column
+In a multi-column Web page layout, a column whose width scales with the font size in the browser, usually because it is specified in <CrossReference>em</CrossReference> units. See also <CrossReference>liquid column</CrossReference> and <CrossReference>fixed column</CrossReference>.
+
+em
+A unit of measurement in typography. One em is equal to the size of the font, so in a 16 pt font, 1 em equals 16 pt. 
+
+embedding
+Including a file, usually of a different type, in another document (e.g. a video clip in a Flash movie or a bitmapped image in an Illustrator document) by copying its contents. See also <CrossReference>link</CrossReference>.
+
+eraser
+A tool for removing parts of an image by dragging over areas to be erased.
+
+event sound
+A sound added to a Flash movie that starts to play when the keyframe at which it was added is displayed, and continues to play until the end of its duration or for a specified number of repetitions, irrespective of how the playback of the movie proceeds.
+
+Exif
+A standard for image <CrossReference>metadata</CrossReference>, which records details about how a digital photograph was taken: exposure time, focal length and so on, together with some information about when it was taken.
+
+extruding
+A method of generating 3D objects from 2D shapes, by extending a plane surface into the third dimension by sweeping it along a path. The simplest form of extruding, as provided in Illustrator, extends along a straight line perpendicular to the x,y plane, so the object grows outwards, as though it had been squeezed out of a shaped nozzle.
+
+eyedropper
+A tool for sampling properties, such as colour, from an object or part of an image, usually in order to transfer it to another. The precise operation of the eyedropper and the properties it can sample vary from program to program.
+
+fastening points
+The points that fix a boundary defined by clicking with the <CrossReference>magnetic lasso</CrossReference> in Photoshop.
+
+filter gallery
+A dialogue in Photoshop for choosing and applying filters, previewing their effects and altering their parameters. The same functions are provided by Illustrator's <CrossReference>effect gallery</CrossReference>.
+
+filter
+A method of systematically altering the values of <CrossReference>pixels</CrossReference> in an image to produce special effects.
+
+fixed column
+In a multi-column Web page layout, a column whose width is a fixed size and does not scale with the font size in the browser or with the window's width, because it is specified in absolute units. See also <CrossReference>elastic column</CrossReference> and <CrossReference>liquid column</CrossReference>.
+
+Flash document
+The file in which various media elements, which may include animation, still images, video and sound are assembled and organized in Flash, from which a <CrossReference>Flash movie</CrossReference> is usually generated.
+
+Flash Lite
+A restricted version of the Flash Player, used on mobile devices such as phones and PDAs.
+
+Flash Media Server
+A proprietory program for delivering Flash Video (<CrossReference>FLV</CrossReference>) as a stream over a network.
+
+Flash movie
+The finished file generated from a <CrossReference>Flash document</CrossReference>, which can be embedded in a Web page or played by the stand-alone player. (Although they are referred to as movies, they do not necessarily contain moving pictures; a Flash movie may consist of a single frame.)
+
+Flash Video Encoder
+A program that can be used to convert video from other formats to <CrossReference>FLV</CrossReference> independently of Flash itself or any video editor.
+
+flatten
+In Photoshop, to combine all the layers of an image into a single layer.
+
+float
+To move an element, often an image, as far to the left or right of a Web page as possible, while text is wrapped round it. Floating is achieved by setting the CSS property float.
+
+FLV (Flash Video)
+A video format associated with Flash that may be streamed and viewed in a Web browser using the Flash Player plug-in.
+
+FLV QuickTime export plug-in
+A <CrossReference>plug-in</CrossReference> that allows <CrossReference>Flash Video</CrossReference> to be exported from popular video editing and post-production programs, including After Effects and Final Cut Pro.
+
+form
+An HTML element that can contain interface elements, which are used to collect input from users and pass them on to server-side scripts.
+
+free transform
+A command or tool that is used to apply any combination of rotation, scaling and skewing transformations to vector objects or Photoshop layers.
+
+free transform tool
+See <CrossReference>free transform</CrossReference>.
+
+GIF text
+Text that has been rendered as a bitmap and saved as a GIF file. Often used on Web pages to ensure that text will appear exactly as the designer intended. The use of GIF text should be avoided, though, on <CrossReference>accessibility</CrossReference> grounds.
+
+gradient
+A type of <CrossReference>fill</CrossReference> in which colours gradually blend into each other. The blending may be linear or radial, or – in Photoshop – <CrossReference>angular</CrossReference> or <CrossReference>diamond</CrossReference>-shaped.
+
+gradient tool
+A tool for applying <CrossReference>gradient fills</CrossReference> manually, which allows greater control than is available in the Gradient panel (or its equivalent).
+
+grid
+A systematic rectangular or polar arrangement of lines. In Illustrator, grids of both types can be created with the grid tool.
+
+gripper
+In Dreamweaver, the dotted area to the left of the disclosure triangle in the title bar of a <CrossReference>panel group</CrossReference>.
+
+group select tool
+In Illustrator, a tool that allows you to select an object that is part of a group without ungrouping.
+
+guide
+A horizontal or vertical line which is displayed in the document window for use as a layout aid. (In Illustrator, any object can also be made into a guide.)
+
+handles
+The small squares at each corner and in the middle of each side of a <CrossReference>bounding box</CrossReference>, which are used to carry out transformations by dragging.
+
+HSB model
+A way of presenting colours as three values – <CrossReference>hue</CrossReference>, <CrossReference>saturation</CrossReference> and <CrossReference>brightness</CrossReference> – which is said to be a more natural way of thinking about colours than <CrossReference>RGB</CrossReference> or <CrossReference>CMYK</CrossReference> colour.
+
+hue
+A pure colour. In the <CrossReference>HSB model</CrossReference> of colour, hue is equated with position around the rim of the <CrossReference>colour wheel</CrossReference>. 
+
+image histogram
+A visual representation of how different <CrossReference>brightness</CrossReference> levels are distributed among the <CrossReference>pixels</CrossReference> of an image (or selection). The horizontal axis represents the different possible brightness levels, with black (zero) at the left, and white (255) at the right. The height of the graph at each point indicates the number of pixels with that brightness.
+
+image optimization
+An imprecise term used to refer to the processes of preparing an image for use on the Web, including conversion to a Web image format, compression and – in the case of formats using <CrossReference>indexed colour</CrossReference> – reducing the number of colours.
+
+ink bottle
+A tool, only available in Flash, for setting the stroke properties of objects.
+
+input text
+In Flash, text that is entered by users while the movie runs.
+
+Insert bar
+In Dreamweaver, a panel containing icons for commonly-used elements, which can be added to a document by clicking their icons.
+
+instance
+In Flash or Illustrator, the result of placing a <CrossReference>symbol</CrossReference> in a document. The instance is a reference to the symbol, so will be updated if the symbol is edited, but it may also have transformations and effects applied to it independently.
+
+IPTC core specification
+A trade standard for image <CrossReference>metadata</CrossReference> that provides a uniform way of recording information about an image’s creator, its copyright status, and various other information that helps to classify it. 
+
+isolation mode
+In Illustrator, an editing mode in which only specified objects can be selected or altered. In isolation mode, everything except the isolated objects is subtly dimmed in the document window to indicate that it is not available for editing.
+
+jitter
+A random variation of some quantity, such as the angle of a brush, which can be added to produce a more natural result.
+
+kerning
+In typography, the technique of moving certain pairs of letters, such as AV, closer together to maintain an optical illusion of uniform spacing.
+
+key object
+In Illustrator, an object chosen from several that have been selected, which serves as the reference for alignment and distribution operations.
+
+keyframe
+In Flash, a frame whose contents you create explicitly. See also <CrossReference>tweening</CrossReference>.
+
+keywords
+In Bridge, descriptive words that may be attached to a file to help classify it.
+
+knife tool
+A tool in Illustrator that cuts shapes into separate pieces on either side of a line drawn by dragging the tool in the document.
+
+Lab colour
+A <CrossReference>colour mode</CrossReference> used for high quality images.
+
+lasso tool
+A tool for making selections, of objects or pixels, by drawing a freehand outline: anything inside the outline will be selected. 
+
+Layer comp
+In Photoshop, a composition formed by a specified combination of layers.
+
+layer effects
+In Photoshop, special effects that are are applied to a layer itself, and not to the pixels it contains, thus avoiding permanent alteration of the image data. Layer effects therefore also affect any new content which may be added to the layer at a later date.
+
+layer folder
+In Flash, a collection of layers that can be treated as a single unit. See also <CrossReference>layer group</CrossReference>.
+
+layer group
+In Photoshop, a collection of layers that can be treated as a single unit. See also <CrossReference>layer folder</CrossReference>.
+
+layer mask
+In Photoshop, a <CrossReference>mask</CrossReference> that is attached to a layer.
+
+layer style
+In Photoshop, a combination of <CrossReference>layer effects</CrossReference> that can be named and saved for re-use.
+
+leading
+The distance between consecutive baselines in typeset text. (Pronounced to rhyme with 'bedding'.)
+
+left-aligned
+A style of aligning paragraphs, with a straight left margin and ragged right.
+
+letter spacing
+See <CrossReference>tracking</CrossReference>.
+
+library
+In a <CrossReference>Flash movie</CrossReference>, its collection of symbols and imported assets.
+
+line tool
+A tool for creating straight line segments by dragging in vector graphics programs. (Known as the line segment tool in Illustrator.) Although redundant it can be more convenient than using the <CrossReference>pen tool</CrossReference>.
+
+link
+In an Illustrator document, a pointer to an external file which has been included in the document. Linked files are not physically copied into the document. See also <CrossReference>embedding</CrossReference>.
+
+liquid column
+In a multi-column Web page layout, a column whose width scales with the width of the browser window, usually because it is specified in percentage units. See also <CrossReference>elastic column</CrossReference> and <CrossReference>fixed column</CrossReference>.
+
+list items
+The elements that make up a list in an <CrossReference>HTML</CrossReference> document.
+
+Live Paint
+In Illustrator, a mode of working in which <CrossReference>fills</CrossReference> and <CrossReference>strokes</CrossReference> can be applied to an image in a natural way that corresponds to the regions seen by the user, rather than the vector objects they are made from.
+
+Live Paint group
+In Illustrator, several objects that have been selected and combined so that they can be painted in <CrossReference>Live Paint</CrossReference> mode.
+
+Live Paint select tool
+In Illustrator, a tool that can be used to select regions and edges in a <CrossReference>Live Paint group</CrossReference>.
+
+Live Trace
+Illustrator's powerful vectorizing facility that can be used to turn a bitmapped image into a vector graphic.
+
+local site
+In Dreamweaver, a folder used to keep track of the files making up a Web site under construction on the machine where the site is being developed. 
+
+lock
+To fix a layer or object so that it cannot be changed.
+
+locked region
+In Dreamweaver, an area of a <CrossReference>template</CrossReference> which cannot normally be edited in any page based on the template.
+
+loupe
+In Bridge, a sub-window resembling a magnifying glass that appears in the preview pane to show a magnified view of an image.
+
+magic eraser
+In Photoshop, a tool for removing <CrossReference>pixels</CrossReference> of a particular colour. When you click with this tool, all pixels of the same colour  as the one you clicked on (within a specified tolerance) are erased. 
+
+magic wand
+A tool for selecting <CrossReference>pixels</CrossReference> or objects that share some attributes. For example, in Photoshop, all pixels of the same colour (within a specified tolerance) as the one clicked on with the magic wand are selected.
+
+magnetic lasso
+In Photoshop, a tool for making selections by drawing roughly round the area to be selected. As the tool is dragged, the selection boundary snaps to the nearest clearly defined edge.
+
+marquee tools
+In Photoshop, a set of four selection tools, with which areas of pixels that lie within a geometrical shape (rectangle, ellipse, single-pixel row or single-pixel column) can be selected.
+
+merge drawing mode
+In Flash, a <CrossReference>drawing mode</CrossReference> in which shapes are split into separate pieces where they overlap. If objects are drawn in this mode, their fill and stroke can be selected independently, and only individual segments of a compound path are selected with the arrow tool. 
+
+mesh tool
+In Illustrator, a tool for creating elaborate <CrossReference>gradient</CrossReference> <CrossReference>fills</CrossReference>, by constructing a mesh of points where colour can be specified. A two-dimensional blend of colours is produced around each point.
+
+metadata placard
+In the Metadata panel in Bridge, a small summary of important <CrossReference>Exif</CrossReference> data values, shown in a way that resembles the display on the screen of a digital camera. 
+
+modal dialogue
+A box containing interface elements in which values can be entered, but the user cannot do anything else until the box is explicitly closed (usually by clicking an OK or Cancel button). 
+
+modeless dialogue
+A box containing interface elements in which values can be entered, which can be left open while the user works on the document. 
+
+morphing
+See <CrossReference>shape tweening</CrossReference>.
+
+motion guide
+In Flash, a path, known as a motion guide, for objects to follow when they are <CrossReference>motion tweened</CrossReference>.
+
+motion tweening
+<CrossReference>Tweening</CrossReference> of position and other properties, including rotation and transparency, which can be interpolated efficiently in Flash.
+
+numbered file sequence
+A set of files named following a consistent convention, so that each one includes a sequence number in its name. Numbered file sequences are often used to hold the frames of an animation.
+
+object drawing mode
+In Flash, a <CrossReference>drawing mode</CrossReference> in which objects retain their identity and do not interact with any other shapes that they intersect. See also <CrossReference>merge drawing mode</CrossReference>.
+
+On2 VP6
+The <CrossReference>codec</CrossReference> used by default for encoding <CrossReference>Flash video</CrossReference>.
+
+onion skins
+
+OpenType
+
+ordered
+
+orphaned
+
+oval primitive
+
+oval tool
+
+paint bucket
+
+paintbrush tool
+
+panel groups
+
+panel menu
+
+panel
+
+parameters
+
+pasteboard
+
+patch tool
+
+path eraser
+
+path type tool
+
+Pattern brushes
+
+Pattern Maker
+
+pattern stamp tool
+
+pen tool 
+
+pencil
+
+pencil tool
+
+plug-ins
+
+polygon tool
+
+polygonal lasso
+
+polystar tool
+
+preview panel
+
+primary colours
+
+Progressive download
+
+projectors
+
+Properties panel
+
+Property Inspector
+
+proxy preview area
+
+PSD
+
+rasterized
+
+RDS
+
+rectangle primitive
+
+rectangle tool
+
+reflected
+
+reflection tool
+
+registration point
+
+remote site
+
+RGB colour
+
+right-aligned
+
+rotation tool
+
+rubylith
+
+ruler guides
+
+S-curve
+
+saturation
+
+scaling
+
+Scatter brushes
+
+scissors tool
+
+scribble effect
+
+scripting
+
+secondary colours
+
+selected
+
+selection handle
+
+selection tool
+
+server-side scripts
+
+shape hints
+
+Shape tweening
+
+shape tweening
+
+shearing tools
+
+skin
+
+smart filters
+
+smart guides
+
+smart objects
+
+smooth points
+
+spiral tool
+
+split view
+
+spot healing brush
+
+Spry effects
+
+Spry framework
+
+Spry widgets
+
+stacks
+
+stage
+
+star rating
+
+star tool
+
+static
+
+Stream sounds
+
+strokes
+
+structure
+
+style sheets
+
+styles
+
+subselection tool
+
+SVG (Scalable Vector Graphics)
+
+swatch
+
+SWF
+See <CrossReference>Flash movie</CrossReference>.
+
+symbol screener
+
+symbol scruncher
+
+symbol set
+
+symbol shifter
+
+symbol sizer
+
+symbol spinner
+
+symbol sprayer
+
+symbol stainer
+
+symbol styler
+
+symbolism tools
+
+synchronize
+
+tag structure
+
+target
+
+templates
+
+text block
+
+text frame
+
+tile
+
+tiled
+
+time-based
+
+timeline
+
+timeline effect
+
+tint
+
+title
+
+tone
+
+tool tips
+
+toolbars
+
+tracing
+
+tracking
+
+transitions
+
+transparency setting
+
+type
+
+type tool
+
+ultra-compact mode
+
+unordered
+
+upsample
+
+value
+
+vectorize
+
+WebDAV
+
+weight
+
+welcome screen
+
+WMV
+
+work path
+
+workspace
+
+XHTML 1.1
+
+XML data sets
+
+z-ordering

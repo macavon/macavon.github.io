@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+
+<html class="no-js">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+	<meta name="description" content="Companion site for popular textbook Digital Multimedia, 3rd Edition, by Nigel Chapman and Jenny Chapman. Free teaching and learning resources." />
+
+  <link rel="stylesheet" media="screen" href="/assets/application.css" />
+
+<!--[if lte IE 7]>
+    <link rel="stylesheet" href="/ie67hax.css" type="text/css" media="screen" charset="utf-8">
+<![endif]-->
+
+  <script src="/assets/application.js"></script>
+
+<!--[if (gte IE 6)&(lte IE 8)]>
+	<script src="/assets/selectivizr.js"></script>
+<![endif]-->
+<!--[if lt IE 9]>
+	<script src="/assets/scripts.js"></script>
+<![endif]-->
+
+
+	<link rel="icon" href="/favicon.ico" type="image/x-icon" />
+	<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+	<title>Digital Multimedia -- Errata</title>
+</head>
+
+<body>
+
+  <nav>
+    <h1><a href="/">Digital Multimedia</a></h1>
+    <ul class="nav0"><li class="current"><span class="current">Navigation</span></li></ul>
+<ul class="navbar nav1"><li class="current"><a class="current" href="/pages/teaching-and-learning-resources">Teaching and Learning</a></li><li><a href="/pages/preview">Sample Material</a></li><li><a href="/pages/about-us">About Us</a></li></ul>
+<ul class="navbar nav2"><li><a href="/pages/teaching-and-learning-resources">Introduction</a></li><li><a href="/pages/lecture-slides-overview">Lecture Slides</a></li><li><a href="/pages/answers-overview">Answers</a></li><li><a href="/pages/examples-overview">Examples</a></li><li><a href="/pages/projects-introduction">Projects</a></li><li><a href="/pages/references-overview">References</a></li><li class="current simple-navigation-active-leaf"><span class="current">Errata</span></li></ul>
+
+
+  </nav>
+  <ul class="nav0"><li class="current simple-navigation-active-leaf"><span class="current">Quick Links</span><ul id="quicklynx"><li><span>Quick Links</span></li><li><a href="/pages/lecture-slides-overview">Lecture Slides</a></li><li><a href="/pages/answers-overview">Answers</a></li><li><a href="/pages/examples-overview">Examples</a></li><li><a href="/pages/preview">Sample Material</a></li></ul></li></ul>
+
+	<div id="main">
+  <noscript>
+    <p><em>JavaScript Is Required</em> You have disabled JavaScript for this site, or your browser does not support JavaScript. Some features of the site will not work correctly. We advise you to enable JavaScript.</p>
+  </noscript>
+
+	<h1>Errors and Omissions</h1>
+<h2>Chapter 2</h2>
+<p><strong>p.&nbsp;55, Test Question&nbsp;5.</strong> This exercise should be restricted to lossless compression.</p>
+<h2>Chapter 3</h2>
+<p><strong>p.&nbsp;98, Test Question&nbsp;4.</strong> This question should start: In Figure&nbsp;3.24, which of the two <em>lower</em> shapes …</p>
+<h2>Chapter 14</h2>
+<p><strong>p. 557.</strong> In the 3rd line of the code fragment in the middle of the page there is a superfluous <code>.</code> between the <code>)</code> and <code>[</code>.</p>
+<p><strong>p.&nbsp;560ff.</strong> (This isn't exactly an error, but we advise you to make the following changes to be consistent with the behaviour of popular Web browsers.) Change the first paragraph of the section headed "Events and Listeners" to the following:</p>
+<blockquote>The method <code>addEventListener</code> is an example of a method that takes a function as one of its arguments. <code>addEventListener</code> takes three arguments. The first is a string, whose value is the name of an event; the second is a function which will act as the listener for events of that type. We use the function’s name only, because we are passing the function object, not calling it. For simple cases, the third argument is always <code>false</code>.</blockquote>
+<p>This change reflects the behaviour of the current versions of Firefox and Opera, which consider omitting the final argument to be an error. Safari allows it to be omitted, which appears to be the behaviour specified in the ECMAScript standard. (Internet Explorer does not implement <code>addEventListener</code> at all.) For consistency, the third argument should be added to the calls of <code>addEventListener</code> in the remaining JavaScript examples. (Note that this argument can be omitted in ActionScript, and usually is, so no change is necessary to the examples in the ActionScript part of the chapter.)</p>
+<p><strong>p.&nbsp;560.</strong> 5 lines from the bottom, change to
+<pre class="codefragment">switch1.addEventListener("click", plainify, false)</pre>
+</p>
+<p><strong>p.&nbsp;563.</strong> Change the two calls in the function <code>prepare</code> to
+<pre class="codefragment">
+switch1.addEventListener("click", plainify, false)
+switch2.addEventListener("click", fancify, false)
+</pre>
+and the call below it to
+<pre class="codefragment">window.addEventListener("load", prepare, false)</pre>
+</p>
+<p><strong>p.&nbsp;565.</strong> Change the call at the end of <code>do_switch</code> to
+<pre class="codefragment">the_switch.addEventListener("click", the_listener, false)</pre>
+</p>
+<p><strong>p.&nbsp;574.</strong> Add at the end of the last sentence: ", but the third argument can be omitted."</p>
+<h2>Chapter 15</h2>
+<p><strong>p&nbsp;608.</strong> Add the following before the <code>polyline</code> element on the last line:</p>
+<pre class="codefragment">&lt;circle cx=&quot;50&quot; cy=&quot;50&quot; r=&quot;50&quot; fill=&quot;#F67155&quot; stroke=&quot;none&quot; /&gt;</pre>
+<p><strong>p.&nbsp;622, Test Question 9.</strong> This question may need some clarification. Change the first sentence to:</p>
+<p class="codefragment">
+Show how you can use a combination of transforms in SVG to scale a 300 × 400 pixel rectangle with a red fill,	whose	top left corner is at (150, 200), by a factor of 1.5, without altering the position of the top left corner.
+</p>
+<!-- <h2>Glossary</h2>
+<p><strong>p.&nbsp;683.</strong> Insert the <a href="/glossary/colour%20values">entry for &quot;colour values&quot;</a> between "colour table" and "colour wheel".</p> -->
+
+</div>
+</body>
+
+</html>

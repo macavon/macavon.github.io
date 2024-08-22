@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+
+<html class="no-js">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+	<meta name="description" content="Companion site for popular textbook Digital Multimedia, 3rd Edition, by Nigel Chapman and Jenny Chapman. Free teaching and learning resources." />
+
+  <link rel="stylesheet" media="screen" href="/assets/application.css" />
+
+<!--[if lte IE 7]>
+    <link rel="stylesheet" href="/ie67hax.css" type="text/css" media="screen" charset="utf-8">
+<![endif]-->
+
+  <script src="/assets/application.js"></script>
+
+<!--[if (gte IE 6)&(lte IE 8)]>
+	<script src="/assets/selectivizr.js"></script>
+<![endif]-->
+<!--[if lt IE 9]>
+	<script src="/assets/scripts.js"></script>
+<![endif]-->
+
+
+	<link rel="icon" href="/favicon.ico" type="image/x-icon" />
+	<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+	<title>Digital Multimedia -- Answers 6</title>
+</head>
+
+<body>
+
+  <nav>
+    <h1><a href="/">Digital Multimedia</a></h1>
+    <ul class="nav0"><li class="current"><span class="current">Navigation</span></li></ul>
+<ul class="navbar nav1"><li class="current"><a class="current" href="/pages/teaching-and-learning-resources">Teaching and Learning</a></li><li><a href="/pages/preview">Sample Material</a></li><li><a href="/pages/about-us">About Us</a></li></ul>
+<ul class="navbar nav2"><li><a href="/pages/teaching-and-learning-resources">Introduction</a></li><li><a href="/pages/lecture-slides-overview">Lecture Slides</a></li><li class="current"><a class="current" href="/pages/answers-overview">Answers</a></li><li><a href="/pages/examples-overview">Examples</a></li><li><a href="/pages/projects-introduction">Projects</a></li><li><a href="/pages/references-overview">References</a></li><li><a href="/pages/errata">Errata</a></li></ul>
+<ul class="navbar nav3"><li><a href="/pages/answers-overview">Introduction</a></li><li><a href="/pages/answers-1">1</a></li><li><a href="/pages/answers-2">2</a></li><li><a href="/pages/answers-3">3</a></li><li><a href="/pages/answers-4">4</a></li><li><a href="/pages/answers-5">5</a></li><li class="current simple-navigation-active-leaf"><span class="current">6</span></li><li><a href="/pages/answers-7">7</a></li><li><a href="/pages/answers-8">8</a></li><li><a href="/pages/answers-9">9</a></li><li><a href="/pages/answers-10">10</a></li><li><a href="/pages/answers-11">11</a></li><li><a href="/pages/answers-12">12</a></li><li><a href="/pages/answers-13">13</a></li><li><a href="/pages/answers-14">14</a></li><li><a href="/pages/answers-15">15</a></li><li><a href="/pages/answers-16">16</a></li></ul>
+
+  </nav>
+  <ul class="nav0"><li class="current simple-navigation-active-leaf"><span class="current">Quick Links</span><ul id="quicklynx"><li><span>Quick Links</span></li><li><a href="/pages/lecture-slides-overview">Lecture Slides</a></li><li><a href="/pages/answers-overview">Answers</a></li><li><a href="/pages/examples-overview">Examples</a></li><li><a href="/pages/preview">Sample Material</a></li></ul></li></ul>
+
+	<div id="main">
+  <noscript>
+    <p><em>JavaScript Is Required</em> You have disabled JavaScript for this site, or your browser does not support JavaScript. Some features of the site will not work correctly. We advise you to enable JavaScript.</p>
+  </noscript>
+
+	<h1>Answers to Exercises, Chapter 6</h1>
+<p>These are answers to the exercises in the 3rd edition of <span class="booktitle">Digital Multimedia</span> (published February 2009) only. Do not try to use them in conjunction with the 2nd edition.</p>
+                                                                                                               <h2>Test Questions</h2>
+<ol class="answerlist">
+	<li>Broadcast video is interlaced because the analogue TV channels that were in use when the standards were developed did not provide sufficient bandwidth to transmit the contents of an entire video frame at the required rate. Therefore, the frame was divided into two fields, each comprising alternate lines of the frame, which could be transmitted and displayed in succession. Although modern TV equipment is capable of displaying entire frames at once, the broadcast industry is shackled by the standards developed in the past for analogue signals. In contrast, Web video does not suffer from these constraints, because Web video is displayed on computer monitors, not television sets. Interlacing is unnecessary and, because of the complications it creates, undesirable, so it is not used on the Web.</li>
+	<li>A PAL frame contains 576 lines, an NTSC frame contains 480. In digital video, these are also the numbers of pixels vertically. Both frames have 720 pixels horizontally in CCIR&nbsp;601, and they both have the same aspect ratio. Suppose (without loss of generality) that a pixel is 1 unit tall, and that the pixels in PAL and NTSC frames are p and n units wide, respectively. Then to make the aspect ratios of PAL and NTSC frames the same, we need 720p/576&nbsp;=&nbsp;720n/480, which comes out to p/n&nbsp;=&nbsp;1.2. In other words, PAL pixels are 1.2 times as wide as NTSC pixels.</li>
+	<li>There are two pitfalls in this calculation. First, remember that DV is chrominance sub-sampled. Second, for data rates, M means a million, not 1024*1024, as it does in other contexts.
+		<p>The answer to Test Question 9 in Chapter 2 shows that the data rate of full-colour uncompressed CCIR&nbsp;601 video in either PAL or NTSC is 31104000&nbsp;bytes per second. DV is 4:1:1 sub-sampled, which means that we only sample the colour of every fourth pixel. As the answer to Test Question 10 in Chapter 5 demonstrates, this means that the raw data stream will have half the number of bytes of the full-colour version, so before compression the data rate is 15552000&nbsp;bytes per second, that is, 124416000&nbsp;bits per second or 124.416&nbsp;Mbps, which when divided by 25 is very nearly 5.</p></li>
+		<li>An easy way to get the ratio is to consider 4:4:4 as being unsampled, then just add up the three numbers to see how many samples are being taken in each case. For instance, 4:2:2 means 8 out of each twelve pixels are being sampled, so the image will occupy 2N/3 bytes. For both 4:1:1 and 4:2:0, it occupies N/2.
+			<p>As you can see in the lower diagram of Figure&nbsp;6.6, the U and V colour samples in 4:2:0 sub-sampling are on alternate lines of the picture. That is, they will end up in different fields if the video is interlaced. This may not cause a problem with displaying the frames, because interlaced fields are optically mixed anyway, but it could cause a problem in processing the video because the information making up each frame has been split between the fields.</p></li>
+			<li>
+				<p>(a) In general, the frames before and after a cut will be completely different. A cut usually represents a change of scene or viewpoint. Therefore, the difference between the two frames adjoining the cut will be essentially equal to the complete frame. In this case nothing will be saved by using inter-frame compression. It is normal for software to insert new key frames (I-pictures) after a cut. Motion compensation is of no help.</p>
+				<p>(b) In contrast, a dissolve often features little or no movement, a static scene just fades (this is a generalisation, of course). When this is the case, inter-frame compression will perform well, because pixel values only change relatively slowly between frames. Motion compensation is irrelevant, though.</p>
+				<p>(c) We assume that stabilization is not being performed in the camera, so hand-held shots will tend to be shaky. This can seriously disrupt the effectiveness of inter-frame compression, because pixels that correspond to the same part of the picture, and whose values are identical in consecutive frames, will move abruptly as the camera shakes. Motion compensation should counteract this effect.</p>
+				<p>(d) Zooms also disrupt the effectiveness of inter-frame compression because each pixel may change from one frame to the next, but the change between frames in this case is systematic and can be described algorithmically. ("Digital" zooms can be performed purely by interpolation, after all.) The local motion compensation used in MPEG-2 is of limited help, but global motion compensation is designed precisely to deal with such systematic movement.</p>
+				<p>(e) During a pan, new parts of the scene constantly enter the frame, but usually there is little or no other movement. As with pans, there will be many changed pixels, but the change is systematic. If interpolated frames can depend on following frames as well as preceding ones (i.e. B-pictures are allowed) the pan can be efficiently compressed using global motion compensation. If you find it helpful to think of global motion compensation as being similar to interpolation, you will appreciate that, in order to compute intermediate frames, we need to know the contents of the final frame. Similalry, to perform motion compensation, we need to be able to look ahead to pixels that will come into frame next.</p>
+			</li>
+			<li>This is simply because of inter-frame compression. Because the video frames form a sequence, only some parts of consecutive frames will be different – those where movement occurs. Hence, as we describe in detail in the text, only key frames (I-pictures) need to be stored in full; various methods can be used to store only the difference between consecutive frames in between them. The difference frames will be mostly empty (zero values) so they can be compressed much more effectively than the key frames. If the 750 images are compressed independently, each frame is effectively a key frame, and must include data for each pixel, so it will not be possible to compress the sequence as effectively as we can by making use of data from preceding frames.
+				<p>Note that we did not include the word "usually" in this question. A video clip in which every frame was entirely different would not be watchable, because the frames are displayed too quickly. Note also that chrominance sub-sampling is not the answer here: JPEG images are usually sub-sampled, as we noted in Chapter 4.</p></li>
+				<li>This is a bit messy to draw, so we'll leave that to you. There should be arrows running from right to left from each P to the preceding I or P, whichever is nearer, and arrows running in both directions from each B to the nearest I or P before and after. (There's nothing difficult conceptually, but drawing a neat picture is a challenge.)
+					<p>The bitstream order of the first 19 frames is IPBBPBBIB&nbsp;BPBBPBBIB&nbsp;B. The first group is special because it must begin with an I-picture, since everything subsequently depends on it, but the last pair of B-pictures depend on the first I-picture of the next GOP. This therefore has to be pulled back into the first group of 9 pictures, to establish the pattern of all the subsequent groups. Another way of looking at this is to observe that the first GOP is special because there is no way there can be a B-picture before the first I-picture which depends on it, whereas in later GOPs there will be.</p></li>
+					<li>The movie can start playing instantly, because the data rate is less than the speed of the download. Nevertheless, it may play back jerkily if the processor cannot display frames at that rate, or if network delays interfere – when deciding when to start a progressively downloaded movie, players assume a constant download rate which may not be achieved. We expand on this point in Chapter&nbsp;16.</li>
+					<li>When choosing video formats and codecs, the following factors should be considered.
+					<ul>
+						<li>The destination for the video (DVD, Blu-Ray, broadcast, mobile phone, Web,…). Many of these delivery formats impose the choice for you. For example, DVD video must be in MPEG-2 format.</li>
+						<li>Availability of codecs in players. There is no point using a codec that is unlikely to be installed on the machines of your intended audience or a format that cannot be read on common platforms.</li>
+						<li>Hardware demands of the decompression process. Again, there is no point in using a codec if decompressing the video in real-time is beyond the capabilities of typical computer systems.</li>
+					<li>Achievable compression ratios. Can you get enough compression with your chosen codec to be able to deliver it over your chosen medium, without unacceptable loss of quality?</li>	
+					<li>Image quality of compressed video. Some older codecs (e.g. Cinepak) always produce poor quality, which may be unacceptable.</li>
+					<li>Licencing and intellectual property issues. The use of some codecs requires a licence fee. Some people insist on using "Free Software" that is distributed under a licence such as the GNU GPL which allows it to be modified by its users.</li>
+					</ul>	
+					</li>
+</ol>
+<h2>Discussion Topics: Hints and Tips</h2>
+<ol class="answerlist">
+	<li>As a possible starting point, consider the video formats used by mobile phones and those "still" cameras which can also capture short video clips. These devices are less hampered by the legacy of broadcast formats than conventional video cameras.</li>
+	<li>Think about the effect on compression as well as the factors we consider when describing the use of indexed colour for still images in Chapter&nbsp;5.</li>
+	<li>Apple's iMovie is intended for just such applications, so you could begin to answer this question by making a critical assessment of its features.</li>
+</ol>
+<h2>Practical Tasks: Hints and Tips</h2>
+<ol class="answerlist">
+	<li>If this exercise is to be worthwhile, you need to be as systematic as possible and approach it as you would a scientific experiment. Don't necessarily expect a clear-cut result to emerge if you use modern codecs. There are differences in the algorithms they use, though, so you should be able to refine your experiment to identify factors which do affect their quality differently. For example, does one codec produce consistently better results on scenes with rapid movement?</li>
+	<li>Try looking up the term "garbage matte" and see how it is interpreted in After Effects or Final Cut Pro.</li>
+</ol>
+
+</div>
+</body>
+
+</html>

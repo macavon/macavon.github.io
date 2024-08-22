@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+
+<html class="no-js">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+	<meta name="description" content="Companion site for popular textbook Digital Multimedia, 3rd Edition, by Nigel Chapman and Jenny Chapman. Free teaching and learning resources." />
+
+  <link rel="stylesheet" media="screen" href="/assets/application.css" />
+
+<!--[if lte IE 7]>
+    <link rel="stylesheet" href="/ie67hax.css" type="text/css" media="screen" charset="utf-8">
+<![endif]-->
+
+  <script src="/assets/application.js"></script>
+
+<!--[if (gte IE 6)&(lte IE 8)]>
+	<script src="/assets/selectivizr.js"></script>
+<![endif]-->
+<!--[if lt IE 9]>
+	<script src="/assets/scripts.js"></script>
+<![endif]-->
+
+
+	<link rel="icon" href="/favicon.ico" type="image/x-icon" />
+	<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+	<title>Digital Multimedia -- Examples 15</title>
+</head>
+
+<body>
+
+  <nav>
+    <h1><a href="/">Digital Multimedia</a></h1>
+    <ul class="nav0"><li class="current"><span class="current">Navigation</span></li></ul>
+<ul class="navbar nav1"><li class="current"><a class="current" href="/pages/teaching-and-learning-resources">Teaching and Learning</a></li><li><a href="/pages/preview">Sample Material</a></li><li><a href="/pages/about-us">About Us</a></li></ul>
+<ul class="navbar nav2"><li><a href="/pages/teaching-and-learning-resources">Introduction</a></li><li><a href="/pages/lecture-slides-overview">Lecture Slides</a></li><li><a href="/pages/answers-overview">Answers</a></li><li class="current"><a class="current" href="/pages/examples-overview">Examples</a></li><li><a href="/pages/projects-introduction">Projects</a></li><li><a href="/pages/references-overview">References</a></li><li><a href="/pages/errata">Errata</a></li></ul>
+<ul class="navbar nav3"><li><a href="/pages/examples-overview">Introduction</a></li><li><a href="/pages/examples-1">1</a></li><li><a href="/pages/examples-2">2</a></li><li><a href="/pages/examples-3">3</a></li><li><a href="/pages/examples-4">4</a></li><li><a href="/pages/examples-5">5</a></li><li><a href="/pages/examples-6">6</a></li><li><a href="/pages/examples-7">7</a></li><li><a href="/pages/examples-8">8</a></li><li><a href="/pages/examples-9">9</a></li><li><a href="/pages/examples-10">10</a></li><li><a href="/pages/examples-11">11</a></li><li><a href="/pages/examples-12">12</a></li><li><a href="/pages/examples-13">13</a></li><li><a href="/pages/examples-14">14</a></li><li class="current simple-navigation-active-leaf"><span class="current">15</span></li><li><a href="/pages/examples-16">16</a></li></ul>
+
+  </nav>
+  <ul class="nav0"><li class="current simple-navigation-active-leaf"><span class="current">Quick Links</span><ul id="quicklynx"><li><span>Quick Links</span></li><li><a href="/pages/lecture-slides-overview">Lecture Slides</a></li><li><a href="/pages/answers-overview">Answers</a></li><li><a href="/pages/examples-overview">Examples</a></li><li><a href="/pages/preview">Sample Material</a></li></ul></li></ul>
+
+	<div id="main">
+  <noscript>
+    <p><em>JavaScript Is Required</em> You have disabled JavaScript for this site, or your browser does not support JavaScript. Some features of the site will not work correctly. We advise you to enable JavaScript.</p>
+  </noscript>
+
+	<h1>Examples for Chapter 15</h1>
+<h2>pp. 588 and 596, XML Document and DTD</h2>
+<p>We have zipped together the sample document from p.&nbsp;588 and the complete DTD listed on p.&nbsp;596 that goes with it, and added a very small Ruby script that you can use to validate the document with respect to the DTD. Keep all these files in the same directory if you want to use the validation script. Try making some changes to the document and DTD, such as adding an optional field for the edition, and then check that your modified document still validates.</p>
+<p>To use the validation script, you will need Ruby 1.8. with <a href="http://rubyforge.org/projects/rubygems/" title="RubyForge: RubyGems: Project Info">RubyGems</a>, and <a href="http://libxml.rubyforge.org/" title="libXML">libxml</a>. (We do not know whether it will work on Windows.)</p>
+<p><a href="/download/DMM3e-15-1.zip">Download Zip archive file DMM3e-15-1.zip [3.3kB]</a></p>
+
+<h2>SVG Support in Web Browsers</h2>
+<p>The most recent versions of all popular browser provide a basic level of support for SVG. This is a fairly recent achievement, and support in older versions is patchy. Check the tables at the <a href="http://caniuse.com/#cats=SVG" title="Can I use... Support tables for HTML5, CSS3, etc">Can I Use...</a> Web site to find out how well your browser supports SVG.</p>
+
+<ul class="examples">
+		<li>
+			<h2>p. 606, A Simple SVG Drawing</h2>
+			<img alt="Figure 15.2" src="/embedded/thumbnails/DMM3e-15-2.jpg" />
+			
+			<p><a href="/download/DMM3e-15-2.svg">Download SVG file DMM3e-15-2.svg [301.0bytes]</a></p>
+		</li>
+		<li>
+			<h2>p. 609, Shapes</h2>
+			<img alt="Figure 15.4" src="/embedded/thumbnails/DMM3e-15-4.jpg" />
+			This file contains the version of Figure&nbsp;15.4 that uses a <code>path</code> element. The alternative <code>polyline</code> is included in the document, but has been commented out.
+			<p><a href="/download/DMM3e-15-4.svg">Download SVG file DMM3e-15-4.svg [639.0bytes]</a></p>
+		</li>
+		<li>
+			<h2>p. 613, Linear Gradient Fill</h2>
+			<img alt="Figure 15.8" src="/embedded/thumbnails/DMM3e-15-8.jpg" />
+			You will find some additional SVG code in this file,  which is generated by Illustrator. This extra code can be ignored.
+			<p><a href="/download/DMM3e-15-8.svg">Download SVG file DMM3e-15-8.svg [1.2kB]</a></p>
+		</li>
+		<li>
+			<h2>p. 613, Radial Gradient Fill</h2>
+			<img alt="Figure 15.9" src="/embedded/thumbnails/DMM3e-15-9.jpg" />
+			As with the previous example, you will find some extra SVG code in this file that you can ignore.
+			<p><a href="/download/DMM3e-15-9.svg">Download SVG file DMM3e-15-9.svg [1.2kB]</a></p>
+		</li>
+		<li class="wide">
+			<h2>Transformations</h2>
+			The SVG files for the examples of transformations on pages 614–616 include the border and reference rectangle, as shown in Figures 15.10–15.13, as well as the transforms applied to the rectangle.
+		</li>
+		<li>
+			<h2>p. 614, Translation</h2>
+			<img alt="Figure 15.10" src="/embedded/thumbnails/DMM3e-15-10.jpg" />
+			
+			<p><a href="/download/DMM3e-15-10.svg">Download SVG file DMM3e-15-10.svg [892.0bytes]</a></p>
+		</li>
+		<li>
+			<h2>p. 615, Scaling</h2>
+			<img alt="Figure 15.11" src="/embedded/thumbnails/DMM3e-15-11.jpg" />
+			
+			<p><a href="/download/DMM3e-15-11.svg">Download SVG file DMM3e-15-11.svg [889.0bytes]</a></p>
+		</li>
+		<li>
+			<h2>p. 615, Rotation About the Origin</h2>
+			<img alt="svg" src="/embedded/thumbnails/DMM3e-15-12a.jpg" />
+			
+			<p><a href="/download/DMM3e-15-12a.svg">Download SVG file DMM3e-15-12a.svg [885.0bytes]</a></p>
+		</li>
+		<li>
+			<h2>p. 615, Rotation About a Point</h2>
+			<img alt="svg" src="/embedded/thumbnails/DMM3e-15-12b.jpg" />
+			
+			<p><a href="/download/DMM3e-15-12b.svg">Download SVG file DMM3e-15-12b.svg [893.0bytes]</a></p>
+		</li>
+		<li>
+			<h2>p. 616, Skewing</h2>
+			<img alt="Figure 15.13" src="/embedded/thumbnails/DMM3e-15-13.jpg" />
+			
+			<p><a href="/download/DMM3e-15-13.svg">Download SVG file DMM3e-15-13.svg [896.0bytes]</a></p>
+		</li>
+		<li>
+			<h2>p. 617, Transforming a Group</h2>
+			<img alt="Figure 15.14" src="/embedded/thumbnails/DMM3e-15-14.jpg" />
+			Both versions of the code shown on page&nbsp;617 are included in this file. The version that does not use nested groups is commented out.
+			<p><a href="/download/DMM3e-15-14.svg">Download SVG file DMM3e-15-14.svg [1.1kB]</a></p>
+		</li>
+	
+</ul>
+<p class="clearright">&nbsp;</p>
+
+
+</div>
+</body>
+
+</html>

@@ -1,0 +1,2 @@
+227	Make and Object>Live Paint should be in computer font, not glossary term.
+481	'pen tool' should be a glossary term.
