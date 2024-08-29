@@ -1,0 +1,4 @@
+<FilesMatch "\.(fla|psd|ai|zip)$">
+ForceType application/octet-stream
+Header set Content-Disposition attachment
+</FilesMatch>

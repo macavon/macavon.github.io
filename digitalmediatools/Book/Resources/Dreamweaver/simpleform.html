@@ -1,0 +1,57 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+
+	<title>Simple Form</title>
+	
+</head>
+
+<body>
+<form action="noscript.html" method="post" accept-charset="utf-8">
+		<p><label for="Name">*Your name:</label> <input name="Name" id="Name" size="41" /></p>
+
+		<p><label for="email">*Your email address:</label> <input name="email" id="email" size="33" /></p>
+
+		<p><label for="CourseTitle">*Title of course being taught:</label> <input name="CourseTitle" id="CourseTitle" size="25" /></p>
+
+		<p><label for="NumberOfStudents">Number of students:</label> <input name="NumberOfStudents" id="NumberOfStudents" size="6" />&nbsp;&nbsp;&nbsp;<label for="StartDate">Start date(s):</label> <input name="StartDate" id="StartDate" size="9" /></p>
+
+		<p><label for="CurrentBook">Book(s) currently in use:</label><br />
+		<textarea cols="53" rows="4" name="CurrentBook" id="CurrentBook">
+	</textarea></p>
+
+		<p><label for="Institution">*Institution:</label> <input name="Institution" id="Institution" size="41" /></p>
+		<p><label for="Department">Department:</label> <input name="Department" id="Department" size="39" /></p>
+
+		<p><label for="PostalAddress">*Full postal address of institution:</label><br />
+		<textarea cols="53" rows="10" name="PostalAddress" id="PostalAddress">
+	</textarea></p>
+
+		<p>
+			<select name = "ch" id="ch" multiple="multiple" >
+			<option label="Classic MacOS" value="classic">MacOS 9 or earlier
+			</option>
+			<option label="MacOS X" value="osx" selected="selected">MacOS X
+			</option>
+			<option label="NT" value="winnt">Windows NT</option>
+			<option label="2000" value="win2k">Windows 2000</option>
+			<option label="XP" value="winxp">Windows XP</option>
+			<option label="ME" value="winme">Windows ME</option>
+			<option label="Other" value="winoth">Other Windows</option>
+			<option label="Linux" value="linux">Linux</option>
+			<option label="BSD" value="bsd">BSD Unix</option>
+			<option label="Solaris" value="solaris">Sun Solaris</option>
+			<option label="Other" value="othux">Other Unix</option>
+			</select>
+			
+		</p>
+
+		<p><input type="submit" name="send" value="Send" /></p>
+	</form>
+
+
+</body>
+</html>
